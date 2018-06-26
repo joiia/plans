@@ -1,0 +1,30 @@
+.headline {
+    
+    @mixin atS {} 
+    
+    &--centered {
+        text-align: center;
+    }
+    
+    &--small {
+    }
+    
+    &--narrow {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    &--light {
+        font-weight: 100;
+    }
+    
+    &--b-margin-small {
+        margin-bottom: .5em;
+    }
+    
+    &--no-t-margin {
+        margin-top: 0;
+    }
+    
+}
