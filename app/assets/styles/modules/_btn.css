@@ -1,1 +1,62 @@
-.btn {}
+.btn {
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none !important;
+    text-align: center;
+    transition: all .5s;
+    
+    &--rnd {
+        border-radius: 30px;
+    }
+    
+    &--lg {
+        height: 48px;
+        font-size: $px16;
+        padding: 12px 25px;
+        
+        @mixin atM {
+            height: 57px;
+            font-size: $px18;
+            padding: 15px 35px;
+        } 
+        
+    }
+    
+    &--orng {
+        background: $orange;
+        color: #fff !important;
+        
+        &:hover {
+            background: #f85959;
+        }
+        
+    }
+    
+    &--icn {
+        padding-left: 18px;
+        
+        @mixin atM {
+            padding-left: 25px;
+        } 
+    }
+    
+    &__icon {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+        position: relative;
+        top: -2px;
+        
+        @mixin atM {
+            margin-right: 15px;
+
+        } 
+    }
+    
+    &--mrg-t {
+        @mixin atM {
+            margin-top: 7px;
+        }
+    }
+    
+}

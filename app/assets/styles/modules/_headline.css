@@ -1,30 +1,89 @@
 .headline {
     
-    @mixin atS {} 
-    
-    &--centered {
-        text-align: center;
+    &--18 {
+        font-size: $px15;
+        
+        @mixin atS {
+            font-size: $px16;
+        }
+        
+        @mixin atM {
+            font-size: $px18;
+        }
     }
     
-    &--small {
+    &--20 {
+        font-size: $px16;
+        
+        @mixin atS {
+            font-size: $px18;
+        }
+        
+        @mixin atM {
+            font-size: $px20;
+        }
     }
     
-    &--narrow {
-        max-width: 500px;
-        margin-left: auto;
-        margin-right: auto;
+    &--22 {
+        font-size: $px18;
+        
+        @mixin atS {
+            font-size: $px20;
+        }
+        
+        @mixin atM {
+            font-size: $px22;
+        }
     }
     
-    &--light {
-        font-weight: 100;
+    &--27 {
+        font-size: $px22;
+        
+        @mixin atS {
+            font-size: $px24;
+        }
+        
+        @mixin atM {
+            font-size: $px27;
+        }
+        
+        .icon {
+            margin-right: 20px;
+            position: relative;
+            top: -2px;
+        }
     }
     
-    &--b-margin-small {
-        margin-bottom: .5em;
+    
+    &--blue-l {
+        color: $blue-lg;
     }
     
-    &--no-t-margin {
-        margin-top: 0;
+    &--blue {
+        color: $blue;
     }
     
+    &--orng {
+        color: $orange-d;
+    }
+    
+    &--bold {
+        font-family: $bold;
+    }
+    
+    &--mrg-b-l {
+        margin-bottom: 20px;
+        
+        @mixin atM {
+            margin-bottom: 35px;
+        }
+    }
+    
+    &--no-mrg {
+        margin: 0;
+    }
+    
+    &--up {
+        text-transform: uppercase;
+    }
 }

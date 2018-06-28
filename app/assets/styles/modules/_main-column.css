@@ -1,0 +1,26 @@
+.main-column {
+    position: relative;
+    padding-bottom: 0;
+    
+    @mixin atM {
+        padding-left: 30px; 
+    }
+    
+    &:after {
+        content: "";
+        background: $blue-lll;
+        position: absolute;
+        left: -15px;
+        top: 0;
+        width: 2000px;
+        height: 100%;
+        display: block;
+        box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.28);
+        z-index: -2;
+        
+        @mixin atM {
+            left: 0;
+        }
+    }
+     
+}

@@ -1,0 +1,49 @@
+.add-event {
+    
+    &__title {
+        font-size: $px15;
+        font-family: $bold;
+        margin-bottom: 7px;
+        margin-left: 10px;
+        
+        i {
+            margin-right: 10px;
+        }
+    }
+    
+    &__field {
+        position: relative;
+        
+        &:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            top: -6px;
+            left: 14px;
+            border-style: solid;
+            border-width: 0 5px 7px 5px;
+            border-color: transparent transparent #b4bacd transparent;
+        }
+        
+        &:after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            top: -5px;
+            left: 15px;
+            border-style: solid;
+            border-width: 0 4px 6px 4px;
+            border-color: transparent transparent #ffffff transparent;
+        }
+    }
+    
+    &__field-input {
+        border: 1px solid #b4bacd;
+        padding: 3px 7px;
+        font-size: $px14;
+        width: 400px;
+        max-width: 100%;
+    }
+}

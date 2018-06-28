@@ -1,5 +1,5 @@
 {
-  "name": "new",
+  "name": "plans",
   "version": "1.0.0",
   "dependencies": {
     "gulp-svg2png": "^0.3.0",
@@ -45,13 +45,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joiia/new.git"
+    "url": "git+https://github.com/joiia/plans.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/joiia/new/issues"
+    "url": "https://github.com/joiia/plans/issues"
   },
-  "homepage": "https://github.com/joiia/new#readme",
+  "homepage": "https://github.com/joiia/plans#readme",
   "description": ""
 }

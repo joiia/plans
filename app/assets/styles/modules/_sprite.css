@@ -1,0 +1,165 @@
+
+
+
+        .icon {
+            background-image: url('../../assets/images/sprites/sprite-2389e4b4.png');
+        }
+ 
+
+        
+
+    .icon--add-media {
+        width: 48px; 
+        height: 28px;
+        background-position: 0 30.392156862745097%;  
+    }
+
+    .icon--calendar {
+        width: 34px; 
+        height: 35px;
+        background-position: 81.5068493150685% 0;  
+    }
+
+    .icon--calendar-s-active {
+        width: 28px; 
+        height: 27px;
+        background-position: 59.21052631578947% 57.28155339805825%;  
+    }
+
+    .icon--comments {
+        width: 21px; 
+        height: 21px;
+        background-position: 42.76729559748428% 95.41284403669725%;  
+    }
+
+    .icon--add-event {
+        width: 20px; 
+        height: 22px;
+        background-position: 16.875% 96.29629629629629%;  
+    }
+
+    .icon--done {
+        width: 45px; 
+        height: 45px;
+        background-position: 33.333333333333336% 69.41176470588235%;  
+    }
+
+    .icon--edit {
+        width: 27px; 
+        height: 27px;
+        background-position: 100% 0;  
+    }
+
+    .icon--edit-s {
+        width: 16px; 
+        height: 16px;
+        background-position: 83.53658536585365% 75.43859649122807%;  
+    }
+
+    .icon--edit-ss {
+        width: 16px; 
+        height: 16px;
+        background-position: 67.07317073170732% 91.2280701754386%;  
+    }
+
+    .icon--exit {
+        width: 18px; 
+        height: 18px;
+        background-position: 73.45679012345678% 76.78571428571429%;  
+    }
+
+    .icon--invitations {
+        width: 29px; 
+        height: 23px;
+        background-position: 31.788079470198674% 28.97196261682243%;  
+    }
+
+    .icon--invite {
+        width: 24px; 
+        height: 19px;
+        background-position: 98.07692307692308% 77.47747747747748%;  
+    }
+
+    .icon--joined {
+        width: 21px; 
+        height: 21px;
+        background-position: 29.559748427672957% 95.41284403669725%;  
+    }
+
+    .icon--likes {
+        width: 21px; 
+        height: 19px;
+        background-position: 55.9748427672956% 93.69369369369369%;  
+    }
+
+    .icon--logo {
+        width: 119px; 
+        height: 31px;
+        background-position: 0 0;  
+    }
+
+    .icon--media {
+        width: 30px; 
+        height: 29px;
+        background-position: 79.33333333333333% 56.43564356435643%;  
+    }
+
+    .icon--messages {
+        width: 32px; 
+        height: 22px;
+        background-position: 80.4054054054054% 32.407407407407405%;  
+    }
+
+    .icon--messages-s {
+        width: 26px; 
+        height: 19px;
+        background-position: 99.35064935064935% 24.324324324324323%;  
+    }
+
+    .icon--news {
+        width: 24px; 
+        height: 24px;
+        background-position: 98.07692307692308% 58.490566037735846%;  
+    }
+
+    .icon--not-done {
+        width: 45px; 
+        height: 45px;
+        background-position: 0 69.41176470588235%;  
+    }
+
+    .icon--notices {
+        width: 23px; 
+        height: 23px;
+        background-position: 49.044585987261144% 28.97196261682243%;  
+    }
+
+    .icon--private {
+        width: 25px; 
+        height: 16px;
+        background-position: 98.70967741935483% 40.35087719298246%;  
+    }
+
+    .icon--search {
+        width: 17px; 
+        height: 17px;
+        background-position: 61.34969325153374% 27.43362831858407%;  
+    }
+
+    .icon--search-l {
+        width: 24px; 
+        height: 24px;
+        background-position: 98.07692307692308% 99.05660377358491%;  
+    }
+
+    .icon--search-w {
+        width: 17px; 
+        height: 17px;
+        background-position: 55.214723926380366% 76.10619469026548%;  
+    }
+
+    .icon--settings {
+        width: 27px; 
+        height: 26px;
+        background-position: 0 100%;  
+    }

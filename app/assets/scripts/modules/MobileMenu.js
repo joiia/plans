@@ -4,7 +4,7 @@ class MobileMenu {
     constructor() {
         this.siteHeader = $(".site-header");
         this.menuIcon = $(".site-header__menu-icon");
-        this.menuContent = $(".site-header__menu-content");
+        this.menu = $(".sidebar__menu");
         this.events();
     }
     
@@ -13,8 +13,7 @@ class MobileMenu {
     }
     
     toggleTheMenu() {
-        this.menuContent.toggleClass("site-header__menu-content--is-visible");
-        this.siteHeader.toggleClass("site-header--is-expanded");
+        this.menu.toggleClass("sidebar__menu--is-visible");
         this.menuIcon.toggleClass("site-header__menu-icon--close-x");
     }
 }

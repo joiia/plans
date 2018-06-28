@@ -1,0 +1,158 @@
+.user-info {
+    padding: 20px 0 17px;
+    
+    @mixin atM {
+        padding: 35px 0 25px;
+    }
+    
+    &__photo {
+        img {
+            border: 3px solid #fff;
+            border-radius: 3px;
+            
+            @mixin atM {
+                margin-bottom: 0;
+            }
+        }
+    }
+    
+    &__about {
+        padding-left: 17px;
+        padding-right: 35px;
+        
+        @mixin atS {
+            padding-right: 135px;
+        }
+        
+        @mixin atM {
+            padding-left: 20px;
+            padding-right: 0;
+        }
+        
+        @mixin atL {
+            padding-left: 20px;
+        }
+    }
+    
+    &__name {
+        margin-bottom: 10px;
+        
+        @mixin atM {
+            margin-bottom: 15px;
+        }
+        
+        span {
+            @mixin atM {
+                display: block;
+            }
+        }
+        
+    }
+    
+    &__table {
+        margin-bottom: 20px;
+        
+        td {
+            color: $grey;
+            padding-right: 16px;
+            line-height: 1.1;
+            
+            &:last-child {
+                color: $orange;
+            }
+        }
+    }
+    
+    &__edit {
+        font-family: $italic;
+        position: absolute;
+        top: 10px;
+        right: 3px;
+        
+        @mixin atS {
+            top: 5px;
+        } 
+        
+        @mixin atM {
+            position: static;
+        } 
+        
+        a {
+            font-size: 0;
+            color: #fff;
+            text-decoration: none !important;
+            vertical-align: middle;
+            
+            @mixin atS {
+               font-size: $px13;
+            }
+            
+            @mixin atM {
+               font-size: $px15;
+            }
+            
+        }
+        
+        i {
+            margin-right: 0;
+            position: relative;
+            top: -3px;
+            
+            @mixin atS {
+               margin-right: 8px;
+            }
+            
+            @mixin atM {
+               margin-right: 15px;
+            }
+        }
+    }
+    
+    &__subs-wrap {
+        display: flex;
+        padding-left: 17px;
+        
+        @mixin atM {
+            padding-left: 0px;
+        }
+        
+        @mixin atL {
+            padding-left: 45px;
+        }
+    }
+    
+    &__subs {
+        text-transform: uppercase;
+        font-size: $px10;
+        padding-right: 20px;
+        
+        @mixin atS {
+            font-size: $px11;
+        }
+        
+        @mixin atM {
+            text-align: center;
+            padding-top: 20px;
+            padding-right: 30px;
+            font-size: $px13;
+        }                
+        
+        span {
+            font-size: $px18;
+            display: block;
+            
+            @mixin atS {
+                display: block;
+                font-size: $px22;
+            }
+            
+            @mixin atM {
+                display: block;
+                font-size: $px30;
+            }
+        }
+    }
+    
+    
+    
+}

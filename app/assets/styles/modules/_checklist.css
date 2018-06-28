@@ -1,0 +1,31 @@
+.checklist {
+    padding-bottom: 15px;
+    
+    @mixin atS {
+        padding-bottom: 0;
+    }
+    
+    &__title {
+        font-size: $px16;
+    }
+    
+    &__item {
+        font-size: $px15;
+    }
+    
+    &__item-checkbox {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 7px;
+        cursor: pointer;
+    }
+    
+    &__item-text {
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        top: 1px;
+        cursor: pointer;
+    }
+    
+}

@@ -1,4 +1,171 @@
-.svg .site-header {
-    background: url('../../assets/images/icons/mail.svg');
+.site-header {
+    background: linear-gradient(to bottom, #d5d5d5 0%,#b0b0b0 100%); 
+    padding: 8px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    
+    &__logo {
+        display: block; 
+    }
+    
+    &__search { 
+        display: none;
+        float: right;
+        text-align: right;
+        width: 100%;
+        
+        @mixin atM {
+            display: block;
+        }
+        
+        input {
+            width: 450px;
+            max-width: 100%;
+            color: $grey-d;
+            border: 1px solid $blue-lll;
+            font-size: $px14;
+            height: 35px;
+            border-radius: 17px;
+            padding: 13px 15px 10px;
+        }
+        
+        input[type=submit] {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 35px;
+            height: 35px;
+            background: transparent;
+            font-size: 0;
+            opacity: 0;
+            z-index: 2;
+            cursor: pointer;
+        }
+        
+        .icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1;
+        }
+        
+        
+    }
+    
+    &__search-inner { 
+        width: 100%;
+        position: relative;
+    }
+    
+    &__user-menu { 
+        display: none;
+        
+        @mixin atM {
+            display: block;
+        }
+        
+        a {
+            display: flex;
+            align-items: center;
+            color: #fff;
+            text-decoration: none !important;
+            font-size: $px14;
+            justify-content: flex-end;
+        }
+        
+        .icon--exit {
+            background: $orange-ll;
+            position: relative;
+            z-index: 1;
+            height: 34px;
+            width: 34px;
+            border-radius: 50%;
+            transition: all .5s;
+            cursor: pointer;
+            margin: 0 0 0 15px;
+            
+            &:before {
+                content: "";
+                background-image: url('../../assets/images/sprites/sprite-2389e4b4.png');
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -9px;
+                margin-left: -9px;
+                width: 18px; 
+                height: 18px;
+                background-position: 73.45679012345678% 76.78571428571429%;
+            }
+        }
+    }
+    
+    &__menu-icon {
+        width: 20px;
+        height: 18px;
+        position: absolute;
+        top: 7px;
+        right: 0;
+        z-index: 10;
+        cursor: pointer;
+        
+        @mixin atM {
+            display: none;
+        }
+        
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: #000;
+            height: 4px;
+            width: 20px;
+            transform-origin: 0 0;
+            transition: transform .3s ease-out;
+        }
+        
+        &__middle {
+            position: absolute;
+            left: 0;
+            top: 7px;
+            background-color: #000;
+            height: 4px;
+            width: 20px;
+            transition: all .3s ease-out;
+            transform-origin: 0 50%;
+
+        }
+        
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background-color: #000;
+            height: 4px;
+            width: 20px;
+            transform-origin: 0 100%;
+            transition: transform .3s ease-out;
+        }
+    }
+    
+    &__menu-icon--close-x {
+        &::before {
+            transform: rotate(45deg) scaleX(1.12);
+        }
+        
+        .site-header__menu-icon__middle {
+            opacity: 0;
+            transform: scaleX(0);
+        }
+        
+        &::after {
+            transform: rotate(-45deg) scaleX(1.12) ;
+        }
+        
+    }
 }
 

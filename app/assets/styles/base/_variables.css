@@ -1,1 +1,47 @@
-$grey: #4b4b4b;
+$blue: #1d314b;
+$blue-l: #318198;
+$blue-ll: #e0e9eb;;
+$blue-lll: #ecf0f1;
+$blue-lg: #31839a;
+$blue-lv: #456185;
+$blue-d: #151220;
+
+$grey: #7f8c8d;
+$grey-l: #95a5a6;
+$grey-lv: #9ba6b5;
+$grey-d: #4e5058;
+
+$orange: #ff4e25;
+$orange-l: #fb7f60;
+$orange-ll: #fc8986;
+$orange-d: #e67333;
+
+
+$regular: 'Myriad Pro Regular';
+$bold: 'Myriad Pro Semibold';
+$italic: 'Myriad Pro Italic';
+
+
+$px9: 0.5625rem;
+$px10: 0.625rem;
+$px11: 0.6785rem;
+$px12: 0.75rem;
+$px13: 0.8125rem;
+$px14: 0.875rem;
+$px15: 0.9375rem;
+$px16: 1rem;
+$px18: 1.125rem;
+$px20: 1.25rem;
+$px21: 1.3125rem;
+$px22: 1.375rem;
+$px24: 1.5rem;
+$px27: 1.6875rem;
+$px28: 1.75rem;
+$px30: 1.875rem;
+$px32: 2rem;
+$px36: 2.25rem;
+$px42: 2.625rem;
+$px43: 2.6875rem;
+$px54: 3.375rem;
+$px64: 4rem;
+$px88: 5.5rem;
