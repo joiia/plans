@@ -3220,30 +3220,25 @@ ul {
             justify-content: flex-end;
         }
 
-.site-header__user-menu .icon--exit {
-            background: #fc8986;
+.site-header__exit-wrapper {
             position: relative;
-            z-index: 1;
-            height: 34px;
-            width: 34px;
+            z-index: 100;
             border-radius: 50%;
             transition: all .5s;
             cursor: pointer;
             margin: 0 0 0 15px;
-        }
+            background: #fc8986;
+            width: 36px; 
+            height: 36px;
+    }
 
-.site-header__user-menu .icon--exit:before {
-                content: "";
-                background-image: url('../../assets/images/sprites/sprite-2389e4b4.png');
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                margin-top: -9px;
-                margin-left: -9px;
-                width: 18px; 
-                height: 18px;
-                background-position: 73.45679012345678% 76.78571428571429%;
-            }
+.site-header__exit {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -9px;
+            margin-left: -9px;
+    }
 
 .site-header__menu-icon {
         width: 20px;
