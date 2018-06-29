@@ -2396,8 +2396,12 @@ ul {
     }
     }
 
+@media (min-width: 576px) {
+
 .btn--right {
-        float: right;
+            float: right
+        
+    }
     }
 
 .checklist {

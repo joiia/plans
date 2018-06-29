@@ -60,7 +60,11 @@
     }
     
     &--right {
-        float: right;
+        
+        @mixin atS {
+            float: right;
+        }
+        
     }
     
 }
