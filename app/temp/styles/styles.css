@@ -2396,6 +2396,10 @@ ul {
     }
     }
 
+.btn--right {
+        float: right;
+    }
+
 .checklist {
     padding-bottom: 15px;
     
@@ -2741,6 +2745,7 @@ ul {
 .user-info__subs-wrap {
         display: flex;
         padding-left: 17px;
+        justify-content: flex-end;
     }
 
 @media (min-width: 768px) {
@@ -2762,6 +2767,10 @@ ul {
         font-size: 0.625rem;
         padding-right: 20px;
     }
+
+.user-info__subs:last-child {
+            padding-right: 0;
+        }
 
 @media (min-width: 576px) {
 
@@ -2964,7 +2973,7 @@ ul {
     }
 
 .icon {
-            background-image: url('../../assets/images/sprites/sprite-2389e4b4.png');
+            background-image: url('../../assets/images/sprites/sprite-947a46f6.png');
         }
 
 .icon--add-media {

@@ -111,6 +111,7 @@
     &__subs-wrap {
         display: flex;
         padding-left: 17px;
+        justify-content: flex-end;
         
         @mixin atM {
             padding-left: 0px;
@@ -125,6 +126,10 @@
         text-transform: uppercase;
         font-size: $px10;
         padding-right: 20px;
+        
+        &:last-child {
+            padding-right: 0;
+        }
         
         @mixin atS {
             font-size: $px11;

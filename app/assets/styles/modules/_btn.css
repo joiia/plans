@@ -59,4 +59,8 @@
         }
     }
     
+    &--right {
+        float: right;
+    }
+    
 }
