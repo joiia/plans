@@ -2507,6 +2507,22 @@ ul {
         }
     }
 
+.colors-2 .page-section--blue-d {
+        background: #27969d;
+    }
+
+.colors-2 .page-section--blue {
+        background: #155f6a;
+    }
+
+.colors-3 .page-section--blue-d {
+        background: #abd7da;
+    }
+
+.colors-3 .page-section--blue {
+        background: #238b94;
+    }
+
 .tabs {
     text-align: center;
     padding-right: 0;

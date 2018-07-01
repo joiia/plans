@@ -61,3 +61,23 @@
         }
     }
 }
+
+.colors-2 .page-section {
+    &--blue-d {
+        background: #27969d;
+    }
+    
+    &--blue {
+        background: #155f6a;
+    }
+} 
+
+.colors-3 .page-section {
+    &--blue-d {
+        background: #abd7da;
+    }
+    
+    &--blue {
+        background: #238b94;
+    }
+} 
