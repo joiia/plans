@@ -22,8 +22,8 @@
     
     a {
         color: $grey-l;
-        text-decoration: none !important;
-        transition: all .5ms;
+        text-decoration: none;
+        transition: all .5s;
         
         &:hover {
             color: $grey;
@@ -32,6 +32,19 @@
     
     i {
         margin-right: 10px;
+    }
+    
+    &--news-item {
+        padding-bottom: 0;
+        padding: 0 10px 0;
+        
+        @mixin atL {
+            padding: 0 10px 0;
+        }
+        
+        .post__numbers-item {
+            margin-right: 20px;
+        }
     }
     
     &__title {
@@ -76,12 +89,12 @@
         text-align: center;
         
         @mixin atS {
-            font-size: $px14;
+            font-size: $px13;
             text-align: left;
         }
         
         &-count {
-            font-size: $px14;
+            font-size: $px13;
             position: relative;
             top: 4px;
             
@@ -89,7 +102,14 @@
                 top: 0;
             }
         }
+    }
+    
+    &__numbers-item {
+        margin-right: 35px;
         
+        &:last-child {
+            margin-right: 0;
+        }
     }
     
     &__privacy {
@@ -243,7 +263,19 @@
             background: linear-gradient(to right, rgba(255,255,255,0) 90%,rgba(255,255,255,1) 100%);
         }
         
-        
+        &--bordered {
+            padding: 5px;
+            border: 1px solid $grey-ll;
+            border-radius: 3px;
+            
+            &:after {
+                background: linear-gradient(to right, rgba(255,255,255,0) 70%, rgba(255,255,255,1) 90%, rgba(255,255,255,1) 100%);
+                
+                @mixin atS {
+                      background: linear-gradient(to right, rgba(255,255,255,0) 88%, rgba(255,255,255,1) 95%, rgba(255,255,255,1) 100%);
+                }
+            }
+        }
     }
     
     &__media-wrapper {
@@ -254,7 +286,13 @@
     &__media-item {
         width: 67px;
         height: 67px;
-        margin-right: 6px;   
+        margin-right: 6px;  
+        
+        &--l {
+            width: 124px;
+            height: 124px;
+            margin-right: 10px;
+        }
     }
     
     &__media-col-1 {
@@ -270,4 +308,121 @@
             max-width: 55%;
         }
     }
+    
+   
+    
+    &__author-wrap {
+        display: flex;
+        margin-bottom: 10px;
+    }
+    
+    &__author-img {
+        width: 47px;
+        height: 47px;
+        margin-right: 10px;
+    }
+    
+    &__event-title-wrap {
+        position: relative;
+        background: #F6F8FC;
+        padding: 12px 16px;
+        border-top: 1px solid #dee1e2;
+        border-bottom: 1px solid #dee1e2;
+        margin: 0 -10px;
+        display: block;
+        align-items: center;
+        margin-bottom: 10px;
+        
+        &:after {
+            content: "";
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 0;
+            background: $orange-d;
+            width: 4px;
+            height: 100%;
+        }
+        
+        @mixin atM {
+            display: flex;
+        }
+        
+    }
+    
+    &__event-title-headline {
+        padding-right: 15px;
+        flex-basis: 160px;
+        flex-shrink: 0;
+        margin-bottom: 5px;
+        
+        @mixin atM {
+             margin-bottom: 0;
+        }
+    }
+    
+    &__event-title-desc {
+        color: #4E6A8E;
+        padding-right: 15px;
+        position: relative;
+        top: 2px;
+        flex-grow: 1;
+        margin-bottom: 10px;
+        
+        @mixin atM {
+             margin-bottom: 0;
+        }
+    }
+    
+    &__event-title-btn {
+        flex-basis: 152px;
+        flex-shrink: 0;
+        
+    }
+    
+    &__media-control {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        height: 32px;
+        background: #fff;
+        border: 1px solid $grey-ll;
+        border-radius: 6px;
+        cursor: pointer;
+        z-index: 100;
+        padding: 6px 5px;
+        margin-top: -16px;
+    }
+    
+    &__news-actions {
+        text-align: right;
+        padding-top: 0;
+        
+        @mixin atM {
+            padding-top: 10px;
+        }
+        
+        i {
+            margin-right: 15px;
+        }
+    }
+    
+    &__numbers-wrap {
+        padding-bottom: 15px;
+        
+    }
+    
+    &__tags-wrap {
+        background: #F6F7F8;
+        padding: 15px 10px;
+        margin: 0 -10px;
+        border-top: 1px solid #D8DADF;
+    }
+    
+    &__tag {
+        margin-left: 10px;
+    }
+    
+    
+    
 }

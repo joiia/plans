@@ -9,6 +9,10 @@
         border-radius: 30px;
     }
     
+    &--rnd-s {
+        border-radius: 3px;
+    }
+    
     &--lg {
         height: 48px;
         font-size: $px16;
@@ -22,12 +26,27 @@
         
     }
     
+    &--xs {
+        padding: 5px 15px;
+        font-size: $px13;
+    }
+    
     &--orng {
         background: $orange;
         color: #fff !important;
         
         &:hover {
             background: #f85959;
+        }
+        
+    }
+    
+    &--blue {
+        background: #5885BE;
+        color: #fff !important;
+        
+        &:hover {
+            background: #608ec7;
         }
         
     }

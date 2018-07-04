@@ -8,6 +8,7 @@
 @import "base/_global";
 @import "base/_mixins";
 @import "modules/_form";
+@import "modules/_link";
 @import "modules/_btn";
 @import "modules/_checklist";
 @import "modules/_page-section";
@@ -24,5 +25,4 @@
 @import "modules/_main-column";
 @import "modules/_feed";
 @import "modules/_post";
-@import "modules/_page";
-@import "modules/_colors";
+@import "modules/_page-head";

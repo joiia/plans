@@ -1,6 +1,18 @@
 .headline {
     
     &--18 {
+        font-size: $px14;
+        
+        @mixin atS {
+            font-size: $px15;
+        }
+        
+        @mixin atM {
+            font-size: $px16;
+        }
+    }
+    
+    &--18 {
         font-size: $px15;
         
         @mixin atS {
@@ -83,7 +95,15 @@
         margin: 0;
     }
     
+    &--mrg-b-15 {
+        margin-bottom: 15px;
+    }
+    
     &--up {
         text-transform: uppercase;
+    }
+    
+    &--centered {
+        text-align: center;
     }
 }

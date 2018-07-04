@@ -1,0 +1,14 @@
+.link {
+    
+    &--blue {
+        color: $blue-l !important;
+    }
+    
+    &--bold {
+        font-family: $bold;
+    }
+    
+    &--underlined {
+        text-decoration: underline !important;
+    }
+}

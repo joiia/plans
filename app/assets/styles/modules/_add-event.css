@@ -1,5 +1,7 @@
 .add-event {
     
+    margin-bottom: 25px;
+    
     &__title {
         font-size: $px15;
         font-family: $bold;
