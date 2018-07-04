@@ -3478,6 +3478,37 @@ ul {
 
 .sidebar__menu-item {
         list-style: none; 
+        position: relative;
+    }
+
+.sidebar__menu-count {
+        position: absolute;
+        right: 25px;
+        top: 50%;
+        margin-top: -12.5px;
+        padding: 0.5px 8px;
+        border-radius: 20px;
+        background: #a5a7a8;
+        color: #fff;
+        min-width: 38px;
+        text-align: center;
+    }
+
+@media (min-width: 768px) {
+
+.sidebar__menu-count {
+            right: 15px;
+            min-width: 28px;
+            margin-top: -8px
+    }
+    }
+
+@media (min-width: 992px) {
+
+.sidebar__menu-count {
+            right: 18px;
+            min-width: 32px
+    }
     }
 
 .sidebar__menu-item-link {
@@ -3494,7 +3525,15 @@ ul {
 @media (min-width: 768px) {
 
 .sidebar__menu-item-link {
-             font-size: 0.8125rem
+            font-size: 0.8125rem;
+            padding: 14px 0px 8px
+    }
+    }
+
+@media (min-width: 992px) {
+
+.sidebar__menu-item-link {
+            padding: 14px 20px 8px
     }
     }
 

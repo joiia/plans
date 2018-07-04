@@ -23,6 +23,32 @@
     
     &__menu-item {
         list-style: none; 
+        position: relative;
+    }
+    
+    &__menu-count {
+        position: absolute;
+        right: 25px;
+        top: 50%;
+        margin-top: -12.5px;
+        padding: 0.5px 8px;
+        border-radius: 20px;
+        background: #a5a7a8;
+        color: #fff;
+        min-width: 38px;
+        text-align: center;
+        
+        @mixin atM {
+            right: 15px;
+            min-width: 28px;
+            margin-top: -8px;
+        }
+        
+        @mixin atL {
+            right: 18px;
+            min-width: 32px;
+
+        }
     }
     
     &__menu-item-link {
@@ -36,7 +62,12 @@
         margin-bottom: 10px;
         
         @mixin atM {
-             font-size: $px13;
+            font-size: $px13;
+            padding: 14px 0px 8px;
+        }
+        
+        @mixin atL {
+            padding: 14px 20px 8px;
         }
         
         i {
