@@ -26,3 +26,5 @@
 @import "modules/_feed";
 @import "modules/_post";
 @import "modules/_page-head";
+@import "modules/_table-item";
+@import "modules/_status";

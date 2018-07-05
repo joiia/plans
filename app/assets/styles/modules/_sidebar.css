@@ -23,15 +23,15 @@
     
     &__menu-item {
         list-style: none; 
-        position: relative;
+        position: relative; 
     }
     
     &__menu-count {
         position: absolute;
         right: 25px;
         top: 50%;
-        margin-top: -12.5px;
-        padding: 0.5px 8px;
+        margin-top: -13px;
+        padding: 1px 8px;
         border-radius: 20px;
         background: #a5a7a8;
         color: #fff;
@@ -100,6 +100,10 @@
                    right: 0;
                 }
             }
+        }
+        
+        .sidebar__menu-count {
+            background: #CACCCC;
         }
     }
 }

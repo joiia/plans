@@ -1,108 +1,113 @@
 .headline {
-    
-    &--18 {
+
+    &--16 {
         font-size: $px14;
-        
+
         @mixin atS {
             font-size: $px15;
         }
-        
+
         @mixin atM {
             font-size: $px16;
         }
     }
-    
+
     &--18 {
         font-size: $px15;
-        
+
         @mixin atS {
             font-size: $px16;
         }
-        
+
         @mixin atM {
             font-size: $px18;
         }
     }
-    
+
     &--20 {
         font-size: $px16;
-        
+
         @mixin atS {
             font-size: $px18;
         }
-        
+
         @mixin atM {
             font-size: $px20;
         }
     }
-    
+
     &--22 {
         font-size: $px18;
-        
+
         @mixin atS {
             font-size: $px20;
         }
-        
+
         @mixin atM {
             font-size: $px22;
         }
     }
-    
+
     &--27 {
         font-size: $px22;
-        
+
         @mixin atS {
             font-size: $px24;
         }
-        
+
         @mixin atM {
             font-size: $px27;
         }
-        
+
         .icon {
             margin-right: 20px;
             position: relative;
             top: -2px;
         }
     }
-    
-    
+
+
     &--blue-l {
         color: $blue-lg;
     }
-    
+
     &--blue {
         color: $blue;
     }
-    
+
     &--orng {
         color: $orange-d;
     }
-    
+
     &--bold {
         font-family: $bold;
     }
-    
+
     &--mrg-b-l {
         margin-bottom: 20px;
-        
+
         @mixin atM {
             margin-bottom: 35px;
         }
     }
-    
+
     &--no-mrg {
         margin: 0;
     }
-    
+
     &--mrg-b-15 {
-        margin-bottom: 15px;
+        margin-bottom: 10px;
+
+        @mixin atM {
+            margin-bottom: 15px;
+
+        }
     }
-    
+
     &--up {
         text-transform: uppercase;
     }
-    
+
     &--centered {
         text-align: center;
     }

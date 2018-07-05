@@ -417,6 +417,10 @@
         padding: 15px 10px;
         margin: 0 -10px;
         border-top: 1px solid #D8DADF;
+        
+        i {
+            top: -2px;
+        }
     }
     
     &__tag {

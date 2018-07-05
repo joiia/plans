@@ -1,0 +1,127 @@
+.table-item {
+    transition: all .3s;
+    position: relative;
+
+    @mixin atM {
+        padding: 0 25px;
+
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: $orange-d;
+            opacity: 0;
+            transition: all .3s;
+        }
+
+        &:not(.table-item--no-hov):hover {
+            background: #F6F8FC;
+            &:before {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__inner {
+        border-bottom: 1px solid #dee1e2;
+        padding: 15px 15px 17px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        @mixin atM {
+            padding: 12px 0;
+            flex-wrap: nowrap;
+        }
+    }
+
+    &__userpic {
+        flex-basis: 1;
+        margin-right: 15px;
+        width: 29px;
+        height: 29px;
+        margin-bottom: 10px;
+
+
+        @mixin atS {     
+            margin-bottom: 0px;
+
+        }
+    }
+
+    &__name {
+        padding-right: 20px;
+        flex-grow: 2;
+        font-size: $px14;
+        flex-basis: 80%;
+        margin-bottom: 10px;
+
+        @mixin atS {                 
+            flex-basis: auto;
+            margin-bottom: 0px;
+
+        }
+    }
+
+    &__status {
+        padding-right: 25px;
+        font-size: $px13;
+
+        @mixin atS {  
+            padding-right: 15px;
+        }
+
+        @mixin atL {    
+            padding-right: 35px;
+        }
+    }
+
+    &__button {
+        text-align: right;
+
+        @mixin atS {    
+            padding-right: 15px;
+        }
+
+        @mixin atL {    
+            padding-right: 70px;
+        }
+
+        i {
+            margin-right: 5px;
+        }
+        a {
+            width: 169px;
+            @mixin atS {    
+                width: auto;
+            }
+
+        }
+    }
+
+    &__status-icon {
+
+        width: 35px;
+        position: absolute;
+        top: 15px;
+        right: 2px;
+
+        @mixin atS {
+            padding-right: 10px;
+            position: static;
+        }
+    }
+
+    &--invite {
+        padding: 7px 35px;
+
+        i {
+            margin-right: 4px;
+            top: -1px;
+        }
+    }
+}

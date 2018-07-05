@@ -3,87 +3,108 @@
     vertical-align: middle;
     text-decoration: none !important;
     text-align: center;
-    transition: all .5s;
-    
+    transition: all .3s;
+
     &--rnd {
         border-radius: 30px;
     }
-    
+
     &--rnd-s {
         border-radius: 3px;
     }
-    
+
+    &--rnd-ss {
+        border-radius: 2px;
+    }
+
     &--lg {
         height: 48px;
         font-size: $px16;
         padding: 12px 25px;
-        
+
         @mixin atM {
             height: 57px;
             font-size: $px18;
             padding: 15px 35px;
         } 
-        
+
     }
-    
+
     &--xs {
         padding: 5px 15px;
         font-size: $px13;
     }
-    
+
     &--orng {
         background: $orange;
         color: #fff !important;
-        
+
         &:hover {
             background: #f85959;
         }
-        
+
     }
-    
+
     &--blue {
         background: #5885BE;
         color: #fff !important;
-        
+
         &:hover {
             background: #608ec7;
         }
-        
+
     }
-    
+
+    &--blue-l {
+        background: #3f9cdb;
+        color: #fff !important;
+
+        &:hover {
+            background: #558EB8;
+        }
+
+    }
+
     &--icn {
         padding-left: 18px;
-        
+
         @mixin atM {
             padding-left: 25px;
         } 
     }
-    
+
+    &--mrg-t {
+        @mixin atM {
+            margin-top: 7px;
+        }
+    }
+
+    &--right {
+
+        @mixin atS {
+            float: right;
+        }
+
+    }
+
+    &--flat {
+        padding: 3px 25px;
+    }
+
+    &--bold {
+        font-family: $bold;
+    }
+
     &__icon {
         display: inline-block;
         vertical-align: middle;
         margin-right: 10px;
         position: relative;
         top: -2px;
-        
+
         @mixin atM {
             margin-right: 15px;
 
         } 
     }
-    
-    &--mrg-t {
-        @mixin atM {
-            margin-top: 7px;
-        }
-    }
-    
-    &--right {
-        
-        @mixin atS {
-            float: right;
-        }
-        
-    }
-    
 }

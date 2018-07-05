@@ -1,14 +1,28 @@
 .link {
-    
+
+    &:hover {
+        text-decoration: none;
+    }
+
     &--blue {
         color: $blue-l !important;
     }
     
+    &--black {
+        color: #000 !important;
+    }
+
     &--bold {
         font-family: $bold;
     }
-    
+
     &--underlined {
         text-decoration: underline !important;
     }
+    
+    &--s {
+        font-size: $px12;
+    }
+
+
 }
