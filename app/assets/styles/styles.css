@@ -3,15 +3,17 @@
 @import "../../../node_modules/bootstrap/dist/css/bootstrap-reboot";
 @import "../../../node_modules/bootstrap/dist/css/bootstrap-grid";
 
-@import "base/_variables";
 @import "base/_fonts";
-@import "base/_global";
+@import "base/_variables";
 @import "base/_mixins";
+
+@import "base/_global";
 @import "modules/_form";
 @import "modules/_link";
 @import "modules/_btn";
 @import "modules/_checklist";
 @import "modules/_page-section";
+@import "modules/_page";
 @import "modules/_tabs";
 @import "modules/_user-info";
 @import "modules/_headline";
@@ -28,3 +30,5 @@
 @import "modules/_page-head";
 @import "modules/_table-item";
 @import "modules/_status";
+@import "modules/_status";
+@import "modules/_panel";

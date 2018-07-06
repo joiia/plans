@@ -2,7 +2,7 @@
 
 
         .icon {
-            background-image: url('../../assets/images/sprites/sprite-38351c0a.png');
+            background-image: url('../../assets/images/sprites/sprite-cd330234.png');
         }
  
 
@@ -11,151 +11,151 @@
     .icon--add {
         width: 17px; 
         height: 17px;
-        background-position: 71.03825136612022% 96.96969696969697%;  
+        background-position: 98.44559585492227% 62.5%;  
     }
 
     .icon--add-media {
         width: 48px; 
         height: 28px;
-        background-position: 0 20.12987012987013%;  
+        background-position: 0 19.745222929936304%;  
     }
 
     .icon--arrow-r {
         width: 14px; 
         height: 19px;
-        background-position: 43.54838709677419% 98.15950920245399%;  
+        background-position: 96.93877551020408% 12.048192771084338%;  
     }
 
     .icon--calendar {
         width: 28px; 
         height: 27px;
-        background-position: 0 85.80645161290323%;  
+        background-position: 89.01098901098901% 0;  
     }
 
     .icon--calendar-active {
         width: 28px; 
         height: 27px;
-        background-position: 16.27906976744186% 85.80645161290323%;  
+        background-position: 89.01098901098901% 17.088607594936708%;  
     }
 
     .icon--calendar-l-active {
         width: 34px; 
         height: 35px;
-        background-position: 71.6867469879518% 21.768707482993197%;  
+        background-position: 67.61363636363636% 40.666666666666664%;  
     }
 
     .icon--cancel-s {
         width: 23px; 
         height: 23px;
-        background-position: 48.0225988700565% 65.40880503144655%;  
+        background-position: 87.70053475935829% 85.18518518518519%;  
     }
 
     .icon--comments {
         width: 21px; 
         height: 21px;
-        background-position: 12.29050279329609% 99.37888198757764%;  
+        background-position: 34.39153439153439% 98.78048780487805%;  
     }
 
     .icon--comments-p {
         width: 25px; 
         height: 24px;
-        background-position: 62.857142857142854% 84.17721518987342%;  
+        background-position: 13.513513513513514% 85.71428571428571%;  
     }
 
     .icon--create-event {
         width: 20px; 
         height: 22px;
-        background-position: 72.77777777777777% 65%;  
+        background-position: 12.105263157894736% 99.38650306748467%;  
     }
 
     .icon--delete {
         width: 10px; 
         height: 10px;
-        background-position: 96.84210526315789% 18.6046511627907%;  
+        background-position: 95% 88%;  
     }
 
     .icon--done {
         width: 45px; 
         height: 45px;
-        background-position: 0 43.065693430656935%;  
+        background-position: 27.272727272727273% 42.142857142857146%;  
     }
 
     .icon--done-s {
         width: 24px; 
         height: 24px;
-        background-position: 90.9090909090909% 45.56962025316456%;  
+        background-position: 39.784946236559136% 85.71428571428571%;  
     }
 
     .icon--edit {
         width: 27px; 
         height: 27px;
-        background-position: 32.369942196531795% 85.80645161290323%;  
+        background-position: 88.52459016393442% 34.177215189873415%;  
     }
 
     .icon--edit-s {
         width: 16px; 
         height: 16px;
-        background-position: 100% 9.63855421686747%;  
+        background-position: 97.9381443298969% 72.18934911242603%;  
     }
 
     .icon--edit-ss {
         width: 16px; 
         height: 16px;
-        background-position: 100% 0;  
+        background-position: 97.9381443298969% 81.65680473372781%;  
     }
 
     .icon--exit {
         width: 18px; 
         height: 18px;
-        background-position: 52.1978021978022% 97.5609756097561%;  
+        background-position: 98.95833333333333% 23.353293413173652%;  
     }
 
     .icon--invitations {
         width: 29px; 
         height: 23px;
-        background-position: 52.63157894736842% 37.106918238993714%;  
+        background-position: 49.72375690607735% 36.41975308641975%;  
     }
 
     .icon--invitations-active {
         width: 29px; 
         height: 23px;
-        background-position: 17.54385964912281% 65.40880503144655%;  
+        background-position: 35.35911602209945% 64.19753086419753%;  
     }
 
     .icon--invitations-l-active {
         width: 41px; 
         height: 32px;
-        background-position: 74.84276729559748% 0;  
+        background-position: 70.41420118343196% 18.954248366013072%;  
     }
 
     .icon--invite {
         width: 24px; 
         height: 19px;
-        background-position: 90.9090909090909% 58.895705521472394%;  
+        background-position: 63.97849462365591% 62.65060240963855%;  
     }
 
     .icon--invite-w {
         width: 17px; 
         height: 14px;
-        background-position: 89.61748633879782% 95.23809523809524%;  
+        background-position: 98.44559585492227% 53.21637426900585%;  
     }
 
     .icon--joined {
         width: 21px; 
         height: 21px;
-        background-position: 89.3854748603352% 86.33540372670808%;  
+        background-position: 45.5026455026455% 98.78048780487805%;  
     }
 
     .icon--like-p {
         width: 26px; 
         height: 23px;
-        background-position: 33.9080459770115% 65.40880503144655%;  
+        background-position: 50.54347826086956% 64.19753086419753%;  
     }
 
     .icon--likes {
         width: 21px; 
         height: 19px;
-        background-position: 33.5195530726257% 98.15950920245399%;  
+        background-position: 65.60846560846561% 97.59036144578313%;  
     }
 
     .icon--logo {
@@ -167,101 +167,119 @@
     .icon--media {
         width: 30px; 
         height: 29px;
-        background-position: 0 67.97385620915033%;  
+        background-position: 18.88888888888889% 66.66666666666667%;  
     }
 
     .icon--messages {
         width: 32px; 
         height: 22px;
-        background-position: 28.571428571428573% 19.375%;  
+        background-position: 26.96629213483146% 19.01840490797546%;  
+    }
+
+    .icon--messages-active {
+        width: 32px; 
+        height: 22px;
+        background-position: 44.943820224719104% 19.01840490797546%;  
+    }
+
+    .icon--messages-l-active {
+        width: 43px; 
+        height: 29px;
+        background-position: 71.25748502994011% 0;  
     }
 
     .icon--messages-s {
         width: 26px; 
         height: 19px;
-        background-position: 45.97701149425287% 19.01840490797546%;  
+        background-position: 88.04347826086956% 64.4578313253012%;  
     }
 
     .icon--news {
         width: 24px; 
         height: 24px;
-        background-position: 90.9090909090909% 0;  
+        background-position: 26.881720430107528% 85.71428571428571%;  
     }
 
     .icon--news-active {
         width: 24px; 
         height: 24px;
-        background-position: 90.9090909090909% 15.189873417721518%;  
+        background-position: 75.26881720430107% 85.71428571428571%;  
     }
 
     .icon--news-l-active {
         width: 34px; 
         height: 34px;
-        background-position: 71.6867469879518% 45.270270270270274%;  
+        background-position: 0 68.87417218543047%;  
     }
 
     .icon--not-done {
         width: 45px; 
         height: 45px;
-        background-position: 29.032258064516128% 43.065693430656935%;  
+        background-position: 0 42.142857142857146%;  
     }
 
     .icon--notices {
         width: 23px; 
         height: 23px;
-        background-position: 61.016949152542374% 65.40880503144655%;  
+        background-position: 0 100%;  
     }
 
     .icon--point {
         width: 17px; 
         height: 21px;
-        background-position: 23.497267759562842% 99.37888198757764%;  
+        background-position: 55.44041450777202% 98.78048780487805%;  
     }
 
     .icon--private {
         width: 25px; 
         height: 16px;
-        background-position: 51.42857142857143% 49.397590361445786%;  
+        background-position: 48.648648648648646% 48.5207100591716%;  
     }
 
     .icon--search {
         width: 17px; 
         height: 17px;
-        background-position: 61.74863387978142% 96.96969696969697%;  
+        background-position: 98.44559585492227% 33.92857142857143%;  
     }
 
     .icon--search-l {
         width: 24px; 
         height: 24px;
-        background-position: 90.9090909090909% 72.78481012658227%;  
+        background-position: 62.365591397849464% 85.71428571428571%;  
+    }
+
+    .icon--search-m {
+        width: 20px; 
+        height: 20px;
+        background-position: 100% 0;  
     }
 
     .icon--search-w {
         width: 17px; 
         height: 17px;
-        background-position: 80.32786885245902% 96.96969696969697%;  
+        background-position: 98.44559585492227% 44.04761904761905%;  
     }
 
     .icon--send {
         width: 25px; 
         height: 24px;
-        background-position: 77.14285714285714% 84.17721518987342%;  
+        background-position: 0 85.71428571428571%;  
     }
 
     .icon--settings {
         width: 27px; 
         height: 26px;
-        background-position: 47.97687861271676% 85.25641025641026%;  
+        background-position: 88.52459016393442% 50.943396226415096%;  
     }
 
     .icon--settings-ss {
         width: 22px; 
         height: 22px;
-        background-position: 0 100%;  
+        background-position: 22.872340425531913% 99.38650306748467%;  
     }
 
     .icon--time {
         width: 18px; 
         height: 24px;
-        background-position: 87.91208791208791% 30.379746835443036%;  
+        background-position: 51.041666666666664% 85.71428571428571%;  
     }

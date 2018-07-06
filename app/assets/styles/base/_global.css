@@ -40,3 +40,15 @@ a {
         outline: none;
     }
 }
+
+.italic {
+    font-family: $italic;
+}
+
+.italic-b {
+    font-family: $italic-b;
+}
+
+.rounded {
+    border-radius: 50%;
+}

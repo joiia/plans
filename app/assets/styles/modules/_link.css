@@ -11,6 +11,10 @@
     &--black {
         color: #000 !important;
     }
+    
+    &--green {
+        color: $green !important;
+    }
 
     &--bold {
         font-family: $bold;
@@ -24,5 +28,8 @@
         font-size: $px12;
     }
 
+    &--grey-d {
+        color: #4d4f4f !important;
+    }
 
 }

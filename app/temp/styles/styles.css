@@ -2255,8 +2255,8 @@ html {
     font-family: 'Myriad Pro Regular';
     src: url('../../assets/fonts/MyriadPro-Regular.eot');
     src: url('../../assets/fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
-    url('../../assets/fonts/MyriadPro-Regular.woff') format('woff'),
-    url('../../assets/fonts/MyriadPro-Regular.ttf') format('truetype');
+        url('../../assets/fonts/MyriadPro-Regular.woff') format('woff'),
+        url('../../assets/fonts/MyriadPro-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -2265,8 +2265,8 @@ html {
     font-family: 'Myriad Pro Semibold';
     src: url('../../assets/fonts/MyriadPro-Semibold.eot');
     src: url('../../assets/fonts/MyriadPro-Semibold.eot?#iefix') format('embedded-opentype'),
-    url('../../assets/fonts/MyriadPro-Semibold.woff') format('woff'),
-    url('../../assets/fonts/MyriadPro-Semibold.ttf') format('truetype');
+        url('../../assets/fonts/MyriadPro-Semibold.woff') format('woff'),
+        url('../../assets/fonts/MyriadPro-Semibold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -2275,8 +2275,18 @@ html {
     font-family: 'Myriad Pro Italic';
     src: url('../../assets/fonts/MyriadPro-It.eot');
     src: url('../../assets/fonts/MyriadPro-It.eot?#iefix') format('embedded-opentype'),
-    url('../../assets/fonts/MyriadPro-It.woff') format('woff'),
-    url('../../assets/fonts/MyriadPro-It.ttf') format('truetype');
+        url('../../assets/fonts/MyriadPro-It.woff') format('woff'),
+        url('../../assets/fonts/MyriadPro-It.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro Semibold Italic';
+    src: url('../../assets/fonts/MyriadPro-SemiboldIt.eot');
+    src: url('../../assets/fonts/MyriadPro-SemiboldIt.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/MyriadPro-SemiboldIt.woff') format('woff'),
+        url('../../assets/fonts/MyriadPro-SemiboldIt.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -2322,6 +2332,18 @@ a:focus {
         outline: none;
     }
 
+.italic {
+    font-family: 'Myriad Pro Italic';
+}
+
+.italic-b {
+    font-family: 'Myriad Pro Semibold Italic';
+}
+
+.rounded {
+    border-radius: 50%;
+}
+
 .form input {
         box-shadow: none;
         border: 1px solid #95a5a6;
@@ -2339,6 +2361,10 @@ a:focus {
         color: #000 !important;
     }
 
+.link--green {
+        color: #17a14b !important;
+    }
+
 .link--bold {
         font-family: 'Myriad Pro Semibold';
     }
@@ -2349,6 +2375,10 @@ a:focus {
 
 .link--s {
         font-size: 0.75rem;
+    }
+
+.link--grey-d {
+        color: #4d4f4f !important;
     }
 
 .btn {
@@ -2546,10 +2576,6 @@ a:focus {
         background: linear-gradient(to bottom, #adadad 0%, #dcdcdc 100%);
     }
 
-.page-section--main-content {
-        overflow: hidden;
-    }
-
 .page-section--bottom {
         position: relative;
         padding: 16px 0 0;
@@ -2589,6 +2615,15 @@ a:focus {
 
 .colors-3 .page-section--blue {
         background: #238b94;
+    }
+
+.page {
+    overflow: hidden;
+}
+
+.page--no-tabs {
+        padding-top: 45px;
+        background: linear-gradient(to bottom, #cccccc 0%, transparent 14%); 
     }
 
 .tabs {
@@ -3099,157 +3134,157 @@ a:focus {
     }
 
 .icon {
-            background-image: url('../../assets/images/sprites/sprite-38351c0a.png');
+            background-image: url('../../assets/images/sprites/sprite-cd330234.png');
         }
 
 .icon--add {
         width: 17px; 
         height: 17px;
-        background-position: 71.03825136612022% 96.96969696969697%;  
+        background-position: 98.44559585492227% 62.5%;  
     }
 
 .icon--add-media {
         width: 48px; 
         height: 28px;
-        background-position: 0 20.12987012987013%;  
+        background-position: 0 19.745222929936304%;  
     }
 
 .icon--arrow-r {
         width: 14px; 
         height: 19px;
-        background-position: 43.54838709677419% 98.15950920245399%;  
+        background-position: 96.93877551020408% 12.048192771084338%;  
     }
 
 .icon--calendar {
         width: 28px; 
         height: 27px;
-        background-position: 0 85.80645161290323%;  
+        background-position: 89.01098901098901% 0;  
     }
 
 .icon--calendar-active {
         width: 28px; 
         height: 27px;
-        background-position: 16.27906976744186% 85.80645161290323%;  
+        background-position: 89.01098901098901% 17.088607594936708%;  
     }
 
 .icon--calendar-l-active {
         width: 34px; 
         height: 35px;
-        background-position: 71.6867469879518% 21.768707482993197%;  
+        background-position: 67.61363636363636% 40.666666666666664%;  
     }
 
 .icon--cancel-s {
         width: 23px; 
         height: 23px;
-        background-position: 48.0225988700565% 65.40880503144655%;  
+        background-position: 87.70053475935829% 85.18518518518519%;  
     }
 
 .icon--comments {
         width: 21px; 
         height: 21px;
-        background-position: 12.29050279329609% 99.37888198757764%;  
+        background-position: 34.39153439153439% 98.78048780487805%;  
     }
 
 .icon--comments-p {
         width: 25px; 
         height: 24px;
-        background-position: 62.857142857142854% 84.17721518987342%;  
+        background-position: 13.513513513513514% 85.71428571428571%;  
     }
 
 .icon--create-event {
         width: 20px; 
         height: 22px;
-        background-position: 72.77777777777777% 65%;  
+        background-position: 12.105263157894736% 99.38650306748467%;  
     }
 
 .icon--delete {
         width: 10px; 
         height: 10px;
-        background-position: 96.84210526315789% 18.6046511627907%;  
+        background-position: 95% 88%;  
     }
 
 .icon--done {
         width: 45px; 
         height: 45px;
-        background-position: 0 43.065693430656935%;  
+        background-position: 27.272727272727273% 42.142857142857146%;  
     }
 
 .icon--done-s {
         width: 24px; 
         height: 24px;
-        background-position: 90.9090909090909% 45.56962025316456%;  
+        background-position: 39.784946236559136% 85.71428571428571%;  
     }
 
 .icon--edit {
         width: 27px; 
         height: 27px;
-        background-position: 32.369942196531795% 85.80645161290323%;  
+        background-position: 88.52459016393442% 34.177215189873415%;  
     }
 
 .icon--edit-s {
         width: 16px; 
         height: 16px;
-        background-position: 100% 9.63855421686747%;  
+        background-position: 97.9381443298969% 72.18934911242603%;  
     }
 
 .icon--edit-ss {
         width: 16px; 
         height: 16px;
-        background-position: 100% 0;  
+        background-position: 97.9381443298969% 81.65680473372781%;  
     }
 
 .icon--exit {
         width: 18px; 
         height: 18px;
-        background-position: 52.1978021978022% 97.5609756097561%;  
+        background-position: 98.95833333333333% 23.353293413173652%;  
     }
 
 .icon--invitations {
         width: 29px; 
         height: 23px;
-        background-position: 52.63157894736842% 37.106918238993714%;  
+        background-position: 49.72375690607735% 36.41975308641975%;  
     }
 
 .icon--invitations-active {
         width: 29px; 
         height: 23px;
-        background-position: 17.54385964912281% 65.40880503144655%;  
+        background-position: 35.35911602209945% 64.19753086419753%;  
     }
 
 .icon--invitations-l-active {
         width: 41px; 
         height: 32px;
-        background-position: 74.84276729559748% 0;  
+        background-position: 70.41420118343196% 18.954248366013072%;  
     }
 
 .icon--invite {
         width: 24px; 
         height: 19px;
-        background-position: 90.9090909090909% 58.895705521472394%;  
+        background-position: 63.97849462365591% 62.65060240963855%;  
     }
 
 .icon--invite-w {
         width: 17px; 
         height: 14px;
-        background-position: 89.61748633879782% 95.23809523809524%;  
+        background-position: 98.44559585492227% 53.21637426900585%;  
     }
 
 .icon--joined {
         width: 21px; 
         height: 21px;
-        background-position: 89.3854748603352% 86.33540372670808%;  
+        background-position: 45.5026455026455% 98.78048780487805%;  
     }
 
 .icon--like-p {
         width: 26px; 
         height: 23px;
-        background-position: 33.9080459770115% 65.40880503144655%;  
+        background-position: 50.54347826086956% 64.19753086419753%;  
     }
 
 .icon--likes {
         width: 21px; 
         height: 19px;
-        background-position: 33.5195530726257% 98.15950920245399%;  
+        background-position: 65.60846560846561% 97.59036144578313%;  
     }
 
 .icon--logo {
@@ -3261,103 +3296,121 @@ a:focus {
 .icon--media {
         width: 30px; 
         height: 29px;
-        background-position: 0 67.97385620915033%;  
+        background-position: 18.88888888888889% 66.66666666666667%;  
     }
 
 .icon--messages {
         width: 32px; 
         height: 22px;
-        background-position: 28.571428571428573% 19.375%;  
+        background-position: 26.96629213483146% 19.01840490797546%;  
+    }
+
+.icon--messages-active {
+        width: 32px; 
+        height: 22px;
+        background-position: 44.943820224719104% 19.01840490797546%;  
+    }
+
+.icon--messages-l-active {
+        width: 43px; 
+        height: 29px;
+        background-position: 71.25748502994011% 0;  
     }
 
 .icon--messages-s {
         width: 26px; 
         height: 19px;
-        background-position: 45.97701149425287% 19.01840490797546%;  
+        background-position: 88.04347826086956% 64.4578313253012%;  
     }
 
 .icon--news {
         width: 24px; 
         height: 24px;
-        background-position: 90.9090909090909% 0;  
+        background-position: 26.881720430107528% 85.71428571428571%;  
     }
 
 .icon--news-active {
         width: 24px; 
         height: 24px;
-        background-position: 90.9090909090909% 15.189873417721518%;  
+        background-position: 75.26881720430107% 85.71428571428571%;  
     }
 
 .icon--news-l-active {
         width: 34px; 
         height: 34px;
-        background-position: 71.6867469879518% 45.270270270270274%;  
+        background-position: 0 68.87417218543047%;  
     }
 
 .icon--not-done {
         width: 45px; 
         height: 45px;
-        background-position: 29.032258064516128% 43.065693430656935%;  
+        background-position: 0 42.142857142857146%;  
     }
 
 .icon--notices {
         width: 23px; 
         height: 23px;
-        background-position: 61.016949152542374% 65.40880503144655%;  
+        background-position: 0 100%;  
     }
 
 .icon--point {
         width: 17px; 
         height: 21px;
-        background-position: 23.497267759562842% 99.37888198757764%;  
+        background-position: 55.44041450777202% 98.78048780487805%;  
     }
 
 .icon--private {
         width: 25px; 
         height: 16px;
-        background-position: 51.42857142857143% 49.397590361445786%;  
+        background-position: 48.648648648648646% 48.5207100591716%;  
     }
 
 .icon--search {
         width: 17px; 
         height: 17px;
-        background-position: 61.74863387978142% 96.96969696969697%;  
+        background-position: 98.44559585492227% 33.92857142857143%;  
     }
 
 .icon--search-l {
         width: 24px; 
         height: 24px;
-        background-position: 90.9090909090909% 72.78481012658227%;  
+        background-position: 62.365591397849464% 85.71428571428571%;  
+    }
+
+.icon--search-m {
+        width: 20px; 
+        height: 20px;
+        background-position: 100% 0;  
     }
 
 .icon--search-w {
         width: 17px; 
         height: 17px;
-        background-position: 80.32786885245902% 96.96969696969697%;  
+        background-position: 98.44559585492227% 44.04761904761905%;  
     }
 
 .icon--send {
         width: 25px; 
         height: 24px;
-        background-position: 77.14285714285714% 84.17721518987342%;  
+        background-position: 0 85.71428571428571%;  
     }
 
 .icon--settings {
         width: 27px; 
         height: 26px;
-        background-position: 47.97687861271676% 85.25641025641026%;  
+        background-position: 88.52459016393442% 50.943396226415096%;  
     }
 
 .icon--settings-ss {
         width: 22px; 
         height: 22px;
-        background-position: 0 100%;  
+        background-position: 22.872340425531913% 99.38650306748467%;  
     }
 
 .icon--time {
         width: 18px; 
         height: 24px;
-        background-position: 87.91208791208791% 30.379746835443036%;  
+        background-position: 51.041666666666664% 85.71428571428571%;  
     }
 
 .site-header {
@@ -3367,7 +3420,7 @@ a:focus {
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 10000;
 }
 
 .site-header__logo {
@@ -3599,7 +3652,9 @@ a:focus {
 
 .sidebar__menu-count {
             right: 18px;
-            min-width: 32px
+            min-width: 32px;
+            height: 20px;
+            line-height: 19px
     }
     }
 
@@ -3742,6 +3797,7 @@ a:focus {
 .main-column {
     position: relative;
     padding-bottom: 0;
+    min-height: calc(100vh - 410px);
      
 }
 
@@ -3753,6 +3809,11 @@ a:focus {
 }
     }
 
+.main-column > * {
+        z-index: 1000;
+        position: relative;
+    }
+
 .main-column:after {
         content: "";
         background: #ecf0f1;
@@ -3762,8 +3823,8 @@ a:focus {
         width: 2000px;
         height: 100%;
         display: block;
-        box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.28);
-        z-index: -2;
+        box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.24);
+        z-index: 1;
     }
 
 @media (min-width: 768px) {
@@ -4409,12 +4470,16 @@ a:focus {
 .table-item {
     transition: all .3s;
     position: relative;
+    
+    
 }
 
 @media (min-width: 768px) {
 
 .table-item {
         padding: 0 25px
+    
+    
 }
 
         .table-item:before {
@@ -4540,7 +4605,6 @@ a:focus {
     }
 
 .table-item__status-icon {
-
         width: 35px;
         position: absolute;
         top: 15px;
@@ -4566,4 +4630,192 @@ a:focus {
 
 .status--ok {
         color: #17a14b;
+    }
+
+.panel {
+    padding-bottom: 45px;
+}
+
+.panel__inner {
+        background: #fff;
+        border: 1px solid #dee1e2;
+        border-radius: 5px;
+    }
+
+.panel__item {
+        padding: 15px 25px;
+        border-bottom: 1px solid #dee1e2;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+.panel__item:last-child {
+            border-bottom: none;
+        }
+
+.panel__item:hover .panel__status-icon {
+                opacity: 1 !important;
+            }
+
+.panel__status-icon {
+
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+@media (min-width: 768px) {
+
+.panel__status-icon {
+            position: static;
+            opacity: 0;
+            transition: all .5s
+    }
+    }
+
+.panel__search {
+        padding: 12px 0 !important;
+    }
+
+.panel__search-icon {
+        position: absolute;
+        top: 16px;
+        left: 25px;
+    }
+
+.panel__search-input {
+        padding: 5px 0 0 60px;
+        font-size: 0.875rem;
+        border: none;
+        width: 100%;
+        background: transparent;
+        height: 100%;
+    }
+
+.panel__userpic {
+        width: 29px;
+        height: 29px;
+        padding-right: 15px;
+        flex-basis: 44px;
+    }
+
+.panel__message-wrapper {
+        flex-grow: 2;
+        flex-basis: 80%;
+        margin-bottom: 5px;
+    }
+
+@media (min-width: 768px) {
+
+.panel__message-wrapper {
+            margin-bottom: 0;
+            flex-basis: 0
+    }
+    }
+
+.panel__message {
+        line-height: 1.2;
+        font-size: 0.8125rem;
+        margin-right: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+.panel__message--answer {
+            background: #E0E4E7;
+            border-radius: 0 10px 10px 10px;
+            padding: 5px 10px 4px 20px;
+            margin-left: 10px;
+            position: relative;
+            top: 10px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+@media (min-width: 768px) {
+
+.panel__message--answer {
+                top: 5px;
+                border-radius: 20px;
+                padding: 2px 10px 2px 20px
+        }
+    }
+
+.panel__message--answer-sender {
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            position: absolute;
+            top: -5px;
+            left: -10px;
+        }
+
+@media (min-width: 768px) {
+
+.panel__message--answer-sender {
+                top: -2px
+        }
+    }
+
+.panel__subs {
+        padding-top: 10px;
+        font-size: 0.875rem;
+    }
+
+.panel__subs-event {
+        margin-bottom: 10px;
+    }
+
+.panel__subs-text {
+        flex-basis: 100%;
+    }
+
+.panel__message-photo-wrapper {
+        flex-basis: 64px;
+        flex-shrink: 0;
+        width: 64px;
+        height: 44px;
+        border: 1px solid #dee1e2;
+        position: relative;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+@media (min-width: 768px) {
+
+.panel__message-photo-wrapper {
+            margin-bottom: 0
+    }
+    }
+
+.panel__message-photo-inner {
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        width: 60px;
+        height: 40px;
+        display: block;
+        border: 3px solid #fff;
+        overflow: hidden;
+    }
+
+.panel__message-photo {
+    }
+
+.panel__time {
+        color: #95a5a6;
+        margin-right: 20px;
+        padding-left: 44px;
+        font-size: 0.8125rem;
+    }
+
+@media (min-width: 768px) {
+
+.panel__time {
+            padding-left: 0;
+            font-size: 0.875rem
+    }
     }

@@ -35,10 +35,6 @@
         background: linear-gradient(to bottom, #adadad 0%, #dcdcdc 100%);
     }
     
-    &--main-content {
-        overflow: hidden;
-    }
-    
     &--bottom {
         position: relative;
         padding: 16px 0 0;

@@ -1,0 +1,175 @@
+.panel {
+    padding-bottom: 45px;
+
+    &__inner {
+        background: #fff;
+        border: 1px solid $grey-ll;
+        border-radius: 5px;
+    }
+
+    &__item {
+        padding: 15px 25px;
+        border-bottom: 1px solid $grey-ll;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        &:hover {
+            .panel__status-icon {
+                opacity: 1 !important;
+            }
+        }
+    }
+
+    &__status-icon {
+
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+
+        @mixin atM {
+            position: static;
+            opacity: 0;
+            transition: all .5s;
+        }
+    }
+
+    &__search {
+        padding: 12px 0 !important;
+    }
+
+    &__search-icon {
+        position: absolute;
+        top: 16px;
+        left: 25px;
+    }
+
+    &__search-input {
+        padding: 5px 0 0 60px;
+        font-size: $px14;
+        border: none;
+        width: 100%;
+        background: transparent;
+        height: 100%;
+    }
+
+    &__userpic {
+        width: 29px;
+        height: 29px;
+        padding-right: 15px;
+        flex-basis: 44px;
+    }
+
+    &__message-wrapper {
+        flex-grow: 2;
+        flex-basis: 80%;
+        margin-bottom: 5px;
+
+        @mixin atM {
+            margin-bottom: 0;
+            flex-basis: 0;
+
+        }
+    }
+
+    &__message {
+        line-height: 1.2;
+        font-size: $px13;
+        margin-right: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        &--answer {
+            background: #E0E4E7;
+            border-radius: 0 10px 10px 10px;
+            padding: 5px 10px 4px 20px;
+            margin-left: 10px;
+            position: relative;
+            top: 10px;
+            display: inline-block;
+            margin-bottom: 10px;
+
+            @mixin atM {
+                top: 5px;
+                border-radius: 20px;
+                padding: 2px 10px 2px 20px;
+            }
+        }
+
+        &--answer-sender {
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            position: absolute;
+            top: -5px;
+            left: -10px;
+
+            @mixin atM {
+                top: -2px;
+
+            }
+        }
+    }
+
+    &__subs {
+        padding-top: 10px;
+        font-size: $px14;
+    }
+
+    &__subs-event {
+        margin-bottom: 10px;
+    }
+
+    &__subs-text {
+        flex-basis: 100%;
+    }
+
+    &__message-photo-wrapper {
+        flex-basis: 64px;
+        flex-shrink: 0;
+        width: 64px;
+        height: 44px;
+        border: 1px solid #dee1e2;
+        position: relative;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        
+        @mixin atM {
+            margin-bottom: 0;
+        }
+    }
+
+    &__message-photo-inner {
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        width: 60px;
+        height: 40px;
+        display: block;
+        border: 3px solid #fff;
+        overflow: hidden;
+    }
+
+    &__message-photo {
+    }
+
+    &__time {
+        color: $grey-l;
+        margin-right: 20px;
+        padding-left: 44px;
+        font-size: $px13;
+
+        @mixin atM {
+            padding-left: 0;
+            font-size: $px14;
+
+        }
+    }
+}
+

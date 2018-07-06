@@ -38,6 +38,7 @@
         min-width: 38px;
         text-align: center;
         
+        
         @mixin atM {
             right: 15px;
             min-width: 28px;
@@ -47,7 +48,8 @@
         @mixin atL {
             right: 18px;
             min-width: 32px;
-
+            height: 20px;
+            line-height: 19px;
         }
     }
     

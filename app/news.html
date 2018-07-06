@@ -2,178 +2,178 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title></title>
-    
-    <!-- build:css assets/styles/styles.css -->
-    <link rel="stylesheet" href="temp/styles/styles.css">
-    <!-- endbuild -->
-    
-    <!-- build:js assets/scripts/Vendor.js -->
-    <script src="temp/scripts/Vendor.js"></script>
-    <!-- endbuild -->
-</head>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title></title>
 
-<body>
-   
-    <header class="site-header">
-        <div class="container">
-            <div class="row no-gutters">
-                <div class="col-3 col-lg-2">
-                    <a class="site-header__logo icon icon--logo" href=""></a>
-                </div>
-                <div class="col-7 col-lg-8">
-                    <div class="site-header__search">
-                        <div class="site-header__search-inner">
-                            <input type="text" placeholder="Найти людей, школу, события">
-                            <input type="submit">
-                            <div class="icon icon--search"> </div>
+        <!-- build:css assets/styles/styles.css -->
+        <link rel="stylesheet" href="temp/styles/styles.css">
+        <!-- endbuild -->
+
+        <!-- build:js assets/scripts/Vendor.js -->
+        <script src="temp/scripts/Vendor.js"></script>
+        <!-- endbuild -->
+    </head>
+
+    <body>
+
+        <header class="site-header">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-3 col-lg-2">
+                        <a class="site-header__logo icon icon--logo" href=""></a>
+                    </div>
+                    <div class="col-7 col-lg-8">
+                        <div class="site-header__search">
+                            <div class="site-header__search-inner">
+                                <input type="text" placeholder="Найти людей, школу, события">
+                                <input type="submit">
+                                <div class="icon icon--search"> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="site-header__user-menu">
+                            <a href="">Выйти
+                                <div class="site-header__exit-wrapper"><div class="icon icon--exit site-header__exit"></div></div></a>
+                        </div>
+                        <div class="site-header__menu-icon">
+                            <div class="site-header__menu-icon__middle"></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-2">
-                    <div class="site-header__user-menu">
-                        <a href="">Выйти
-                        <div class="site-header__exit-wrapper"><div class="icon icon--exit site-header__exit"></div></div></a>
-                    </div>
-                    <div class="site-header__menu-icon">
-                           <div class="site-header__menu-icon__middle"></div>
-                    </div>
-                </div>
             </div>
-        </div>
-    </header>
-<!-- endinject -->
-<!-- inject:page-head:html -->
-<div class="page-head">
-    <div class="page-section page-section--blue-d user-info">
-        <div class="container">
-            <div class="row no-gutters">
-                <div class="col-3 col-md-2">
-                    <div class="user-info__photo"> <img src="assets/images/photo.jpg" alt=""> </div>
-                </div>
-                <div class="col-9 col-md-10">
+        </header>
+        <!-- endinject -->
+        <!-- inject:page-head:html -->
+        <div class="page-head">
+            <div class="page-section page-section--blue-d user-info">
+                <div class="container">
                     <div class="row no-gutters">
-                        <div class="col-12 col-md-6">
-                            <div class="user-info__about">
-                                <h2 class="headline headline--22 user-info__name">Петр <span>Иванов</span></h2>
-                                <table class="user-info__table">
-                                    <tr>
-                                        <td>Школа №</td>
-                                        <td>2017</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Класс</td>
-                                        <td>10А</td>
-                                    </tr>
-                                </table>
-                                <div class="user-info__edit"> <a href=""><i class="icon icon--edit-ss"></i>Редактировать</a> </div>
-                            </div>
+                        <div class="col-3 col-md-2">
+                            <div class="user-info__photo"> <img src="assets/images/photo.jpg" alt=""> </div>
                         </div>
-                        <div class="col-12 col-md-6">
-                            <div class="user-info__subs-wrap">
-                                <div class="user-info__subs"> подписки <span>920</span> </div>
-                                <div class="user-info__subs"> подписчики <span>723</span> </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="page-section page-section--blue page-section--pd-t-xs ">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-sm-7">
-                    <div class="checklist">
-                        <div class="checklist__title">Фильтр</div>
-                        <div class="checklist__item">
-                            <input id="checklist__item-1" class="checklist__item-checkbox" type="checkbox">
-                            <label for="checklist__item-1" class="checklist__item-text"> Общие школьные новости </label>
-                        </div>
-                        <div class="checklist__item">
-                            <input id="checklist__item-2" class="checklist__item-checkbox" type="checkbox">
-                            <label for="checklist__item-2" class="checklist__item-text"> Новости для: 10, 11 класса </label>
-                        </div>
-                        <div class="checklist__item">
-                            <input id="checklist__item-3" class="checklist__item-checkbox" type="checkbox">
-                            <label for="checklist__item-3" class="checklist__item-text"> Расписание: 10А </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-5">
-                    <a href="" class="btn btn--right btn--rnd btn--orng btn--lg btn--icn btn--mrg-t"> <i class="icon icon--edit btn__icon"></i>Создать событие</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- endinject -->
-<div class="page page--user-profile">
-    <div class="page-section page-section--grd page-section--pd-no">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <ul class="tabs tabs--filter">
-                        <li class="tabs__item tabs__item--current"> <a class="tabs__item-link" href="">день</a> </li>
-                        <li class="tabs__item"> <a class="tabs__item-link" href="">неделя</a> </li>
-                        <li class="tabs__item"> <a class="tabs__item-link" href="">месяц</a> </li>
-                        <li class="tabs__item"> <a class="tabs__item-link" href="">год</a> </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="page-section page-section--main-content page-section--pd-no">
-        <div class="container">
-            <div class="row no-gutters">
-                <div class="col-md-3">
-                    <div class="sidebar">
-                        <ul class="sidebar__menu">
-                            <li class="sidebar__menu-item"> <a href="./" class="sidebar__menu-item-link"><i class="icon icon--calendar"></i>календарь</a> </li>
-                            <li class="sidebar__menu-item sidebar__menu-item--current"> <a href="" class="sidebar__menu-item-link"><i class="icon icon--news-active"></i>лента новостей</a> </li>
-                            <li class="sidebar__menu-item"> <a href="invitations.html" class="sidebar__menu-item-link"><i class="icon icon--invitations"></i>приглашения <span class="sidebar__menu-count">1</span></a> </li>
-                            <li class="sidebar__menu-item"> <a href="" class="sidebar__menu-item-link"><i class="icon icon--messages"></i>сообщения <span class="sidebar__menu-count">2</span></a></li>
-                            <li class="sidebar__menu-item"> <a href="" class="sidebar__menu-item-link"><i class="icon icon--media"></i>фото/видео <span class="sidebar__menu-count">25</span></a></li>
-                            <li class="sidebar__menu-item"> <a href="" class="sidebar__menu-item-link"><i class="icon icon--search-l"></i>поиск</a> </li>
-                            <li class="sidebar__menu-item"> <a href="" class="sidebar__menu-item-link"><i class="icon icon--settings"></i>настройки</a> </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-9">
-                    <div class="page-section main-column">
-                        <h2 class="headline headline--27 headline--blue-l headline--mrg-b-l">
-                            <i class="icon icon--news-l-active"></i>Лента новостей
-                        </h2>
-                        <div class="feed feed--news">
-                            <div class="feed__item-wrapper feed--news__item">
-                                <div class="feed__title feed__title--l feed--news__title post__time headline headline--orng headline--16 headline--bold headline--centered">10 апреля 2017 <div>12:00</div></div>
-                                <div class="feed__item">
-                                    <div class="post post--news-item feed--news__item">
-                                   <div class="post__author-wrap">
-                                       <div class="post__author-img">
-                                           <img src="assets/images/userpic-1.jpg" alt="">
-                                       </div>
-                                       <div class="post__author-desc">
-                                           <a href="" class="post__author link link--blue link--bold">Иванов Иван</a> создал новое <a href="" class="link link--blue">событие</a>
-                                           <div class="post__author-time">
-                                           3 минуты назад
-                                           </div>
-                                       </div>
-                                       
-                                   </div>
-                                    <div class="post__event-title-wrap">
-                                        <div class="post__event-title-headline"><h3 class="headline headline--blue headline--bold headline--20 headline--no-mrg">Поездка в Сочи</h3></div>
-                                        <div class="post__event-title-desc">
-                                            Летим в Сочи на майские, кто с нами?
-                                        </div>
-                                        <div class="post__event-title-btn"><a href="" class="btn btn--blue btn--icon btn--xs btn--rnd-s"><i class="icon icon--invite-w"></i>Присоединиться</a></div>
-                                        
+                        <div class="col-9 col-md-10">
+                            <div class="row no-gutters">
+                                <div class="col-12 col-md-6">
+                                    <div class="user-info__about">
+                                        <h2 class="headline headline--22 user-info__name">Петр <span>Иванов</span></h2>
+                                        <table class="user-info__table">
+                                            <tr>
+                                                <td>Школа №</td>
+                                                <td>2017</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Класс</td>
+                                                <td>10А</td>
+                                            </tr>
+                                        </table>
+                                        <div class="user-info__edit"> <a href=""><i class="icon icon--edit-ss"></i>Редактировать</a> </div>
                                     </div>
-                                    
-                                    <div class="post__media">
-                                                   <div class="post__media-wrapper-outer post__media-wrapper-outer--bordered">
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="user-info__subs-wrap">
+                                        <div class="user-info__subs"> подписки <span>920</span> </div>
+                                        <div class="user-info__subs"> подписчики <span>723</span> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-section page-section--blue page-section--pd-t-xs ">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-sm-7">
+                            <div class="checklist">
+                                <div class="checklist__title">Фильтр</div>
+                                <div class="checklist__item">
+                                    <input id="checklist__item-1" class="checklist__item-checkbox" type="checkbox">
+                                    <label for="checklist__item-1" class="checklist__item-text"> Общие школьные новости </label>
+                                </div>
+                                <div class="checklist__item">
+                                    <input id="checklist__item-2" class="checklist__item-checkbox" type="checkbox">
+                                    <label for="checklist__item-2" class="checklist__item-text"> Новости для: 10, 11 класса </label>
+                                </div>
+                                <div class="checklist__item">
+                                    <input id="checklist__item-3" class="checklist__item-checkbox" type="checkbox">
+                                    <label for="checklist__item-3" class="checklist__item-text"> Расписание: 10А </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-5">
+                            <a href="" class="btn btn--right btn--rnd btn--orng btn--lg btn--icn btn--mrg-t"> <i class="icon icon--edit btn__icon"></i>Создать событие</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- endinject -->
+        <div class="page">
+            <div class="page-section page-section--grd page-section--pd-no">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="tabs tabs--filter">
+                                <li class="tabs__item tabs__item--current"> <a class="tabs__item-link" href="">день</a> </li>
+                                <li class="tabs__item"> <a class="tabs__item-link" href="">неделя</a> </li>
+                                <li class="tabs__item"> <a class="tabs__item-link" href="">месяц</a> </li>
+                                <li class="tabs__item"> <a class="tabs__item-link" href="">год</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-section page-section--main-content page-section--pd-no">
+                <div class="container">
+                    <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <div class="sidebar">
+                                <ul class="sidebar__menu">
+                                    <li class="sidebar__menu-item"> <a href="./" class="sidebar__menu-item-link"><i class="icon icon--calendar"></i>календарь</a> </li>
+                                    <li class="sidebar__menu-item sidebar__menu-item--current"> <a href="" class="sidebar__menu-item-link"><i class="icon icon--news-active"></i>лента новостей</a> </li>
+                                    <li class="sidebar__menu-item"> <a href="invitations.html" class="sidebar__menu-item-link"><i class="icon icon--invitations"></i>приглашения <span class="sidebar__menu-count">1</span></a> </li>
+                                    <li class="sidebar__menu-item"> <a href="messages.html" class="sidebar__menu-item-link"><i class="icon icon--messages"></i>сообщения <span class="sidebar__menu-count">2</span></a></li>
+                                    <li class="sidebar__menu-item"> <a href="" class="sidebar__menu-item-link"><i class="icon icon--media"></i>фото/видео <span class="sidebar__menu-count">25</span></a></li>
+                                    <li class="sidebar__menu-item"> <a href="" class="sidebar__menu-item-link"><i class="icon icon--search-l"></i>поиск</a> </li>
+                                    <li class="sidebar__menu-item"> <a href="" class="sidebar__menu-item-link"><i class="icon icon--settings"></i>настройки</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="page-section main-column">
+                                <h2 class="headline headline--27 headline--blue-l headline--mrg-b-l">
+                                    <i class="icon icon--news-l-active"></i>Лента новостей
+                                </h2>
+                                <div class="feed feed--news">
+                                    <div class="feed__item-wrapper feed--news__item">
+                                        <div class="feed__title feed__title--l feed--news__title post__time headline headline--orng headline--16 headline--bold headline--centered">10 апреля 2017 <div>12:00</div></div>
+                                        <div class="feed__item">
+                                            <div class="post post--news-item feed--news__item">
+                                                <div class="post__author-wrap">
+                                                    <div class="post__author-img">
+                                                        <img src="assets/images/userpic-1.jpg" alt="">
+                                                    </div>
+                                                    <div class="post__author-desc">
+                                                        <a href="" class="post__author link link--blue link--bold">Иванов Иван</a> создал новое <a href="" class="link link--blue">событие</a>
+                                                        <div class="post__author-time">
+                                                            3 минуты назад
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="post__event-title-wrap">
+                                                    <div class="post__event-title-headline"><h3 class="headline headline--blue headline--bold headline--20 headline--no-mrg">Поездка в Сочи</h3></div>
+                                                    <div class="post__event-title-desc">
+                                                        Летим в Сочи на майские, кто с нами?
+                                                    </div>
+                                                    <div class="post__event-title-btn"><a href="" class="btn btn--blue btn--icon btn--xs btn--rnd-s"><i class="icon icon--invite-w"></i>Присоединиться</a></div>
+
+                                                </div>
+
+                                                <div class="post__media">
+                                                    <div class="post__media-wrapper-outer post__media-wrapper-outer--bordered">
                                                         <div class="post__media-wrapper">
                                                             <div class="post__media-item post__media-item--l">
                                                                 <a href=""><img src="assets/images/photo.jpg" alt=""></a>
@@ -193,64 +193,64 @@
                                                         </div>
                                                         <div class="post__media-control"><div class="icon icon--arrow-r"></div></div>
                                                     </div>
-                                    </div>
-                                    
-                                    <div class="post__numbers-wrap">   
-                                        <div class="row no-gutters">
-                                            <div class="col-12 col-lg-9">
-                                                <div class="post__numbers">
-                                                    <a href="" class="post__numbers-item post__likes"><i class="icon icon--likes"></i>Понравилось [<span class="post__numbers-count">20</span>]</a> 
-                                                    <a href="" class="post__numbers-item post__comments"><i class="icon icon--comments"></i>Комментрии [<span class="post__numbers-count">10</span>]</a> 
-                                                    <a href="" class="post__numbers-item post__joined"><i class="icon icon--joined"></i>Присоединились [<span class="post__numbers-count">10</span>]</a>
                                                 </div>
-                                            </div>
-                                            <div class="col-12 col-lg-3">
-                                                <div class="post__news-actions">
-                                                    <a href=""><i class="icon icon--like-p"></i></a>
-                                                    <a href=""><i class="icon icon--comments-p"></i></a>
-                                                    <a href=""><i class="icon icon--send"></i></a>
+
+                                                <div class="post__numbers-wrap">   
+                                                    <div class="row no-gutters">
+                                                        <div class="col-12 col-lg-9">
+                                                            <div class="post__numbers">
+                                                                <a href="" class="post__numbers-item post__likes"><i class="icon icon--likes"></i>Понравилось [<span class="post__numbers-count">20</span>]</a> 
+                                                                <a href="" class="post__numbers-item post__comments"><i class="icon icon--comments"></i>Комментрии [<span class="post__numbers-count">10</span>]</a> 
+                                                                <a href="" class="post__numbers-item post__joined"><i class="icon icon--joined"></i>Присоединились [<span class="post__numbers-count">10</span>]</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-lg-3">
+                                                            <div class="post__news-actions">
+                                                                <a href=""><i class="icon icon--like-p"></i></a>
+                                                                <a href=""><i class="icon icon--comments-p"></i></a>
+                                                                <a href=""><i class="icon icon--send"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
+
+                                                <div class="post__tags-wrap">
+                                                    <i class="icon icon--point"></i>Метки: <a href="" class="link post__tag link--blue link--underlined">Отдых</a> <a href="" class="link post__tag link--blue link--underlined">Еще метка</a>
+                                                </div>
+
+
+
                                             </div>
                                         </div>
                                     </div>
-                                       
-                                    <div class="post__tags-wrap">
-                                        <i class="icon icon--point"></i>Метки: <a href="" class="link post__tag link--blue link--underlined">Отдых</a> <a href="" class="link post__tag link--blue link--underlined">Еще метка</a>
-                                    </div>
-                                        
-                                   
-                                    
-                                </div>
-                                </div>
-                            </div>
-                            
-                            <div class="feed__item-wrapper">
-                                <div class="feed__title feed__title--l feed--news__title post__time headline headline--orng headline--16 headline--bold headline--centered">10 апреля 2017 <div>12:00</div></div>
-                                <div class="feed__item">
-                                    <div class="post post--news-item feed--news__item">
-                                   <div class="post__author-wrap">
-                                       <div class="post__author-img">
-                                           <img src="assets/images/userpic-2.jpg" alt="">
-                                       </div>
-                                       <div class="post__author-desc">
-                                           <a href="" class="post__author link link--blue link--bold">Иванов Иван</a> создал новое <a href="" class="link link--blue">событие</a>
-                                           <div class="post__author-time">
-                                           3 минуты назад
-                                           </div>
-                                       </div>
-                                       
-                                   </div>
-                                    <div class="post__event-title-wrap">
-                                        <div class="post__event-title-headline"><h3 class="headline headline--blue headline--bold headline--20 headline--no-mrg">Поездка в Сочи</h3></div>
-                                        <div class="post__event-title-desc">
-                                            Летим в Сочи на майские, кто с нами?
-                                        </div>
-                                        <div class="post__event-title-btn"><a href="" class="btn btn--blue btn--icon btn--xs btn--rnd-s"><i class="icon icon--invite-w"></i>Присоединиться</a></div>
-                                        
-                                    </div>
-                                    
-                                    <div class="post__media">
-                                                   <div class="post__media-wrapper-outer post__media-wrapper-outer--bordered">
+
+                                    <div class="feed__item-wrapper">
+                                        <div class="feed__title feed__title--l feed--news__title post__time headline headline--orng headline--16 headline--bold headline--centered">10 апреля 2017 <div>12:00</div></div>
+                                        <div class="feed__item">
+                                            <div class="post post--news-item feed--news__item">
+                                                <div class="post__author-wrap">
+                                                    <div class="post__author-img">
+                                                        <img src="assets/images/userpic-2.jpg" alt="">
+                                                    </div>
+                                                    <div class="post__author-desc">
+                                                        <a href="" class="post__author link link--blue link--bold">Иванов Иван</a> создал новое <a href="" class="link link--blue">событие</a>
+                                                        <div class="post__author-time">
+                                                            3 минуты назад
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="post__event-title-wrap">
+                                                    <div class="post__event-title-headline"><h3 class="headline headline--blue headline--bold headline--20 headline--no-mrg">Поездка в Сочи</h3></div>
+                                                    <div class="post__event-title-desc">
+                                                        Летим в Сочи на майские, кто с нами?
+                                                    </div>
+                                                    <div class="post__event-title-btn"><a href="" class="btn btn--blue btn--icon btn--xs btn--rnd-s"><i class="icon icon--invite-w"></i>Присоединиться</a></div>
+
+                                                </div>
+
+                                                <div class="post__media">
+                                                    <div class="post__media-wrapper-outer post__media-wrapper-outer--bordered">
                                                         <div class="post__media-wrapper">
                                                             <div class="post__media-item post__media-item--l">
                                                                 <a href=""><img src="assets/images/photo.jpg" alt=""></a>
@@ -270,34 +270,36 @@
                                                         </div>
                                                         <div class="post__media-control"><div class="icon icon--arrow-r"></div></div>
                                                     </div>
-                                    </div>
-                                    
-                                    <div class="post__numbers-wrap">   
-                                        <div class="row no-gutters">
-                                            <div class="col-12 col-lg-9">
-                                                <div class="post__numbers">
-                                                    <a href="" class="post__numbers-item post__likes"><i class="icon icon--likes"></i>Понравилось [<span class="post__numbers-count">20</span>]</a> 
-                                                    <a href="" class="post__numbers-item post__comments"><i class="icon icon--comments"></i>Комментрии [<span class="post__numbers-count">10</span>]</a> 
-                                                    <a href="" class="post__numbers-item post__joined"><i class="icon icon--joined"></i>Присоединились [<span class="post__numbers-count">10</span>]</a>
                                                 </div>
-                                            </div>
-                                            <div class="col-12 col-lg-3">
-                                                <div class="post__news-actions">
-                                                    <a href=""><i class="icon icon--like-p"></i></a>
-                                                    <a href=""><i class="icon icon--comments-p"></i></a>
-                                                    <a href=""><i class="icon icon--send"></i></a>
+
+                                                <div class="post__numbers-wrap">   
+                                                    <div class="row no-gutters">
+                                                        <div class="col-12 col-lg-9">
+                                                            <div class="post__numbers">
+                                                                <a href="" class="post__numbers-item post__likes"><i class="icon icon--likes"></i>Понравилось [<span class="post__numbers-count">20</span>]</a> 
+                                                                <a href="" class="post__numbers-item post__comments"><i class="icon icon--comments"></i>Комментрии [<span class="post__numbers-count">10</span>]</a> 
+                                                                <a href="" class="post__numbers-item post__joined"><i class="icon icon--joined"></i>Присоединились [<span class="post__numbers-count">10</span>]</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-lg-3">
+                                                            <div class="post__news-actions">
+                                                                <a href=""><i class="icon icon--like-p"></i></a>
+                                                                <a href=""><i class="icon icon--comments-p"></i></a>
+                                                                <a href=""><i class="icon icon--send"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
+
+                                                <div class="post__tags-wrap">
+                                                    <i class="icon icon--point"></i>Метки: <a href="" class="link post__tag link--blue link--underlined">Отдых</a> <a href="" class="link post__tag link--blue link--underlined">Еще метка</a>
+                                                </div>
+
+
+
                                             </div>
                                         </div>
                                     </div>
-                                       
-                                    <div class="post__tags-wrap">
-                                        <i class="icon icon--point"></i>Метки: <a href="" class="link post__tag link--blue link--underlined">Отдых</a> <a href="" class="link post__tag link--blue link--underlined">Еще метка</a>
-                                    </div>
-                                        
-                                   
-                                    
-                                </div>
                                 </div>
                             </div>
                         </div>
@@ -305,14 +307,12 @@
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<!-- inject:footer:html -->
-<!-- build:js assets/scripts/App.js -->
-    <script src="temp/scripts/App.js"></script>
-    <!-- endbuild -->
-    
-</body>
+        <!-- inject:footer:html -->
+        <!-- build:js assets/scripts/App.js -->
+        <script src="temp/scripts/App.js"></script>
+        <!-- endbuild -->
+
+    </body>
 
 </html>
 <!-- endinject -->

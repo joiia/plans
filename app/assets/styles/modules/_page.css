@@ -1,0 +1,8 @@
+.page {
+    overflow: hidden;
+    
+    &--no-tabs {
+        padding-top: 45px;
+        background: linear-gradient(to bottom, #cccccc 0%, transparent 14%); 
+    }
+}
