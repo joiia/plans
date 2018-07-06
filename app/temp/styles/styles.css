@@ -2652,8 +2652,9 @@ a:focus {
         margin-right: 10px;
         font-family: 'Myriad Pro Semibold';
         font-size: 0.8125rem;
-        
-        
+        color: #2c3e50;
+
+
     }
 
 @media (min-width: 768px) {
@@ -2661,8 +2662,8 @@ a:focus {
 .tabs__item {
             margin-right: 15px;
             font-size: 0.9375rem
-        
-        
+
+
     }
     }
 
@@ -2709,6 +2710,15 @@ a:focus {
             -webkit-transform: translateY(0);
                     transform: translateY(0);
         }
+
+.tabs--green .tabs__item--current a:after {
+                background: #17a14b;
+            }
+
+.tabs i {
+        margin-left: 3px;
+        top: -2px;
+    }
 
 .user-info {
     padding: 20px 0 17px;
@@ -3005,6 +3015,24 @@ a:focus {
     }
     }
 
+.headline--26 {
+        font-size: 1.3125rem;
+    }
+
+@media (min-width: 576px) {
+
+.headline--26 {
+            font-size: 1.4375rem
+    }
+    }
+
+@media (min-width: 768px) {
+
+.headline--26 {
+            font-size: 1.625rem
+    }
+    }
+
 .headline--27 {
         font-size: 1.375rem;
     }
@@ -3039,6 +3067,10 @@ a:focus {
 
 .headline--orng {
         color: #e67333;
+    }
+
+.headline--pink {
+        color: #e97b79;
     }
 
 .headline--bold {
@@ -3134,157 +3166,175 @@ a:focus {
     }
 
 .icon {
-            background-image: url('../../assets/images/sprites/sprite-cd330234.png');
+            background-image: url('../../assets/images/sprites/sprite-f5d4bfeb.png');
         }
 
 .icon--add {
         width: 17px; 
         height: 17px;
-        background-position: 98.44559585492227% 62.5%;  
+        background-position: 98.17351598173516% 70.83333333333333%;  
     }
 
 .icon--add-media {
         width: 48px; 
         height: 28px;
-        background-position: 0 19.745222929936304%;  
+        background-position: 0 17.12707182320442%;  
     }
 
 .icon--arrow-r {
         width: 14px; 
         height: 19px;
-        background-position: 96.93877551020408% 12.048192771084338%;  
+        background-position: 96.84684684684684% 43.1578947368421%;  
     }
 
 .icon--calendar {
         width: 28px; 
         height: 27px;
-        background-position: 89.01098901098901% 0;  
+        background-position: 77.88461538461539% 0;  
     }
 
 .icon--calendar-active {
         width: 28px; 
         height: 27px;
-        background-position: 89.01098901098901% 17.088607594936708%;  
+        background-position: 77.88461538461539% 14.835164835164836%;  
     }
 
 .icon--calendar-l-active {
         width: 34px; 
         height: 35px;
-        background-position: 67.61363636363636% 40.666666666666664%;  
+        background-position: 0 59.770114942528735%;  
+    }
+
+.icon--calendar-s {
+        width: 21px; 
+        height: 20px;
+        background-position: 100% 22.22222222222222%;  
     }
 
 .icon--cancel-s {
         width: 23px; 
         height: 23px;
-        background-position: 87.70053475935829% 85.18518518518519%;  
+        background-position: 11.737089201877934% 88.70967741935483%;  
+    }
+
+.icon--clock-s {
+        width: 21px; 
+        height: 20px;
+        background-position: 0 100%;  
     }
 
 .icon--comments {
         width: 21px; 
         height: 21px;
-        background-position: 34.39153439153439% 98.78048780487805%;  
+        background-position: 100% 0;  
     }
 
 .icon--comments-p {
         width: 25px; 
         height: 24px;
-        background-position: 13.513513513513514% 85.71428571428571%;  
+        background-position: 0 89.1891891891892%;  
     }
 
 .icon--create-event {
         width: 20px; 
         height: 22px;
-        background-position: 12.105263157894736% 99.38650306748467%;  
+        background-position: 32.870370370370374% 88.23529411764706%;  
     }
 
 .icon--delete {
         width: 10px; 
         height: 10px;
-        background-position: 95% 88%;  
+        background-position: 46.017699115044245% 69.84924623115577%;  
     }
 
 .icon--done {
         width: 45px; 
         height: 45px;
-        background-position: 27.272727272727273% 42.142857142857146%;  
+        background-position: 23.56020942408377% 35.97560975609756%;  
     }
 
 .icon--done-s {
         width: 24px; 
         height: 24px;
-        background-position: 39.784946236559136% 85.71428571428571%;  
+        background-position: 89.62264150943396% 26.486486486486488%;  
     }
 
 .icon--edit {
         width: 27px; 
         height: 27px;
-        background-position: 88.52459016393442% 34.177215189873415%;  
+        background-position: 77.51196172248804% 29.67032967032967%;  
     }
 
 .icon--edit-s {
         width: 16px; 
         height: 16px;
-        background-position: 97.9381443298969% 72.18934911242603%;  
+        background-position: 97.72727272727273% 95.33678756476684%;  
     }
 
 .icon--edit-ss {
         width: 16px; 
         height: 16px;
-        background-position: 97.9381443298969% 81.65680473372781%;  
+        background-position: 34.54545454545455% 72.02072538860104%;  
+    }
+
+.icon--edit-sss {
+        width: 12px; 
+        height: 12px;
+        background-position: 41.07142857142857% 70.55837563451777%;  
     }
 
 .icon--exit {
         width: 18px; 
         height: 18px;
-        background-position: 98.95833333333333% 23.353293413173652%;  
+        background-position: 98.62385321100918% 52.87958115183246%;  
     }
 
 .icon--invitations {
         width: 29px; 
         height: 23px;
-        background-position: 49.72375690607735% 36.41975308641975%;  
+        background-position: 43.47826086956522% 31.72043010752688%;  
     }
 
 .icon--invitations-active {
         width: 29px; 
         height: 23px;
-        background-position: 35.35911602209945% 64.19753086419753%;  
+        background-position: 61.83574879227053% 55.913978494623656%;  
     }
 
 .icon--invitations-l-active {
         width: 41px; 
         height: 32px;
-        background-position: 70.41420118343196% 18.954248366013072%;  
+        background-position: 61.02564102564103% 16.384180790960453%;  
     }
 
 .icon--invite {
         width: 24px; 
         height: 19px;
-        background-position: 63.97849462365591% 62.65060240963855%;  
+        background-position: 89.62264150943396% 63.68421052631579%;  
     }
 
 .icon--invite-w {
         width: 17px; 
         height: 14px;
-        background-position: 98.44559585492227% 53.21637426900585%;  
+        background-position: 98.17351598173516% 78.46153846153847%;  
     }
 
 .icon--joined {
         width: 21px; 
         height: 21px;
-        background-position: 45.5026455026455% 98.78048780487805%;  
+        background-position: 100% 11.170212765957446%;  
     }
 
 .icon--like-p {
         width: 26px; 
         height: 23px;
-        background-position: 50.54347826086956% 64.19753086419753%;  
+        background-position: 77.14285714285714% 57.526881720430104%;  
     }
 
 .icon--likes {
         width: 21px; 
         height: 19px;
-        background-position: 65.60846560846561% 97.59036144578313%;  
+        background-position: 50.23255813953488% 86.84210526315789%;  
     }
 
 .icon--logo {
@@ -3296,121 +3346,145 @@ a:focus {
 .icon--media {
         width: 30px; 
         height: 29px;
-        background-position: 18.88888888888889% 66.66666666666667%;  
+        background-position: 47.57281553398058% 57.77777777777778%;  
+    }
+
+.icon--media-active {
+        width: 30px; 
+        height: 29px;
+        background-position: 33.00970873786408% 57.77777777777778%;  
+    }
+
+.icon--media-l-active {
+        width: 37px; 
+        height: 36px;
+        background-position: 59.79899497487437% 35.26011560693642%;  
     }
 
 .icon--messages {
         width: 32px; 
         height: 22px;
-        background-position: 26.96629213483146% 19.01840490797546%;  
+        background-position: 39.21568627450981% 16.577540106951872%;  
     }
 
 .icon--messages-active {
         width: 32px; 
         height: 22px;
-        background-position: 44.943820224719104% 19.01840490797546%;  
+        background-position: 23.529411764705884% 16.577540106951872%;  
     }
 
 .icon--messages-l-active {
         width: 43px; 
         height: 29px;
-        background-position: 71.25748502994011% 0;  
+        background-position: 61.6580310880829% 0;  
     }
 
 .icon--messages-s {
         width: 26px; 
         height: 19px;
-        background-position: 88.04347826086956% 64.4578313253012%;  
+        background-position: 42.857142857142854% 43.1578947368421%;  
     }
 
 .icon--news {
         width: 24px; 
         height: 24px;
-        background-position: 26.881720430107528% 85.71428571428571%;  
+        background-position: 89.62264150943396% 13.513513513513514%;  
     }
 
 .icon--news-active {
         width: 24px; 
         height: 24px;
-        background-position: 75.26881720430107% 85.71428571428571%;  
+        background-position: 89.62264150943396% 88.64864864864865%;  
     }
 
 .icon--news-l-active {
         width: 34px; 
         height: 34px;
-        background-position: 0 68.87417218543047%;  
+        background-position: 16.831683168316832% 59.42857142857143%;  
     }
 
 .icon--not-done {
         width: 45px; 
         height: 45px;
-        background-position: 0 42.142857142857146%;  
+        background-position: 0 35.97560975609756%;  
     }
 
 .icon--notices {
         width: 23px; 
         height: 23px;
-        background-position: 0 100%;  
+        background-position: 22.535211267605632% 88.70967741935483%;  
     }
 
 .icon--point {
         width: 17px; 
         height: 21px;
-        background-position: 55.44041450777202% 98.78048780487805%;  
+        background-position: 41.55251141552512% 87.76595744680851%;  
     }
 
 .icon--private {
         width: 25px; 
         height: 16px;
-        background-position: 48.648648648648646% 48.5207100591716%;  
+        background-position: 24.170616113744074% 72.02072538860104%;  
     }
 
 .icon--search {
         width: 17px; 
         height: 17px;
-        background-position: 98.44559585492227% 33.92857142857143%;  
+        background-position: 98.17351598173516% 86.97916666666667%;  
+    }
+
+.icon--search-active {
+        width: 24px; 
+        height: 24px;
+        background-position: 89.62264150943396% 39.45945945945946%;  
     }
 
 .icon--search-l {
         width: 24px; 
         height: 24px;
-        background-position: 62.365591397849464% 85.71428571428571%;  
+        background-position: 89.62264150943396% 52.432432432432435%;  
+    }
+
+.icon--search-ll-active {
+        width: 25px; 
+        height: 25px;
+        background-position: 90.04739336492891% 0;  
     }
 
 .icon--search-m {
         width: 20px; 
         height: 20px;
-        background-position: 100% 0;  
+        background-position: 99.53703703703704% 32.804232804232804%;  
     }
 
 .icon--search-w {
         width: 17px; 
         height: 17px;
-        background-position: 98.44559585492227% 44.04761904761905%;  
+        background-position: 98.17351598173516% 61.979166666666664%;  
     }
 
 .icon--send {
         width: 25px; 
         height: 24px;
-        background-position: 0 85.71428571428571%;  
+        background-position: 12.322274881516588% 75.13513513513513%;  
     }
 
 .icon--settings {
         width: 27px; 
         height: 26px;
-        background-position: 88.52459016393442% 50.943396226415096%;  
+        background-position: 77.51196172248804% 44.26229508196721%;  
     }
 
-.icon--settings-ss {
-        width: 22px; 
-        height: 22px;
-        background-position: 22.872340425531913% 99.38650306748467%;  
+.icon--settings-s {
+        width: 26px; 
+        height: 26px;
+        background-position: 0 75.95628415300547%;  
     }
 
 .icon--time {
         width: 18px; 
         height: 24px;
-        background-position: 51.041666666666664% 85.71428571428571%;  
+        background-position: 87.1559633027523% 75.67567567567568%;  
     }
 
 .site-header {
@@ -4819,3 +4893,46 @@ a:focus {
             font-size: 0.875rem
     }
     }
+
+.photo-gallery {
+    padding-bottom: 20px;
+
+}
+
+.photo-gallery:last-child {
+        padding-bottom: 45px;
+
+    }
+
+.photo-gallery__wrapper {
+        padding: 35px 21px 35px;
+        display: flex;
+        flex-wrap: wrap; 
+    }
+
+.photo-gallery__item {
+        width: 33.333%;
+        flex-basis: 33.333%;
+        padding: 0 4px 10px;
+    }
+
+@media (min-width: 576px) {
+
+.photo-gallery__item {
+            width: 20%;
+            flex-basis: 20%
+    }
+    }
+
+@media (min-width: 992px) {
+
+.photo-gallery__item {
+            width: 16.667%;
+            flex-basis: 16.667%
+    }
+    }
+
+.photo-gallery__item img {
+            min-width: 100%;
+            height: auto;
+        }

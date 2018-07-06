@@ -19,6 +19,8 @@ $orange-d: #e67333;
 
 $green: #17a14b;
 
+$pink: #e97b79;
+
 $regular: 'Myriad Pro Regular';
 $bold: 'Myriad Pro Semibold';
 $italic: 'Myriad Pro Italic';
@@ -36,7 +38,9 @@ $px18: 1.125rem;
 $px20: 1.25rem;
 $px21: 1.3125rem;
 $px22: 1.375rem;
+$px23: 1.4375rem;
 $px24: 1.5rem;
+$px26: 1.625rem;
 $px27: 1.6875rem;
 $px28: 1.75rem;
 $px30: 1.875rem;

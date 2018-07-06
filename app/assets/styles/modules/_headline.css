@@ -47,6 +47,18 @@
             font-size: $px22;
         }
     }
+    
+    &--26 {
+        font-size: $px21;
+
+        @mixin atS {
+            font-size: $px23;
+        }
+
+        @mixin atM {
+            font-size: $px26;
+        }
+    }
 
     &--27 {
         font-size: $px22;
@@ -77,6 +89,10 @@
 
     &--orng {
         color: $orange-d;
+    }
+    
+    &--pink {
+        color: $pink;
     }
 
     &--bold {

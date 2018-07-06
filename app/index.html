@@ -2,350 +2,344 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title></title>
-    
-    <!-- build:css assets/styles/styles.css -->
-    <link rel="stylesheet" href="temp/styles/styles.css">
-    <!-- endbuild -->
-    
-    <!-- build:js assets/scripts/Vendor.js -->
-    <script src="temp/scripts/Vendor.js"></script>
-    <!-- endbuild -->
-</head>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title></title>
 
-<body>
-   
-    <header class="site-header">
-        <div class="container">
-            <div class="row no-gutters">
-                <div class="col-3 col-lg-2">
-                    <a class="site-header__logo icon icon--logo" href=""></a>
-                </div>
-                <div class="col-7 col-lg-8">
-                    <div class="site-header__search">
-                        <div class="site-header__search-inner">
-                            <input type="text" placeholder="Найти людей, школу, события">
-                            <input type="submit">
-                            <div class="icon icon--search"> </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="site-header__user-menu">
-                        <a href="">Выйти
-                        <div class="site-header__exit-wrapper"><div class="icon icon--exit site-header__exit"></div></div></a>
-                    </div>
-                    <div class="site-header__menu-icon">
-                           <div class="site-header__menu-icon__middle"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-<!-- endinject -->
-    
-<!-- inject:page-head:html -->
-<div class="page-head">
-    <div class="page-section page-section--blue-d user-info">
-        <div class="container">
-            <div class="row no-gutters">
-                <div class="col-3 col-md-2">
-                    <div class="user-info__photo"> <img src="assets/images/photo.jpg" alt=""> </div>
-                </div>
-                <div class="col-9 col-md-10">
-                    <div class="row no-gutters">
-                        <div class="col-12 col-md-6">
-                            <div class="user-info__about">
-                                <h2 class="headline headline--22 user-info__name">Петр <span>Иванов</span></h2>
-                                <table class="user-info__table">
-                                    <tr>
-                                        <td>Школа №</td>
-                                        <td>2017</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Класс</td>
-                                        <td>10А</td>
-                                    </tr>
-                                </table>
-                                <div class="user-info__edit"> <a href=""><i class="icon icon--edit-ss"></i>Редактировать</a> </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="user-info__subs-wrap">
-                                <div class="user-info__subs"> подписки <span>920</span> </div>
-                                <div class="user-info__subs"> подписчики <span>723</span> </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="page-section page-section--blue page-section--pd-t-xs ">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-sm-7">
-                    <div class="checklist">
-                        <div class="checklist__title">Фильтр</div>
-                        <div class="checklist__item">
-                            <input id="checklist__item-1" class="checklist__item-checkbox" type="checkbox">
-                            <label for="checklist__item-1" class="checklist__item-text"> Общие школьные новости </label>
-                        </div>
-                        <div class="checklist__item">
-                            <input id="checklist__item-2" class="checklist__item-checkbox" type="checkbox">
-                            <label for="checklist__item-2" class="checklist__item-text"> Новости для: 10, 11 класса </label>
-                        </div>
-                        <div class="checklist__item">
-                            <input id="checklist__item-3" class="checklist__item-checkbox" type="checkbox">
-                            <label for="checklist__item-3" class="checklist__item-text"> Расписание: 10А </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-5">
-                    <a href="" class="btn btn--right btn--rnd btn--orng btn--lg btn--icn btn--mrg-t"> <i class="icon icon--edit btn__icon"></i>Создать событие</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- endinject -->
-          
-    <div class="page">
-        <div class="page-section page-section--grd page-section--pd-no">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <ul class="tabs tabs--filter">
-                            <li class="tabs__item tabs__item--current">
-                                <a class="tabs__item-link" href="">день</a>
-                            </li>
-                            <li class="tabs__item">
-                                <a class="tabs__item-link" href="">неделя</a>
-                            </li>
-                            <li class="tabs__item">
-                                <a class="tabs__item-link" href="">месяц</a>
-                            </li>
-                            <li class="tabs__item">
-                                <a class="tabs__item-link" href="">год</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="page-section page-section--main-content page-section--pd-no">
+        <!-- build:css assets/styles/styles.css -->
+        <link rel="stylesheet" href="temp/styles/styles.css">
+        <!-- endbuild -->
+
+        <!-- build:js assets/scripts/Vendor.js -->
+        <script src="temp/scripts/Vendor.js"></script>
+        <!-- endbuild -->
+    </head>
+
+    <body>
+
+        <header class="site-header">
             <div class="container">
                 <div class="row no-gutters">
-                    <div class="col-md-3">
-                        <div class="sidebar">
-                            <ul class="sidebar__menu">
-                                <li class="sidebar__menu-item sidebar__menu-item--current">
-                                   <a href="#" class="sidebar__menu-item-link"><i class="icon icon--calendar-active"></i>календарь</a> 
+                    <div class="col-3 col-lg-2">
+                        <a class="site-header__logo icon icon--logo" href=""></a>
+                    </div>
+                    <div class="col-7 col-lg-8">
+                        <div class="site-header__search">
+                            <div class="site-header__search-inner">
+                                <input type="text" placeholder="Найти людей, школу, события">
+                                <input type="submit">
+                                <div class="icon icon--search"> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="site-header__user-menu">
+                            <a href="">Выйти
+                                <div class="site-header__exit-wrapper"><div class="icon icon--exit site-header__exit"></div></div></a>
+                        </div>
+                        <div class="site-header__menu-icon">
+                            <div class="site-header__menu-icon__middle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- endinject -->
+
+        <!-- inject:page-head:html -->
+        <div class="page-head">
+            <div class="page-section page-section--blue-d user-info">
+                <div class="container">
+                    <div class="row no-gutters">
+                        <div class="col-3 col-md-2">
+                            <div class="user-info__photo"> <img src="assets/images/photo.jpg" alt=""> </div>
+                        </div>
+                        <div class="col-9 col-md-10">
+                            <div class="row no-gutters">
+                                <div class="col-12 col-md-6">
+                                    <div class="user-info__about">
+                                        <h2 class="headline headline--22 user-info__name">Петр <span>Иванов</span></h2>
+                                        <table class="user-info__table">
+                                            <tr>
+                                                <td>Школа №</td>
+                                                <td>2017</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Класс</td>
+                                                <td>10А</td>
+                                            </tr>
+                                        </table>
+                                        <div class="user-info__edit"> <a href=""><i class="icon icon--edit-ss"></i>Редактировать</a> </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="user-info__subs-wrap">
+                                        <div class="user-info__subs"> подписки <span>920</span> </div>
+                                        <div class="user-info__subs"> подписчики <span>723</span> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-section page-section--blue page-section--pd-t-xs ">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-sm-7">
+                            <div class="checklist">
+                                <div class="checklist__title">Фильтр</div>
+                                <div class="checklist__item">
+                                    <input id="checklist__item-1" class="checklist__item-checkbox" type="checkbox">
+                                    <label for="checklist__item-1" class="checklist__item-text"> Общие школьные новости </label>
+                                </div>
+                                <div class="checklist__item">
+                                    <input id="checklist__item-2" class="checklist__item-checkbox" type="checkbox">
+                                    <label for="checklist__item-2" class="checklist__item-text"> Новости для: 10, 11 класса </label>
+                                </div>
+                                <div class="checklist__item">
+                                    <input id="checklist__item-3" class="checklist__item-checkbox" type="checkbox">
+                                    <label for="checklist__item-3" class="checklist__item-text"> Расписание: 10А </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-5">
+                            <a href="" class="btn btn--right btn--rnd btn--orng btn--lg btn--icn btn--mrg-t"> <i class="icon icon--edit btn__icon"></i>Создать событие</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- endinject -->
+
+        <div class="page">
+            <div class="page-section page-section--grd page-section--pd-no">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="tabs tabs--filter">
+                                <li class="tabs__item tabs__item--current">
+                                    <a class="tabs__item-link" href="">день</a>
                                 </li>
-                                <li class="sidebar__menu-item">
-                                   <a href="news.html" class="sidebar__menu-item-link"><i class="icon icon--news"></i>лента новостей</a> 
+                                <li class="tabs__item">
+                                    <a class="tabs__item-link" href="">неделя</a>
                                 </li>
-                                <li class="sidebar__menu-item">
-                                   <a href="invitations.html" class="sidebar__menu-item-link"><i class="icon icon--invitations"></i>приглашения <span class="sidebar__menu-count">1</span></a> 
+                                <li class="tabs__item">
+                                    <a class="tabs__item-link" href="">месяц</a>
                                 </li>
-                                <li class="sidebar__menu-item">
-                                   <a href="messages.html" class="sidebar__menu-item-link"><i class="icon icon--messages"></i>сообщения <span class="sidebar__menu-count">2</span></a> 
-                                </li>
-                                <li class="sidebar__menu-item">
-                                   <a href="" class="sidebar__menu-item-link"><i class="icon icon--media"></i>фото/видео <span class="sidebar__menu-count">25</span></a> 
-                                </li>
-                                <li class="sidebar__menu-item">
-                                   <a href="" class="sidebar__menu-item-link"><i class="icon icon--search-l"></i>поиск</a> 
-                                </li>
-                                <li class="sidebar__menu-item">
-                                   <a href="" class="sidebar__menu-item-link"><i class="icon icon--settings"></i>настройки</a> 
+                                <li class="tabs__item">
+                                    <a class="tabs__item-link" href="">год</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-9">
-                        <div class="page-section main-column">
-                            <h2 class="headline headline--27 headline--blue-l headline--mrg-b-l">
-                                <i class="icon icon--calendar-l-active"></i>16 Ноября 2016, Четверг
-                            </h2>
-                            <div class="add-event">
-                                <div class="add-event__title">
-                                    <i class="icon icon--add-event"></i>Создать событие
-                                </div>
-                                <div class="add-event__field">
-                                    <input class="add-event__field-input" type="text" placeholder="Напиши новое событие...">
-                                </div>
-                            </div>
-                            <div class="feed feed--events">
-                                <div class="feed__item-wrapper">
-                                    <div class="feed__title post__time headline headline--orng headline--22 headline--bold">12:00</div>
-                                    <div class="feed__item">
-                                        <div class="post post--event">
-                                        
-                                        <h3 class="post__title headline headline--blue headline--bold headline--20">Олимпиада по Физике</h3>
-                                        <div class="post__content">Место проведения</div>
-                                        <div class="post__add-media"><a href=""><i class="icon icon--add-media"></i>Добавить фото/видео отчет</a></div>
-                                        <div class="post__numbers">
-                                                <a href="" class="post__numbers-item post__likes"><i class="icon icon--likes"></i>Понравилось [<span class="post__numbers-count">20</span>]</a> 
-                                                <a href="" class="post__numbers-item post__comments"><i class="icon icon--comments"></i>Комментрии [<span class="post__numbers-count">10</span>]</a> 
-                                                <a href="" class="post__numbers-item post__joined"><i class="icon icon--joined"></i>Присоединились [<span class="post__numbers-count">10</span>]</a>
-                                        </div>
-                                    
-                                        <div class="post__privacy">
-                                            <ul class="post__privacy-list">
-                                                <i class="icon icon--private"></i>
-                                                <li class="post__privacy-item">Личное</li>
-                                                <li class="post__privacy-item post__privacy-item--active">Для всех</li> 
-                                                <li class="post__privacy-item">Для друзей</li>
-                                                <li class="post__privacy-item">Для избранных</li> 
-                                            </ul>
-                                        </div>
+                </div>
+            </div>
 
-                                        <div class="post__actions">
+            <div class="page-section page-section--main-content page-section--pd-no">
+                <div class="container">
+                    <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <div class="sidebar">
+                                <ul class="sidebar__menu">
+                                    <li class="sidebar__menu-item sidebar__menu-item--current">
+                                        <a href="#" class="sidebar__menu-item-link"><i class="icon icon--calendar-active"></i>календарь</a> 
+                                    </li>
+                                    <li class="sidebar__menu-item">
+                                        <a href="news.html" class="sidebar__menu-item-link"><i class="icon icon--news"></i>лента новостей</a> 
+                                    </li>
+                                    <li class="sidebar__menu-item">
+                                        <a href="invitations.html" class="sidebar__menu-item-link"><i class="icon icon--invitations"></i>приглашения <span class="sidebar__menu-count">1</span></a> 
+                                    </li>
+                                    <li class="sidebar__menu-item">
+                                        <a href="messages.html" class="sidebar__menu-item-link"><i class="icon icon--messages"></i>сообщения <span class="sidebar__menu-count">2</span></a> 
+                                    </li>
+                                    <li class="sidebar__menu-item"> <a href="media.html" class="sidebar__menu-item-link"><i class="icon icon--media"></i>фото/видео <span class="sidebar__menu-count">25</span></a></li>
+                                    <li class="sidebar__menu-item"> <a href="search.html" class="sidebar__menu-item-link"><i class="icon icon--search-l"></i>поиск</a> </li>
+                                    <li class="sidebar__menu-item"> <a href="settings.html" class="sidebar__menu-item-link"><i class="icon icon--settings"></i>настройки</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="page-section main-column">
+                                <h2 class="headline headline--27 headline--blue-l headline--mrg-b-l">
+                                    <i class="icon icon--calendar-l-active"></i>16 Ноября 2016, Четверг
+                                </h2>
+                                <div class="add-event">
+                                    <div class="add-event__title">
+                                        <i class="icon icon--add-event"></i>Создать событие
+                                    </div>
+                                    <div class="add-event__field">
+                                        <input class="add-event__field-input" type="text" placeholder="Напиши новое событие...">
+                                    </div>
+                                </div>
+                                <div class="feed feed--events">
+                                    <div class="feed__item-wrapper">
+                                        <div class="feed__title post__time headline headline--orng headline--22 headline--bold">12:00</div>
+                                        <div class="feed__item">
+                                            <div class="post post--event">
+
+                                                <h3 class="post__title headline headline--blue headline--bold headline--20">Олимпиада по Физике</h3>
+                                                <div class="post__content">Место проведения</div>
+                                                <div class="post__add-media"><a href=""><i class="icon icon--add-media"></i>Добавить фото/видео отчет</a></div>
+                                                <div class="post__numbers">
+                                                    <a href="" class="post__numbers-item post__likes"><i class="icon icon--likes"></i>Понравилось [<span class="post__numbers-count">20</span>]</a> 
+                                                    <a href="" class="post__numbers-item post__comments"><i class="icon icon--comments"></i>Комментрии [<span class="post__numbers-count">10</span>]</a> 
+                                                    <a href="" class="post__numbers-item post__joined"><i class="icon icon--joined"></i>Присоединились [<span class="post__numbers-count">10</span>]</a>
+                                                </div>
+
+                                                <div class="post__privacy">
+                                                    <ul class="post__privacy-list">
+                                                        <i class="icon icon--private"></i>
+                                                        <li class="post__privacy-item">Личное</li>
+                                                        <li class="post__privacy-item post__privacy-item--active">Для всех</li> 
+                                                        <li class="post__privacy-item">Для друзей</li>
+                                                        <li class="post__privacy-item">Для избранных</li> 
+                                                    </ul>
+                                                </div>
+
+                                                <div class="post__actions">
                                                     <a href="" class="post__actions-item post__invite"><i class="icon icon--invite"></i>Пригласить
                                                     </a>
                                                     <a href="" class="post__actions-item post__edit"><i class="icon icon--edit-s"></i>Редактировать
                                                     </a>
                                                     <a href="" class="post__actions-item post__messages"><i class="icon icon--messages-s"></i>Сообщение подписчикам
                                                     </a>
-                                        </div>
-                                        <div class="post__status post__status--not-done"><i class="icon icon--not-done"></i>Не выполнено</div>
-                                    </div>
-                                        <div class="post post--event">
-                                        <h3 class="post__title headline headline--blue headline--bold headline--20">Выставка</h3>
-                                        <div class="post__content">Место проведения</div>
-                                        <div class="post__add-media"><a href=""><i class="icon icon--add-media"></i>Добавить фото/видео отчет</a></div>
-                                        <div class="post__numbers">
-                                                <a href="" class="post__numbers-item post__likes"><i class="icon icon--likes"></i>Понравилось [<span class="post__numbers-count">20</span>]</a> 
-                                                <a href="" class="post__numbers-item post__comments"><i class="icon icon--comments"></i>Комментрии [<span class="post__numbers-count">10</span>]</a> 
-                                                <a href="" class="post__numbers-item post__joined"><i class="icon icon--joined"></i>Присоединились [<span class="post__numbers-count">10</span>]</a>
-                                        </div>
-                                    
-                                        <div class="post__privacy">
-                                            <ul class="post__privacy-list">
-                                                <i class="icon icon--private"></i>
-                                                <li class="post__privacy-item">Личное</li>
-                                                <li class="post__privacy-item post__privacy-item--active">Для всех</li> 
-                                                <li class="post__privacy-item">Для друзей</li>
-                                                <li class="post__privacy-item">Для избранных</li> 
-                                            </ul>
-                                        </div>
+                                                </div>
+                                                <div class="post__status post__status--not-done"><i class="icon icon--not-done"></i>Не выполнено</div>
+                                            </div>
+                                            <div class="post post--event">
+                                                <h3 class="post__title headline headline--blue headline--bold headline--20">Выставка</h3>
+                                                <div class="post__content">Место проведения</div>
+                                                <div class="post__add-media"><a href=""><i class="icon icon--add-media"></i>Добавить фото/видео отчет</a></div>
+                                                <div class="post__numbers">
+                                                    <a href="" class="post__numbers-item post__likes"><i class="icon icon--likes"></i>Понравилось [<span class="post__numbers-count">20</span>]</a> 
+                                                    <a href="" class="post__numbers-item post__comments"><i class="icon icon--comments"></i>Комментрии [<span class="post__numbers-count">10</span>]</a> 
+                                                    <a href="" class="post__numbers-item post__joined"><i class="icon icon--joined"></i>Присоединились [<span class="post__numbers-count">10</span>]</a>
+                                                </div>
 
-                                        <div class="post__actions">
+                                                <div class="post__privacy">
+                                                    <ul class="post__privacy-list">
+                                                        <i class="icon icon--private"></i>
+                                                        <li class="post__privacy-item">Личное</li>
+                                                        <li class="post__privacy-item post__privacy-item--active">Для всех</li> 
+                                                        <li class="post__privacy-item">Для друзей</li>
+                                                        <li class="post__privacy-item">Для избранных</li> 
+                                                    </ul>
+                                                </div>
+
+                                                <div class="post__actions">
                                                     <a href="" class="post__actions-item post__invite"><i class="icon icon--invite"></i>Пригласить
                                                     </a>
                                                     <a href="" class="post__actions-item post__edit"><i class="icon icon--edit-s"></i>Редактировать
                                                     </a>
                                                     <a href="" class="post__actions-item post__messages"><i class="icon icon--messages-s"></i>Сообщение подписчикам
                                                     </a>
+                                                </div>
+
+                                                <div class="post__status post__status--done"><i class="icon icon--done"></i>выполнено</div>
+                                            </div>
                                         </div>
-                                        
-                                        <div class="post__status post__status--done"><i class="icon icon--done"></i>выполнено</div>
-                                    </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="page-section page-section--bottom">
-                                <h2 class="headline headline--blue-l headline--up headline--18 headline--mrg-b-15">Фоновое</h2>
-                                <div class="feed feed--events"><div class="feed__item-wrapper">
-                                    <div class="feed__title post__time headline--16 headline--orng headline--bold">10 ноября - 31 декабря</div>
-                                    <div class="feed__item">
-                                        <div class="post post--event">
-                                        
-                                        <h3 class="post__title headline headline--blue headline--bold headline--20">Марафон по физкультуре</h3>
-                                        <div class="post__media">
-                                           <div class="row no-gutters">
-                                               <div class="col-md-6 post__media-col-1">
-                                                   <div class="post__media-wrapper-outer">
-                                                        <div class="post__media-wrapper">
-                                                            <div class="post__media-item">
-                                                                <a href=""><img src="assets/images/photo.jpg" alt=""></a>
+                                <div class="page-section page-section--bottom">
+                                    <h2 class="headline headline--blue-l headline--up headline--18 headline--mrg-b-15">Фоновое</h2>
+                                    <div class="feed feed--events"><div class="feed__item-wrapper">
+                                        <div class="feed__title post__time headline--16 headline--orng headline--bold">10 ноября - 31 декабря</div>
+                                        <div class="feed__item">
+                                            <div class="post post--event">
+
+                                                <h3 class="post__title headline headline--blue headline--bold headline--20">Марафон по физкультуре</h3>
+                                                <div class="post__media">
+                                                    <div class="row no-gutters">
+                                                        <div class="col-md-6 post__media-col-1">
+                                                            <div class="post__media-wrapper-outer">
+                                                                <div class="post__media-wrapper">
+                                                                    <div class="post__media-item">
+                                                                        <a href=""><img src="assets/images/photo.jpg" alt=""></a>
+                                                                    </div>
+                                                                    <div class="post__media-item">
+                                                                        <a href=""><img src="assets/images/photo.jpg" alt=""></a>
+                                                                    </div>
+                                                                    <div class="post__media-item">
+                                                                        <a href=""><img src="assets/images/photo.jpg" alt=""></a>
+                                                                    </div>
+                                                                    <div class="post__media-item">
+                                                                        <a href=""><img src="assets/images/photo.jpg" alt=""></a>
+                                                                    </div>
+                                                                    <div class="post__media-item">
+                                                                        <a href=""><img src="assets/images/photo.jpg" alt=""></a>
+                                                                    </div>
+                                                                </div>
                                                             </div>
-                                                            <div class="post__media-item">
-                                                                <a href=""><img src="assets/images/photo.jpg" alt=""></a>
-                                                            </div>
-                                                            <div class="post__media-item">
-                                                                <a href=""><img src="assets/images/photo.jpg" alt=""></a>
-                                                            </div>
-                                                            <div class="post__media-item">
-                                                                <a href=""><img src="assets/images/photo.jpg" alt=""></a>
-                                                            </div>
-                                                            <div class="post__media-item">
-                                                                <a href=""><img src="assets/images/photo.jpg" alt=""></a>
-                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 post__media-col-2">
+                                                            <div class="post__add-media post__add-media--mrg"><a href=""><i class="icon icon--add-media"></i>Добавить фото/видео отчет</a></div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-6 post__media-col-2">
-                                                    <div class="post__add-media post__add-media--mrg"><a href=""><i class="icon icon--add-media"></i>Добавить фото/видео отчет</a></div>
-                                                </div>
-                                           </div>
-                                        </div>
-                                        
-                                        <div class="post__numbers">
-                                            <div class="row no-gutters">
-                                                <div class="col-4">
-                                                    <a href="" class="post__numbers-item post__likes"><i class="icon icon--likes"></i>Понравилось [<span class="post__numbers-count">20</span>]
-                                                    </a>
-                                                </div>
-                                                <div class="col-4">
-                                                    <a href="" class="post__numbers-item post__comments"><i class="icon icon--comments"></i>Комментрии [<span class="post__numbers-count">10</span>]
-                                                    </a>
-                                                </div>
-                                                <div class="col-4">
-                                                    <a href="" class="post__numbers-item post__joined"><i class="icon icon--joined"></i>Присоединились [<span class="post__numbers-count">10</span>]
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    
-                                        <div class="post__privacy">
-                                            <ul class="post__privacy-list">
-                                                <i class="icon icon--private"></i>
-                                                <li class="post__privacy-item">Личное</li>
-                                                <li class="post__privacy-item post__privacy-item--active">Для всех</li> 
-                                                <li class="post__privacy-item">Для друзей</li>
-                                                <li class="post__privacy-item">Для избранных</li> 
-                                            </ul>
-                                        </div>
 
-                                        <div class="post__actions">
+                                                <div class="post__numbers">
+                                                    <div class="row no-gutters">
+                                                        <div class="col-4">
+                                                            <a href="" class="post__numbers-item post__likes"><i class="icon icon--likes"></i>Понравилось [<span class="post__numbers-count">20</span>]
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <a href="" class="post__numbers-item post__comments"><i class="icon icon--comments"></i>Комментрии [<span class="post__numbers-count">10</span>]
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <a href="" class="post__numbers-item post__joined"><i class="icon icon--joined"></i>Присоединились [<span class="post__numbers-count">10</span>]
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="post__privacy">
+                                                    <ul class="post__privacy-list">
+                                                        <i class="icon icon--private"></i>
+                                                        <li class="post__privacy-item">Личное</li>
+                                                        <li class="post__privacy-item post__privacy-item--active">Для всех</li> 
+                                                        <li class="post__privacy-item">Для друзей</li>
+                                                        <li class="post__privacy-item">Для избранных</li> 
+                                                    </ul>
+                                                </div>
+
+                                                <div class="post__actions">
                                                     <a href="" class="post__actions-item post__invite"><i class="icon icon--invite"></i>Пригласить
                                                     </a>
                                                     <a href="" class="post__actions-item post__edit"><i class="icon icon--edit-s"></i>Редактировать
                                                     </a>
                                                     <a href="" class="post__actions-item post__messages"><i class="icon icon--messages-s"></i>Сообщение подписчикам
                                                     </a>
+                                                </div>
+                                                <div class="post__status post__status--done"><i class="icon icon--done"></i>Выполнено</div>
+                                            </div>
                                         </div>
-                                        <div class="post__status post__status--done"><i class="icon icon--done"></i>Выполнено</div>
-                                    </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    
-    <div class="modal">
-        <div class="modal__inner">
+
+        <div class="modal">
+            <div class="modal__inner">
+            </div>
+            <div class="modal__close">X</div>
         </div>
-        <div class="modal__close">X</div>
-    </div>
-    
-    
-<!-- inject:footer:html -->
-<!-- build:js assets/scripts/App.js -->
-    <script src="temp/scripts/App.js"></script>
-    <!-- endbuild -->
-    
-</body>
+
+
+        <!-- inject:footer:html -->
+        <!-- build:js assets/scripts/App.js -->
+        <script src="temp/scripts/App.js"></script>
+        <!-- endbuild -->
+
+    </body>
 
 </html>
 <!-- endinject -->

@@ -2,30 +2,31 @@
     text-align: center;
     padding-right: 0;
     height: 40px;
-    
+
     @mixin atS {
         text-align: right;
     }
-    
+
     @mixin atM {
         padding-right: 135px;
         height: 45px;
     }
-    
+
     &__item {
         display: inline-block;
         margin-right: 10px;
         font-family: $bold;
         font-size: $px13;
-        
+        color: #2c3e50;
+
         @mixin atM {
             margin-right: 15px;
             font-size: $px15;
         }
-        
-        
+
+
     }
-    
+
     &__item-link {
         color: $blue-d !important;
         text-transform: uppercase;
@@ -35,12 +36,12 @@
         display: inline-block;
         height: 40px;
         overflow: hidden;
-        
+
         @mixin atM {
             padding: 13px 20px;
             height: 45px;
         }
-        
+
         &:after {
             content: "";
             position: absolute;
@@ -53,7 +54,7 @@
             transition: all .3s;
         }
     }
-    
+
     &__item--current {
         a:after {
             content: "";
@@ -65,5 +66,18 @@
             background: $orange-d;
             transform: translateY(0);
         }
+    }
+
+    &--green {
+        .tabs__item--current {
+            a:after {
+                background: $green;
+            }
+        }
+    }
+    
+    i {
+        margin-left: 3px;
+        top: -2px;
     }
 }
