@@ -2500,6 +2500,7 @@ a:focus {
 
 .form__col {
         display: flex;
+        align-items: center;
     }
 
 .form__checkbox {
