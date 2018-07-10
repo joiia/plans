@@ -1,0 +1,12 @@
+.icon {
+    &--mrg-r-15 {
+        margin-right: 12px;
+    }
+    
+    &--input {
+        position: absolute;
+        top: 12px;
+        left: 10px;
+    }
+}
+

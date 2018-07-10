@@ -30,9 +30,23 @@
 
     }
 
+    &--s {
+        font-size: $px14;
+        padding: 8px 20px 7px 40px;
+    }
+
     &--xs {
         padding: 5px 15px;
         font-size: $px13;
+    }
+
+    &--m {
+        font-size: $px13;
+        padding: 7px 35px;
+    }
+
+    &--full {
+        width: 100%;
     }
 
     &--orng {
@@ -63,6 +77,28 @@
             background: #558EB8;
         }
 
+    }
+
+    &--blue-ll {
+        border-radius: 6px;
+        border: 1px solid #dce0e0;
+        background-color: $blue-lll;
+        color: #8a949b;
+        display: block;
+        text-align: left;
+
+        &:hover {
+            color:  #8a949b;
+        }
+    }
+
+    &--green {
+        color: #fff !important;
+        background-color: $green;
+
+        &:hover {
+            background-color: $green-l;
+        }
     }
 
     &--icn {
@@ -104,7 +140,12 @@
 
         @mixin atM {
             margin-right: 15px;
-
         } 
     }
+
+    &--centered {
+        margin: 0 auto;
+    }
+
+
 }

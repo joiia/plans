@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title></title>
 
-        <link rel="stylesheet" href="assets/styles/styles-77d2c5b904.css"/>
+        <link rel="stylesheet" href="assets/styles/styles-83a043fd27.css"/>
 
         <script src="assets/scripts/Vendor-cc6462d996.js"></script>
     </head>
@@ -106,7 +106,7 @@
             </div>
         </div>
         <!-- endinject -->
-        <div class="page page--user-profile">
+        <div class="page search-page">
             <div class="page-section page-section--grd page-section--pd-no">
                 <div class="container">
                     <div class="row">
@@ -139,22 +139,48 @@
                         </div>
                         <div class="col-md-9">
                             <div class="page-section main-column">
-                                <h2 class="headline headline--27 headline--blue-l headline--mrg-b-l">
-                                    <i class="icon icon--search-ll-active"></i>Поиск события
-                                </h2>
-                                <div class="panel panel--messages">
+
+                                <div class="panel panel--search">
                                     <div class="panel__inner">
-                                        <div class="panel__item table-item">
-                                            <div class="panel__userpic"><a href=""><img class="rounded" src="assets/images/up-1.jpg" alt=""></a></div>
-                                            <div class="panel__message-wrapper">
-                                                <div class="panel__sender"><a href="" class="link link--blue link--bold">Иванов Иван</a></div>
-                                                <div class="panel__message"><a href="" class="link link--black italic-b">Привет, текст письма текст письма текст письма текст письма текст . . .</a></div>
+                                        <div class="panel__item panel__item--no-border">
+                                            <h2 class="headline headline--22 headline--blue-l">
+                                                <i class="icon icon--search-ll-active icon--mrg-r-15"></i>Поиск события
+                                            </h2>
+                                        </div>
+                                        <div class="panel__item panel__item--no-border form">
+                                            <div class="form__row form__row--mrg-b-50 row">
+                                                <div class="form__col col-12 col-md-5">
+                                                    <input type="checkbox" class="form__checkbox" id="search--all"><label  class="form__label form__label-s" for="search--all">Искать по всем
+                                                    подписчикам</label>
+                                                </div>
+                                                <div class="form__col col-12 col-md-7">
+                                                    <a class="btn btn--blue-ll btn--s btn--full" href="">Выбрать из списка</a>
+                                                </div>
                                             </div>
-                                            <div class="panel__time">
-                                                12:05
+                                            <div class="form__row">
+                                                <label class="form__label" for=""><i class="icon icon--calendar-s"></i>Дата</label> <span class="form__label-m">с</span><input class="form__input form__input-s" type="text"><span class="form__label-m">по</span><input class="form__input form__input-s" type="text">
+
                                             </div>
-                                            <div class="panel__status-icon">
-                                                <i class="icon icon--cancel-s"></i>
+                                            <div class="form__row">
+                                                <label class="form__label" for=""><i class="icon icon--clock-s"></i>Время </label><span class="form__label-m">с</span> <input class="form__input form__input-s" type="text"><label for=""></label><span class="form__label-m">по</span><input class="form__input form__input-s" type="text">
+                                            </div>
+                                            <div class="form__row">
+                                                <label class="form__label" for="">Метки:</label>
+                                                <ul class="form__tags-list">
+                                                    <li class="form__tags-item"><a class="form__tags-link"href="">Событие</a></li>
+                                                    <li class="form__tags-item"><a class="form__tags-link" href="">Добавить +</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="form__row form__row--mrg-b-50">
+                                                <label class="form__label" for="">Ключевое слово:</label>
+                                                <div class="form__group">
+                                                    <i class="icon icon--edit-sss icon--input"></i>
+                                                    <input class="form__input form__input-icon" type="text" placeholder="Добавить одно или несколько слов">
+                                                    <div class="form__desc">Искать ключевые слова в содержании события</div>
+                                                </div>
+                                            </div>
+                                            <div class="form__row search-page__submit">
+                                                <a class="btn btn--m btn--centered btn--green" href="">Поиск</a>
                                             </div>
                                         </div>
                                     </div>

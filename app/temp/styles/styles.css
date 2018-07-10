@@ -2305,6 +2305,10 @@ h1, h2, h3, h4, h5 {
     word-wrap: break-word;
 }
 
+input {
+    outline: none !important;
+}
+
 label {
     margin: 0;
 }
@@ -2328,6 +2332,12 @@ ul {
     padding: 0;
 }
 
+ul li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
 a:focus {
         outline: none;
     }
@@ -2344,9 +2354,189 @@ a:focus {
     border-radius: 50%;
 }
 
+.form {
+    color: #788086;
+
+
+}
+
 .form input {
         box-shadow: none;
         border: 1px solid #95a5a6;
+    }
+
+.form__label {
+        font-family: 'Myriad Pro Semibold';
+        color: #788086;
+        line-height: 1.2;
+        margin-right: 15px;
+        margin-right: 20px;
+        display: block;
+        flex-basis: 100%;
+        margin-bottom: 10px;
+    }
+
+@media (min-width: 768px) {
+
+.form__label {
+            text-align: right;
+            flex-basis: 100px;
+            flex-shrink: 0;
+            margin-bottom: 0
+    }
+    }
+
+@media (min-width: 992px) {
+
+.form__label {
+            flex-basis: 125px
+    }
+    }
+
+.form__label span {
+            font-family: 'Myriad Pro Regular';
+        }
+
+.form__row {
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+    }
+
+@media (min-width: 768px) {
+
+.form__row {
+            margin-bottom: 30px;
+            align-items: center
+
+    }
+    }
+
+@media (min-width: 992px) {
+
+.form__row {
+            padding: 0 30px
+
+    }
+    }
+
+.form__row--mrg-b-50 {
+            margin-bottom: 30px;
+        }
+
+@media (min-width: 768px) {
+
+.form__row--mrg-b-50 {
+                margin-bottom: 50px
+        }
+    }
+
+.form__row .icon {
+            margin-right: 10px;
+        }
+
+.form__label-s {
+        font-size: 0.875rem;
+        font-family: 'Myriad Pro Regular';
+        text-align: left;
+    }
+
+.form__label-m {
+        flex-basis: 15%;
+        margin-bottom: 10px;
+        padding-right: 10px;
+        text-align: right;
+    }
+
+@media (min-width: 576px) {
+
+.form__label-m {
+            flex-basis: 10%
+    }
+    }
+
+@media (min-width: 768px) {
+
+.form__label-m {
+            margin-bottom: 0;
+            text-align: left;
+            flex-basis: auto
+    }
+    }
+
+.form__input {
+        font-size: 0.75rem;
+        padding: 8px 10px;
+        width: 100%;
+        flex-basis: 85%;
+        margin-bottom: 10px;
+    }
+
+@media (min-width: 576px) {
+
+.form__input {
+            flex-basis: 40%
+    }
+    }
+
+@media (min-width: 768px) {
+
+.form__input {
+            margin-bottom: 0;
+            flex-basis: auto;
+            margin-right: 10px
+    }
+    }
+
+.form__input-s {
+        width: 115px;
+    }
+
+.form__input-icon {
+        padding-left: 30px;
+    }
+
+.form__col {
+        display: flex;
+    }
+
+.form__checkbox {
+        margin-right: 15px;
+        margin-bottom: 10px;
+        position: relative;
+        top: -1px;
+    }
+
+@media (min-width: 768px) {
+
+.form__checkbox {
+            margin-bottom: 0
+    }
+    }
+
+.form__tags-item {
+        display: inline-block;
+    }
+
+.form__tags-link {
+        text-decoration: underline;
+        color: #788086 !important; 
+        margin-right: 10px;
+        font-size: 0.875rem;
+    }
+
+.form__group {
+        position: relative;
+        flex-grow: 1;
+    }
+
+.form__desc {
+        font-size: 0.75rem;
+        position: relative;
+        top: 5px;
+        text-align: center;
     }
 
 .link:hover {
@@ -2387,6 +2577,8 @@ a:focus {
     text-decoration: none !important;
     text-align: center;
     transition: all .3s;
+
+
 }
 
 .btn--rnd {
@@ -2418,9 +2610,23 @@ a:focus {
     }
     }
 
+.btn--s {
+        font-size: 0.875rem;
+        padding: 8px 20px 7px 40px;
+    }
+
 .btn--xs {
         padding: 5px 15px;
         font-size: 0.8125rem;
+    }
+
+.btn--m {
+        font-size: 0.8125rem;
+        padding: 7px 35px;
+    }
+
+.btn--full {
+        width: 100%;
     }
 
 .btn--orng {
@@ -2451,6 +2657,28 @@ a:focus {
 
 .btn--blue-l:hover {
             background: #558EB8;
+        }
+
+.btn--blue-ll {
+        border-radius: 6px;
+        border: 1px solid #dce0e0;
+        background-color: #ecf0f1;
+        color: #8a949b;
+        display: block;
+        text-align: left;
+    }
+
+.btn--blue-ll:hover {
+            color:  #8a949b;
+        }
+
+.btn--green {
+        color: #fff !important;
+        background-color: #17a14b;
+    }
+
+.btn--green:hover {
+            background-color: #20af56;
         }
 
 .btn--icn {
@@ -2500,6 +2728,10 @@ a:focus {
 .btn__icon {
             margin-right: 15px 
     }
+    }
+
+.btn--centered {
+        margin: 0 auto;
     }
 
 .checklist {
@@ -3679,7 +3911,7 @@ a:focus {
         background: #fff;
         height: 100%;
         width: 100%;
-        z-index: 1000;
+        z-index: 10000;
     }
 
 @media (min-width: 768px) {
@@ -4708,6 +4940,8 @@ a:focus {
 
 .panel {
     padding-bottom: 45px;
+
+
 }
 
 .panel__inner {
@@ -4731,6 +4965,44 @@ a:focus {
 .panel__item:hover .panel__status-icon {
                 opacity: 1 !important;
             }
+
+.panel__item--no-border {
+            border-bottom: none !important;
+            padding: 0 20px 20px;
+            display: block;
+        }
+
+@media (min-width: 768px) {
+
+.panel__item--no-border {
+                padding: 0 45px 20px
+        }
+    }
+
+@media (min-width: 992px) {
+
+.panel__item--no-border {
+                padding: 0 45px 20px
+        }
+    }
+
+.panel__item--no-border:first-child {
+                padding-top: 20px;
+            }
+
+@media (min-width: 768px) {
+
+.panel__item--no-border:first-child {
+                    padding-top: 35px
+            }
+    }
+
+@media (min-width: 768px) {
+
+.panel__item--no-border:last-child {
+                    padding-bottom: 45px
+            }
+    }
 
 .panel__status-icon {
 
@@ -4936,3 +5208,13 @@ a:focus {
             min-width: 100%;
             height: auto;
         }
+
+.icon--mrg-r-15 {
+        margin-right: 12px;
+    }
+
+.icon--input {
+        position: absolute;
+        top: 12px;
+        left: 10px;
+    }

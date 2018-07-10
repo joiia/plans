@@ -12,6 +12,10 @@ h1, h2, h3, h4, h5 {
     word-wrap: break-word;
 }
 
+input {
+    outline: none !important;
+}
+
 label {
     margin: 0;
 }
@@ -33,6 +37,12 @@ i {
 ul {
     margin: 0;
     padding: 0;
+    
+    li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
 }
 
 a {
@@ -52,3 +62,4 @@ a {
 .rounded {
     border-radius: 50%;
 }
+

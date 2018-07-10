@@ -1,7 +1,155 @@
 .form {
+    color: #788086;
+
     input {
         box-shadow: none;
         border: 1px solid $grey-l;
     }
-    
+
+    &__label {
+        font-family: $bold;
+        color: #788086;
+        line-height: 1.2;
+        margin-right: 15px;
+        margin-right: 20px;
+        display: block;
+        flex-basis: 100%;
+        margin-bottom: 10px;
+
+        @mixin atM {
+            text-align: right;
+            flex-basis: 100px;
+            flex-shrink: 0;
+            margin-bottom: 0;
+        }
+        
+        @mixin atL {
+            flex-basis: 125px;
+        }
+        
+        span {
+            font-family: $regular;
+        }
+    }
+
+    &__row {
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        @mixin atM {
+            margin-bottom: 30px;
+            align-items: center;
+        }
+        
+        @mixin atL {
+            padding: 0 30px;
+        }
+
+        &--mrg-b-50 {
+            margin-bottom: 30px;
+
+            @mixin atM {
+                margin-bottom: 50px;
+
+            }
+        }
+
+        .icon {
+            margin-right: 10px;
+        }
+
+    }
+
+    &__label-s {
+        font-size: $px14;
+        font-family: $regular;
+        text-align: left;
+    }
+
+    &__label-m {
+        flex-basis: 15%;
+        margin-bottom: 10px;
+        padding-right: 10px;
+        text-align: right;
+
+        @mixin atS {
+            flex-basis: 10%;
+        }
+
+        @mixin atM {
+            margin-bottom: 0;
+            text-align: left;
+            flex-basis: auto;
+        }
+    }
+
+    &__input {
+        font-size: $px12;
+        padding: 8px 10px;
+        width: 100%;
+        flex-basis: 85%;
+        margin-bottom: 10px;
+
+        @mixin atS {
+            flex-basis: 40%;
+        }
+
+        @mixin atM {
+            margin-bottom: 0;
+            flex-basis: auto;
+            margin-right: 10px;
+        }
+    }
+
+    &__input-s {
+        width: 115px;
+    }
+
+    &__input-icon {
+        padding-left: 30px;
+    }
+
+
+
+    &__col {
+        display: flex;
+    }
+
+    &__checkbox {
+        margin-right: 15px;
+        margin-bottom: 10px;
+        position: relative;
+        top: -1px;
+
+        @mixin atM {
+            margin-bottom: 0;
+        }
+    }
+
+    &__tags-item {
+        display: inline-block;
+    }
+
+    &__tags-link {
+        text-decoration: underline;
+        color: #788086 !important; 
+        margin-right: 10px;
+        font-size: $px14;
+    }
+
+    &__group {
+        position: relative;
+        flex-grow: 1;
+    }
+
+    &__desc {
+        font-size: $px12;
+        position: relative;
+        top: 5px;
+        text-align: center;
+    }
+
+
 }

@@ -23,6 +23,34 @@
                 opacity: 1 !important;
             }
         }
+
+        &--no-border {
+            border-bottom: none !important;
+            padding: 0 20px 20px;
+            display: block;
+
+            @mixin atM {
+                padding: 0 45px 20px;
+            }
+            
+            @mixin atL {
+                padding: 0 45px 20px;
+            }
+
+            &:first-child {
+                padding-top: 20px;
+                
+                @mixin atM {
+                    padding-top: 35px;
+                }
+            }
+
+            &:last-child {
+                @mixin atM {
+                    padding-bottom: 45px;
+                }
+            }
+        }
     }
 
     &__status-icon {
@@ -139,7 +167,7 @@
         position: relative;
         margin-right: 10px;
         margin-bottom: 10px;
-        
+
         @mixin atM {
             margin-bottom: 0; 
         }
@@ -171,5 +199,7 @@
 
         }
     }
+
+
 }
 
