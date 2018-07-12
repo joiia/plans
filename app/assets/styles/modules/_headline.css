@@ -85,7 +85,7 @@
 
     &--blue {
         color: $blue;
-    }
+    } 
 
     &--orng {
         color: $orange-d;
@@ -93,6 +93,10 @@
     
     &--pink {
         color: $pink;
+    }
+    
+    &--white {
+        color: #fff !important;
     }
 
     &--bold {

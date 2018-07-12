@@ -6,9 +6,9 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background: rgba(255,255,255, .94);
     transition: all 0.5s ease-out;
-    
+    z-index: -1;
+
     &__close {
         position: absolute;
         top: 15px;
@@ -19,9 +19,34 @@
         font-size: 1.4rem;
         transition: all 0.5s ease-out;
     }
-    
+
     &--is-visible {
         opacity: 1;
         z-index: 5;
+        z-index: 100000;
+    }
+
+    &__bg {
+        background: rgba(0,0,0, .5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+    }
+
+    &__inner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 2;
+    }
+    
+    &__panel {
+        background: #fff;
+        padding: 35px;
+        border-radius: 5px;
     }
 }

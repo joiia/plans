@@ -2,113 +2,113 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title></title>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    
+    <!-- build:css assets/styles/styles.css -->
+    <link rel="stylesheet" href="temp/styles/styles.css">
+    <!-- endbuild -->
+    
+    <!-- build:js assets/scripts/Vendor.js -->
+    <script src="temp/scripts/Vendor.js"></script>
+    <!-- endbuild -->
+</head>
 
-        <!-- build:css assets/styles/styles.css -->
-        <link rel="stylesheet" href="temp/styles/styles.css">
-        <!-- endbuild -->
-
-        <!-- build:js assets/scripts/Vendor.js -->
-        <script src="temp/scripts/Vendor.js"></script>
-        <!-- endbuild -->
-    </head>
-
-    <body>
-
-        <header class="site-header">
-            <div class="container">
-                <div class="row no-gutters">
-                    <div class="col-3 col-lg-2">
-                        <a class="site-header__logo icon icon--logo" href=""></a>
-                    </div>
-                    <div class="col-7 col-lg-8">
-                        <div class="site-header__search">
-                            <div class="site-header__search-inner">
-                                <input type="text" placeholder="Найти людей, школу, события">
-                                <input type="submit">
-                                <div class="icon icon--search"> </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="site-header__user-menu">
-                            <a href="">Выйти
-                                <div class="site-header__exit-wrapper"><div class="icon icon--exit site-header__exit"></div></div></a>
-                        </div>
-                        <div class="site-header__menu-icon">
-                            <div class="site-header__menu-icon__middle"></div>
+<body>
+   
+    <header class="site-header">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-3 col-lg-2">
+                    <a class="site-header__logo icon icon--logo" href=""></a>
+                </div>
+                <div class="col-7 col-lg-8">
+                    <div class="site-header__search">
+                        <div class="site-header__search-inner">
+                            <input type="text" placeholder="Найти людей, школу, события">
+                            <input type="submit">
+                            <div class="icon icon--search"> </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-2">
+                    <div class="site-header__user-menu">
+                        <a href="">Выйти
+                        <div class="site-header__exit-wrapper"><div class="icon icon--exit site-header__exit"></div></div></a>
+                    </div>
+                    <div class="site-header__menu-icon">
+                           <div class="site-header__menu-icon__middle"></div>
+                    </div>
+                </div>
             </div>
-        </header>
-        <!-- endinject -->
+        </div>
+    </header>
+<!-- endinject -->
         <!-- inject:page-head:html -->
         <div class="page-head">
-            <div class="page-section page-section--blue-d user-info">
-                <div class="container">
-                    <div class="row no-gutters">
-                        <div class="col-3 col-md-2">
-                            <div class="user-info__photo"> <img src="assets/images/photo.jpg" alt=""> </div>
-                        </div>
-                        <div class="col-9 col-md-10">
-                            <div class="row no-gutters">
-                                <div class="col-12 col-md-6">
-                                    <div class="user-info__about">
-                                        <h2 class="headline headline--22 user-info__name">Петр <span>Иванов</span></h2>
-                                        <table class="user-info__table">
-                                            <tr>
-                                                <td>Школа №</td>
-                                                <td>2017</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Класс</td>
-                                                <td>10А</td>
-                                            </tr>
-                                        </table>
-                                        <div class="user-info__edit"> <a href=""><i class="icon icon--edit-ss"></i>Редактировать</a> </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <div class="user-info__subs-wrap">
-                                        <div class="user-info__subs"> подписки <span>920</span> </div>
-                                        <div class="user-info__subs"> подписчики <span>723</span> </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <div class="page-section page-section--blue-d user-info">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-3 col-md-2">
+                    <div class="user-info__photo"> <img src="assets/images/photo.jpg" alt=""> </div>
                 </div>
-            </div>
-            <div class="page-section page-section--blue page-section--pd-t-xs ">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-sm-7">
-                            <div class="checklist">
-                                <div class="checklist__title">Фильтр</div>
-                                <div class="checklist__item">
-                                    <input id="checklist__item-1" class="checklist__item-checkbox" type="checkbox">
-                                    <label for="checklist__item-1" class="checklist__item-text"> Общие школьные новости </label>
-                                </div>
-                                <div class="checklist__item">
-                                    <input id="checklist__item-2" class="checklist__item-checkbox" type="checkbox">
-                                    <label for="checklist__item-2" class="checklist__item-text"> Новости для: 10, 11 класса </label>
-                                </div>
-                                <div class="checklist__item">
-                                    <input id="checklist__item-3" class="checklist__item-checkbox" type="checkbox">
-                                    <label for="checklist__item-3" class="checklist__item-text"> Расписание: 10А </label>
-                                </div>
+                <div class="col-9 col-md-10">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-md-6">
+                            <div class="user-info__about">
+                                <h2 class="headline headline--22 user-info__name">Петр <span>Иванов</span></h2>
+                                <table class="user-info__table">
+                                    <tr>
+                                        <td>Школа №</td>
+                                        <td>2017</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Класс</td>
+                                        <td>10А</td>
+                                    </tr>
+                                </table>
+                                <div class="user-info__edit"> <a href=""><i class="icon icon--edit-ss"></i>Редактировать</a> </div>
                             </div>
                         </div>
-                        <div class="col-sm-5">
-                            <a href="" class="btn btn--right btn--rnd btn--orng btn--lg btn--icn btn--mrg-t"> <i class="icon icon--edit btn__icon"></i>Создать событие</a>
+                        <div class="col-12 col-md-6">
+                            <div class="user-info__subs-wrap">
+                                <div class="user-info__subs"> подписки <span>920</span> </div>
+                                <div class="user-info__subs"> подписчики <span>723</span> </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="page-section page-section--blue page-section--pd-t-xs ">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-7">
+                    <div class="checklist">
+                        <div class="checklist__title">Фильтр</div>
+                        <div class="checklist__item">
+                            <input id="checklist__item-1" class="checklist__item-checkbox" type="checkbox">
+                            <label for="checklist__item-1" class="checklist__item-text"> Общие школьные новости </label>
+                        </div>
+                        <div class="checklist__item">
+                            <input id="checklist__item-2" class="checklist__item-checkbox" type="checkbox">
+                            <label for="checklist__item-2" class="checklist__item-text"> Новости для: 10, 11 класса </label>
+                        </div>
+                        <div class="checklist__item">
+                            <input id="checklist__item-3" class="checklist__item-checkbox" type="checkbox">
+                            <label for="checklist__item-3" class="checklist__item-text"> Расписание: 10А </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <a href="" class="open-modal--add-event btn btn--right btn--rnd btn--orng btn--lg btn--icn btn--mrg-t"> <i class="icon icon--edit btn__icon"></i>Создать мероприятие</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
         <!-- endinject -->
         <div class="page page--user-profile">
             <div class="page-section page-section--grd page-section--pd-no">
@@ -215,11 +215,66 @@
             </div>
         </div>
         <!-- inject:footer:html -->
-        <!-- build:js assets/scripts/App.js -->
-        <script src="temp/scripts/App.js"></script>
-        <!-- endbuild -->
+            
+    
+    
 
-    </body>
+
+<div class="modal modal--add-event">
+    <div class="modal__inner">
+        <h2 class="headline headline--white headline--20">Новое мероприятие</h2>
+        <div class="modal__panel">
+            <div class="form">
+                <div class="form__row">
+                    <label for="" class="form__label">Название:</label>
+                    <div class="form__input-wrapper">
+                        <i class="icon icon--edit-sss icon--input"></i>
+                        <input class="form__input form__input-icon" type="text" placeholder="">
+                    </div>
+                </div>
+                <div class="form__row">
+                    <label for="" class="form__label">Описание:</label>
+                    <div class="form__input-wrapper">
+                        <i class="icon icon--edit-sss icon--input"></i>
+                        <input class="form__input form__input-icon" type="text" placeholder="">
+                    </div>
+                </div>
+                <div class="form__row">
+                    <label for="" class="form__label">Местонахождение:</label>
+                    <div class="form__input-wrapper">
+                        <i class="icon icon--edit-sss icon--input"></i>
+                        <input class="form__input form__input-icon" type="text" placeholder="">
+                    </div>
+                </div>
+                <div class="form__row">
+                    <div class="post__add-media"><a href=""><i class="icon icon--add-media"></i>Добавить фото/видео мероприятия</a></div>
+                </div>
+                <div class="form__row">
+                    <label for="" class="form__label">Дата/Время:</label>
+                    <div class="form__input-wrapper">
+                        <i class="icon icon--calendar-s icon--input"></i>
+                        <input class="form__input form__input-icon" type="text" placeholder="">
+                    </div>
+                    <div class="form__input-wrapper">
+                        <i class="icon icon--clock-s icon--input"></i>
+                        <input class="form__input form__input-icon" type="text" placeholder="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal__bg"></div>
+</div>
+
+<!-- build:js assets/scripts/App.js -->
+<script src="temp/scripts/App.js"></script>
+<!-- endbuild -->
+
+</body>
 
 </html>
+            
+    
+    
+
 <!-- endinject -->

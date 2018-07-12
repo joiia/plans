@@ -22,11 +22,11 @@
             flex-shrink: 0;
             margin-bottom: 0;
         }
-        
+
         @mixin atL {
             flex-basis: 125px;
         }
-        
+
         span {
             font-family: $regular;
         }
@@ -42,7 +42,7 @@
             margin-bottom: 30px;
             align-items: center;
         }
-        
+
         @mixin atL {
             padding: 0 30px;
         }
@@ -111,7 +111,9 @@
         padding-left: 30px;
     }
 
-
+    &__input-wrapper {
+        position: relative;
+    }
 
     &__col {
         display: flex;
@@ -150,6 +152,23 @@
         position: relative;
         top: 5px;
         text-align: center;
+    }
+
+    &__input-g {
+        transition: all .3s;
+
+        +.icon--g {
+           transition: all .3s;
+           z-index: 10;
+           opacity: 0;
+        }
+
+        &:focus {
+            background: $green-ll;
+            +.icon--g {
+                opacity: 1;
+            }
+        }
     }
 
 
