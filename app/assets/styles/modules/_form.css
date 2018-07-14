@@ -5,11 +5,69 @@
         box-shadow: none;
         border: 1px solid $grey-l;
     }
+    
+    &__select {
+        box-shadow: none;
+        border: 1px solid $grey-l;
+        font-size: $px12;
+        padding: 8px 10px;
+        outline: none !important;
+        width: 100%;
+    }
+    
+    &__option {
+        border: 1px solid $grey-l;
+        font-size: $px12;
+        padding: 8px 10px !important;
+    }
 
+    &__row {
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        @mixin atM {
+            margin-bottom: 30px;
+        }
+
+        @mixin atL {
+            padding: 0 30px;
+        }
+        
+        &--baseline {
+            align-items: baseline;
+        }
+
+        &--mrg-b-50 {
+            margin-bottom: 30px;
+
+            @mixin atM {
+                margin-bottom: 50px;
+
+            }
+        }
+        
+        &--mrg-b-s {
+            margin-bottom: 15px;
+            
+            @mixin atM {
+                margin-bottom: 15px;
+
+            }
+        }
+
+        .icon {
+            margin-right: 10px;
+        }
+
+    }
+    
     &__label {
         font-family: $bold;
         color: #788086;
         line-height: 1.2;
+        min-height: 21px;
         margin-right: 15px;
         margin-right: 20px;
         display: block;
@@ -30,40 +88,22 @@
         span {
             font-family: $regular;
         }
-    }
-
-    &__row {
-        margin-bottom: 20px;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-
-        @mixin atM {
-            margin-bottom: 30px;
-            align-items: center;
+        
+        &--mrg-no {
+            margin: 0 !important;
         }
-
-        @mixin atL {
-            padding: 0 30px;
-        }
-
-        &--mrg-b-50 {
-            margin-bottom: 30px;
-
-            @mixin atM {
-                margin-bottom: 50px;
-
-            }
-        }
-
-        .icon {
-            margin-right: 10px;
-        }
-
     }
 
     &__label-s {
         font-size: $px14;
+        font-family: $regular;
+        text-align: left;
+        line-height: 1.2;
+        min-height: 21px;
+    }
+    
+    &__label-xs {
+        font-size: $px12;
         font-family: $regular;
         text-align: left;
     }
@@ -73,6 +113,8 @@
         margin-bottom: 10px;
         padding-right: 10px;
         text-align: right;
+        line-height: 1.2;
+        min-height: 21px;
 
         @mixin atS {
             flex-basis: 10%;
@@ -113,6 +155,7 @@
 
     &__input-wrapper {
         position: relative;
+        width: 100%;
     }
 
     &__col {
@@ -125,9 +168,14 @@
         margin-bottom: 10px;
         position: relative;
         top: -1px;
+        vertical-align: middle;
 
         @mixin atM {
             margin-bottom: 0;
+        }
+        
+        &--mrg-r-s {
+            margin-right: 5px;;
         }
     }
 
@@ -158,9 +206,9 @@
         transition: all .3s;
 
         +.icon--g {
-           transition: all .3s;
-           z-index: 10;
-           opacity: 0;
+            transition: all .3s;
+            z-index: 10;
+            opacity: 0;
         }
 
         &:focus {
@@ -170,6 +218,7 @@
             }
         }
     }
+    
 
 
 }

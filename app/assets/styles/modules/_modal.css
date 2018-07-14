@@ -27,7 +27,7 @@
     }
 
     &__bg {
-        background: rgba(0,0,0, .5);
+        background: rgba(0,0,0, .7);
         position: absolute;
         top: 0;
         left: 0;
@@ -42,6 +42,8 @@
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
         z-index: 2;
+        width: 670px;
+        max-width: 80%;
     }
     
     &__panel {

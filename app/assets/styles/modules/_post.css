@@ -70,6 +70,7 @@
     
     &__add-media {
         margin-bottom: 15px;
+
         
         i {
             margin-right: 5px;
@@ -80,6 +81,10 @@
                 margin-top: 25px;
                 margin-left: 20px;
             }
+        }
+        
+        &--mrg-b-no {
+            margin-bottom: 0;
         }
     }
     

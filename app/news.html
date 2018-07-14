@@ -89,16 +89,19 @@
                     <div class="checklist">
                         <div class="checklist__title">Фильтр</div>
                         <div class="checklist__item">
-                            <input id="checklist__item-1" class="checklist__item-checkbox" type="checkbox">
-                            <label for="checklist__item-1" class="checklist__item-text"> Общие школьные новости </label>
+                            <label for="checklist__item-1" class="checklist__item-text"> 
+                                <input id="checklist__item-1" class="checklist__item-checkbox" type="checkbox">Общие школьные новости 
+                            </label>
                         </div>
                         <div class="checklist__item">
-                            <input id="checklist__item-2" class="checklist__item-checkbox" type="checkbox">
-                            <label for="checklist__item-2" class="checklist__item-text"> Новости для: 10, 11 класса </label>
+                            <label for="checklist__item-2" class="checklist__item-text"> 
+                                <input id="checklist__item-2" class="checklist__item-checkbox" type="checkbox">Новости для: 10, 11 класса 
+                            </label>
                         </div>
                         <div class="checklist__item">
-                            <input id="checklist__item-3" class="checklist__item-checkbox" type="checkbox">
-                            <label for="checklist__item-3" class="checklist__item-text"> Расписание: 10А </label>
+                            <label for="checklist__item-3" class="checklist__item-text"> 
+                                <input id="checklist__item-3" class="checklist__item-checkbox" type="checkbox">Расписание: 10А 
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -314,54 +317,146 @@
 
 
 
-<div class="modal modal--add-event">
-    <div class="modal__inner">
-        <h2 class="headline headline--white headline--20">Новое мероприятие</h2>
-        <div class="modal__panel">
-            <div class="form">
-                <div class="form__row">
-                    <label for="" class="form__label">Название:</label>
-                    <div class="form__input-wrapper">
-                        <i class="icon icon--edit-sss icon--input"></i>
-                        <input class="form__input form__input-icon" type="text" placeholder="">
-                    </div>
-                </div>
-                <div class="form__row">
-                    <label for="" class="form__label">Описание:</label>
-                    <div class="form__input-wrapper">
-                        <i class="icon icon--edit-sss icon--input"></i>
-                        <input class="form__input form__input-icon" type="text" placeholder="">
-                    </div>
-                </div>
-                <div class="form__row">
-                    <label for="" class="form__label">Местонахождение:</label>
-                    <div class="form__input-wrapper">
-                        <i class="icon icon--edit-sss icon--input"></i>
-                        <input class="form__input form__input-icon" type="text" placeholder="">
-                    </div>
-                </div>
-                <div class="form__row">
-                    <div class="post__add-media"><a href=""><i class="icon icon--add-media"></i>Добавить фото/видео мероприятия</a></div>
-                </div>
-                <div class="form__row">
-                    <label for="" class="form__label">Дата/Время:</label>
-                    <div class="form__input-wrapper">
-                        
-                        <input class="form__input form__input-icon form__input-g" type="text" placeholder="">
-                        <i class="icon icon--calendar-ss-g icon--input icon--g"></i>
-                        <i class="icon icon--calendar-ss icon--input"></i>
-                    </div>
-                    <div class="form__input-wrapper">
-                        <input class="form__input form__input-icon form__input-g" type="text" placeholder="">
-                        <i class="icon icon--clock-ss-g icon--input icon--g"></i>
-                        <i class="icon icon--clock-ss icon--input"></i>
+
+
+        <div class="modal modal--add-event">
+            <div class="modal__inner">
+                <h2 class="headline headline--white headline--20">Новое мероприятие</h2>
+                <div class="modal__panel">
+                    <div class="form">
+                        <div class="form__row form__row--mrg-b-s row">
+                            <div class="col col-md-4 form__col justify-content-end">
+                                <label for="" class="form__label form__label--mrg-no">Название:</label>
+                            </div>
+                            <div class="col col-md-8 form__col">
+                                <div class="form__input-wrapper">
+                                    <i class="icon icon--edit-sss icon--input"></i>
+                                    <input class="form__input form__input-icon" type="text" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__row form__row--mrg-b-s row">
+                            <div class="col col-md-4 form__col justify-content-end">
+                                <label for="" class="form__label form__label--mrg-no">Описание:</label>
+                            </div>
+                            <div class="col col-md-8 form__col">
+                                <div class="form__input-wrapper">
+                                    <i class="icon icon--edit-sss icon--input"></i>
+                                    <input class="form__input form__input-icon" type="text" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__row form__row--mrg-b-s row">
+                            <div class="col col-md-4 form__col justify-content-end">
+                                <label for="" class="form__label form__label--mrg-no">Местонахождение:</label>
+                            </div>
+                            <div class="col col-md-8 form__col">
+                                <div class="form__input-wrapper">
+                                    <i class="icon icon--edit-sss icon--input"></i>
+                                    <input class="form__input form__input-icon" type="text" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__row form__row--mrg-b-s row no-gutters">
+                            <div class="col form__col justify-content-center">
+                                <div class="post__add-media post__add-media--mrg-b-no"><a class="link link--grey-l link--m" href=""><i class="icon icon--add-media"></i>Добавить фото/видео мероприятия</a></div>
+                            </div>
+                            <div class="col form__col justify-content-center">
+                                <a href="" class="btn btn--blue btn--icon btn--m btn--rnd-s">Загрузить фото/видео</a>
+                            </div>
+                        </div>
+                        <div class="form__row form__row--mrg-b-s row">
+                            <div class="col col-md-4 form__col justify-content-end">
+                                <label for="" class="form__label form__label--mrg-no">Дата/Время:</label>
+                            </div>
+                            <div class="col col-md-4 form__col">
+                                <div class="form__input-wrapper">
+                                    <input class="form__input form__input-icon form__input-g" type="text" placeholder="">
+                                    <i class="icon icon--calendar-ss-g icon--input icon--g"></i>
+                                    <i class="icon icon--calendar-ss icon--input"></i>
+                                </div>          
+                            </div>
+                            <div class="col col-md-4 form__col">
+                                <div class="form__input-wrapper">
+                                    <input class="form__input form__input-icon form__input-g" type="text" placeholder="">
+                                    <i class="icon icon--clock-ss-g icon--input icon--g"></i>
+                                    <i class="icon icon--clock-ss icon--input"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__row form__row--mrg-b-s row no-gutters">
+                            <div class="form__col col offset-md-3 col-md-4">
+                                <label for="event__finish-date" class="form__label-xs"> 
+                                    <input id="event__finish-date" type="checkbox" class="form__checkbox form__checkbox--mrg-r-s">Добавить дату окончания
+                                </label>
+                            </div>
+                            <div class="form__col col col-md-4">
+                                <label for="event__finish-time" class="form__label-xs"> 
+                                    <input id="event__finish-time" type="checkbox" class="form__checkbox form__checkbox--mrg-r-s">Добавить время окончания
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form__row form__row--mrg-b-s row">
+                            <div class="form__col col offset-md-4 col-md-4">
+                                <div class="form__input-wrapper">
+                                    <input class="form__input form__input-icon form__input-g" type="text" placeholder="">
+                                    <i class="icon icon--calendar-ss-g icon--input icon--g"></i>
+                                    <i class="icon icon--calendar-ss icon--input"></i>
+                                </div>
+                            </div>
+                            <div class="form__col col col-md-4">
+                                <div class="form__input-wrapper">
+                                    <input class="form__input form__input-icon form__input-g" type="text" placeholder="">
+                                    <i class="icon icon--clock-ss-g icon--input icon--g"></i>
+                                    <i class="icon icon--clock-ss icon--input"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__row form__row--mrg-b-s row">
+                            <div class="col col-md-4 form__col justify-content-end">
+                                <label for="" class="form__label form__label--mrg-no">Частота:</label>
+                            </div>
+                            <div class="col col-md-8 form__col">
+                                <div class="form__input-wrapper">
+                                    <select class="form__select">
+                                        <option class="form__option">Однократное</option>
+                                        <option class="form__option">Ежедневное</option>
+                                        <option class="form__option">Еженедельное</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__row form__row--mrg-b-s">
+                            <div class="col col-md-4 form__col justify-content-end">
+                                <label for="" class="form__label form__label--mrg-no">Поставить ограничение:</label>
+                            </div>
+                            <div class="col col-md-8 form__col">
+                                <div class="form__input-wrapper">
+                                    <div class="form__label-xs">Можно присоединиться</div>
+                                    <label class="form__label-xs" for="event__join--yes"><input class="form__radio" id="event__join--yes" name="event__join" type="radio">Да</label>
+                                    <label class="form__label-xs" for="event__join--no"><input class="form__radio" id="event__join--no" name="event__join" type="radio">Нет</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__row form__row--mrg-b-s">
+                            <div class="col col-md-4 form__col justify-content-end">
+                                <label class="form__label form__label--mrg-no" for="">Метки:</label>
+                            </div>
+                            <div class="col col-md-8 form__col">
+                                <ul class="form__tags-list">
+                                    <li class="form__tags-item"><a class="form__tags-link"href="">Событие</a></li>
+                                    <li class="form__tags-item"><a class="form__tags-link" href="">Добавить +</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="form__row form__row--mrg-b-s">
+                            <a class="btn btn--m btn--centered btn--green" href="">Создать новое мероприятие</a>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="modal__bg"></div>
         </div>
-    </div>
-    <div class="modal__bg"></div>
-</div>
 
 <!-- build:js assets/scripts/App.js -->
 <script src="temp/scripts/App.js"></script>
@@ -373,6 +468,8 @@
             
     
     
+
+
 
 
 <!-- endinject -->

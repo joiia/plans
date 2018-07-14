@@ -7,13 +7,17 @@
     &--blue {
         color: $blue-l !important;
     }
-    
+
     &--black {
         color: #000 !important;
     }
-    
+
     &--green {
         color: $green !important;
+    }
+
+    &--grey-l {
+        color: $grey-l;
     }
 
     &--bold {
@@ -23,7 +27,11 @@
     &--underlined {
         text-decoration: underline !important;
     }
-    
+
+    &--m {
+        font-size: $px13;
+    }
+
     &--s {
         font-size: $px12;
     }
