@@ -42,7 +42,12 @@
 
     &--m {
         font-size: $px13;
-        padding: 7px 35px;
+        padding: 7px 30px;
+        
+        @mixin atM {
+             padding: 7px 35px;
+        }
+        
     }
 
     &--full {

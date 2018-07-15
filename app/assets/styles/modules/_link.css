@@ -17,7 +17,7 @@
     }
 
     &--grey-l {
-        color: $grey-l;
+        color: $grey-l !important;
     }
 
     &--bold {

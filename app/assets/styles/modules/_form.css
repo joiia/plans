@@ -5,7 +5,7 @@
         box-shadow: none;
         border: 1px solid $grey-l;
     }
-    
+
     &__select {
         box-shadow: none;
         border: 1px solid $grey-l;
@@ -14,7 +14,7 @@
         outline: none !important;
         width: 100%;
     }
-    
+
     &__option {
         border: 1px solid $grey-l;
         font-size: $px12;
@@ -26,6 +26,9 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        opacity: 1;
+        z-index: 1;
+        transition: all .3s;
 
         @mixin atM {
             margin-bottom: 30px;
@@ -34,7 +37,7 @@
         @mixin atL {
             padding: 0 30px;
         }
-        
+
         &--baseline {
             align-items: baseline;
         }
@@ -47,14 +50,30 @@
 
             }
         }
-        
+
         &--mrg-b-s {
             margin-bottom: 15px;
-            
+
             @mixin atM {
                 margin-bottom: 15px;
 
             }
+        }
+
+        &--mrg-b-m {
+            margin-bottom: 20px;
+
+            @mixin atM {
+                margin-bottom: 20px;
+
+            }
+        }
+
+        &--is-hidden {
+            opacity: 0;
+            z-index: -1;
+            margin: 0;
+
         }
 
         .icon {
@@ -62,7 +81,7 @@
         }
 
     }
-    
+
     &__label {
         font-family: $bold;
         color: #788086;
@@ -88,9 +107,18 @@
         span {
             font-family: $regular;
         }
-        
+
         &--mrg-no {
             margin: 0 !important;
+        }
+
+        &--radio {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        &--checkbox {
+            cursor: pointer;
         }
     }
 
@@ -101,7 +129,7 @@
         line-height: 1.2;
         min-height: 21px;
     }
-    
+
     &__label-xs {
         font-size: $px12;
         font-family: $regular;
@@ -143,6 +171,12 @@
             flex-basis: auto;
             margin-right: 10px;
         }
+        
+        &--mrg-b-no {
+            margin-bottom: 0;
+        }
+
+
     }
 
     &__input-s {
@@ -165,15 +199,15 @@
 
     &__checkbox {
         margin-right: 15px;
-        margin-bottom: 10px;
         position: relative;
         top: -1px;
         vertical-align: middle;
+        cursor: pointer;
 
         @mixin atM {
             margin-bottom: 0;
         }
-        
+
         &--mrg-r-s {
             margin-right: 5px;;
         }
@@ -218,7 +252,28 @@
             }
         }
     }
-    
 
+    &__radio {
+        margin-right: 5px;
+        vertical-align: middle;
+        position: relative;
+        top: -1px;
+        cursor: pointer;
+    }
+
+    &__field {
+        transition: all .3s;
+        opacity: 1;
+        z-index: 2;
+        max-height: 50px;
+        top: 0;
+
+        &--is-hidden {
+            top: 0;
+            opacity: 0;
+            z-index: -1;
+            max-height: 0;
+        }
+    }
 
 }

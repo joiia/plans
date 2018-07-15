@@ -5,140 +5,153 @@
     border-bottom: 4px solid $blue-lll;
     margin-bottom: 20px;
     position: relative;
-    
+
     @mixin atS {
         padding: 0 20px 16px;
     }
-    
+
     @mixin atL {
         padding: 0 30px 16px;
         margin-bottom: 30px;
     }
-    
+
     &:last-child {
         border-bottom: none;
         margin-bottom: 0;
     }
-    
+
     a {
         color: $grey-l;
         text-decoration: none;
         transition: all .5s;
-        
+
         &:hover {
             color: $grey;
         }
     }
-    
+
     i {
         margin-right: 10px;
     }
-    
+
     &--news-item {
         padding-bottom: 0;
         padding: 0 10px 0;
-        
+
         @mixin atL {
             padding: 0 10px 0;
         }
-        
+
         .post__numbers-item {
             margin-right: 20px;
         }
     }
-    
+
     &__title {
         padding-right: 45px;
-        
+
         @mixin atM {
             padding-left: 15px;
             padding-right: 0;
         }
     }
-    
+
     &__content {
         color: $blue-lv;
         margin-bottom: 20px;
         padding-right: 45px;
-        
+
         @mixin atM {
             padding-left: 15px;
             margin-bottom: 30px;
             padding-right: 0;
         }
     }
-    
-    &__add-media {
-        margin-bottom: 15px;
 
-        
+    &__add-media {
+        position: relative;
+        margin-bottom: 25px;
+        padding-left: 60px;
+
         i {
             margin-right: 5px;
+            position: absolute;
+            top: -5px;
+            left: 0px;
         }
-        
+
+        a {
+            line-height: 1.2;
+            display: block;
+        }
+
         &--mrg {
             @mixin atM {
                 margin-top: 25px;
                 margin-left: 20px;
             }
         }
-        
+
         &--mrg-b-no {
-            margin-bottom: 0;
+            margin-bottom: 15px;
+            
+            @mixin atM {
+                margin-bottom: 0;
+            }
         }
     }
-    
+
     &__numbers {
         margin-bottom: 22px;
         font-size: 0;
         text-align: center;
-        
+
         @mixin atS {
             font-size: $px13;
             text-align: left;
         }
-        
+
         &-count {
             font-size: $px13;
             position: relative;
             top: 4px;
-            
+
             @mixin atS {
                 top: 0;
             }
         }
     }
-    
+
     &__numbers-item {
         margin-right: 35px;
-        
+
         &:last-child {
             margin-right: 0;
         }
     }
-    
+
     &__privacy {
         text-align: center;
         position: absolute;
         bottom: 15px;
         left: 15px;
-        
+
         @mixin atS {
             position: static;
             margin-bottom: 18px;
         }
-        
+
         i {
             top: -2px;
             margin-right: 3px;
-            
+
             @mixin atS {
                 margin-right: 10px;
             }
-            
+
         }
     }
-    
+
     &__privacy-item {
         margin-right: 15px;
         list-style: none;
@@ -146,11 +159,11 @@
         cursor: pointer;
         position: relative;
         display: none;
-        
+
         @mixin atS {
             display: inline-block;
         }
-        
+
         &:before {
             content: "";
             display: none;
@@ -162,64 +175,64 @@
             background-color: $grey-l;
             opacity: 0.74;
             border-radius: 50%;
-            
+
             @mixin atS {
                 display: block;
             }
         }
-        
+
         &:last-child {
             &:before {
                 display: none;
             }
         }
-        
+
         &:hover {
             color: $orange-d;
         }
     }
-    
+
     &__privacy-item--active {
         color: $orange-d;
         font-family: $bold;
         display: inline-block !important;
     }
-    
+
     &__actions {
         text-align: right;
         @mixin atM {
             text-align: center;
         }
     }
-    
+
     &__actions-item {
         font-size: 0;
         color: $blue-lg !important;
         margin-right: 10px;
-        
+
         @mixin atM {
             font-size: $px12;
             margin-right: 30px;
         }
-        
+
         @mixin atL {
             margin-right: 50px;
         }
-        
+
         &:last-child {
             margin-right: 0 !important;
         }
-        
+
         i {
             margin-right: 0;
-            
+
             @mixin atM {
                 margin-right: 8px;
             }
         }
-        
+
     }
-    
+
     &__status {
         position: absolute;
         top: -10px;
@@ -228,35 +241,35 @@
         text-align: center;
         font-size: 0;
         color: #a1a1a1;
-        
+
         @mixin atM {
             font-size: $px12;
             right: 20px;
         }
-        
+
         i {
             margin-right: 0;
             display: block;
             margin: 0 auto;
             margin-bottom: 5px;
         }
-        
+
         &--done {
             color: $orange-d;
         }
     }
-    
+
     &__media-wrapper-outer {
         margin-bottom: 16px;
         overflow: hidden;
         position: relative;
         max-width: 100%;
         padding-top: 20px;
-        
+
         @mixin atM {
             padding-top: 0;
         }
-        
+
         &:after {
             content: "";
             position: absolute;
@@ -267,66 +280,66 @@
             height: 100%;
             background: linear-gradient(to right, rgba(255,255,255,0) 90%,rgba(255,255,255,1) 100%);
         }
-        
+
         &--bordered {
             padding: 5px;
             border: 1px solid $grey-ll;
             border-radius: 3px;
-            
+
             &:after {
                 background: linear-gradient(to right, rgba(255,255,255,0) 70%, rgba(255,255,255,1) 90%, rgba(255,255,255,1) 100%);
-                
+
                 @mixin atS {
-                      background: linear-gradient(to right, rgba(255,255,255,0) 88%, rgba(255,255,255,1) 95%, rgba(255,255,255,1) 100%);
+                    background: linear-gradient(to right, rgba(255,255,255,0) 88%, rgba(255,255,255,1) 95%, rgba(255,255,255,1) 100%);
                 }
             }
         }
     }
-    
+
     &__media-wrapper {
         display: flex;
         width: 3000px;
     }
-    
+
     &__media-item {
         width: 67px;
         height: 67px;
         margin-right: 6px;  
-        
+
         &--l {
             width: 124px;
             height: 124px;
             margin-right: 10px;
         }
     }
-    
+
     &__media-col-1 {
         @mixin atM {
             flex-basis: 45%;
             max-width: 45%;
         }
     }
-    
+
     &__media-col-2 {
         @mixin atM {
             flex-basis: 55%;
             max-width: 55%;
         }
     }
-    
-   
-    
+
+
+
     &__author-wrap {
         display: flex;
         margin-bottom: 10px;
     }
-    
+
     &__author-img {
         width: 47px;
         height: 47px;
         margin-right: 10px;
     }
-    
+
     &__event-title-wrap {
         position: relative;
         background: #F6F8FC;
@@ -337,7 +350,7 @@
         display: block;
         align-items: center;
         margin-bottom: 10px;
-        
+
         &:after {
             content: "";
             position: absolute;
@@ -348,24 +361,24 @@
             width: 4px;
             height: 100%;
         }
-        
+
         @mixin atM {
             display: flex;
         }
-        
+
     }
-    
+
     &__event-title-headline {
         padding-right: 15px;
         flex-basis: 160px;
         flex-shrink: 0;
         margin-bottom: 5px;
-        
+
         @mixin atM {
-             margin-bottom: 0;
+            margin-bottom: 0;
         }
     }
-    
+
     &__event-title-desc {
         color: #4E6A8E;
         padding-right: 15px;
@@ -373,18 +386,18 @@
         top: 2px;
         flex-grow: 1;
         margin-bottom: 10px;
-        
+
         @mixin atM {
-             margin-bottom: 0;
+            margin-bottom: 0;
         }
     }
-    
+
     &__event-title-btn {
         flex-basis: 152px;
         flex-shrink: 0;
-        
+
     }
-    
+
     &__media-control {
         position: absolute;
         right: 10px;
@@ -398,40 +411,40 @@
         padding: 6px 5px;
         margin-top: -16px;
     }
-    
+
     &__news-actions {
         text-align: right;
         padding-top: 0;
-        
+
         @mixin atM {
             padding-top: 10px;
         }
-        
+
         i {
             margin-right: 15px;
         }
     }
-    
+
     &__numbers-wrap {
         padding-bottom: 15px;
-        
+
     }
-    
+
     &__tags-wrap {
         background: #F6F7F8;
         padding: 15px 10px;
         margin: 0 -10px;
         border-top: 1px solid #D8DADF;
-        
+
         i {
             top: -2px;
         }
     }
-    
+
     &__tag {
         margin-left: 10px;
     }
-    
-    
-    
+
+
+
 }

@@ -8,5 +8,21 @@
         top: 12px;
         left: 10px;
     }
+    
+    &--calendar-ss {
+        top: 11px;
+    }
+    
+    &--calendar-ss-g {
+        top: 11px;
+    }
+    
+    &--clock-ss {
+        top: 11px;
+    }
+    
+    &--clock-ss-g {
+        top: 10px;
+    }
 }
 

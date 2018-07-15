@@ -6,9 +6,10 @@
         top: 45px;
         left: 0;
         background: #fff;
-        height: 100%;
+        height: calc(100vh - 45px);
         width: 100%;
         z-index: 10000;
+        overflow-y: auto;
     
         @mixin atM {
             background: transparent; 
