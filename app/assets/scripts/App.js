@@ -8,3 +8,4 @@ var mobileMenu = new MobileMenu();
 var openModal = new OpenModal();
 var formFields = new FormFields();
  
+//$('#inputDate').datepicker();

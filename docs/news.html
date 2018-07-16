@@ -2,44 +2,50 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title></title>
-    
-    <link rel="stylesheet" href="assets/styles/styles-0cb4c903b3.css"/>
-    
-    <script src="assets/scripts/Vendor-cc6462d996.js"></script>
-</head>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title></title>
 
-<body>
-   
-    <header class="site-header">
-        <div class="container">
-            <div class="row no-gutters">
-                <div class="col-3 col-lg-2">
-                    <a class="site-header__logo icon icon--logo" href=""></a>
-                </div>
-                <div class="col-7 col-lg-8">
-                    <div class="site-header__search">
-                        <div class="site-header__search-inner">
-                            <input type="text" placeholder="Найти людей, школу, события">
-                            <input type="submit">
-                            <div class="icon icon--search"> </div>
+        <link rel="stylesheet" href="assets/styles/styles-b5cd9dd354.css"/>
+
+        <script src="assets/scripts/Vendor-cc6462d996.js"></script>
+
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="assets/scripts/jquery.ui.datepicker-ru.js"></script>
+
+
+    </head>
+
+    <body>
+
+        <header class="site-header">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-3 col-lg-2">
+                        <a class="site-header__logo icon icon--logo" href=""></a>
+                    </div>
+                    <div class="col-7 col-lg-8">
+                        <div class="site-header__search">
+                            <div class="site-header__search-inner">
+                                <input type="text" placeholder="Найти людей, школу, события">
+                                <input type="submit">
+                                <div class="icon icon--search"> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="site-header__user-menu">
+                            <a href="">Выйти
+                                <div class="site-header__exit-wrapper"><div class="icon icon--exit site-header__exit"></div></div></a>
+                        </div>
+                        <div class="site-header__menu-icon">
+                            <div class="site-header__menu-icon__middle"></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-2">
-                    <div class="site-header__user-menu">
-                        <a href="">Выйти
-                        <div class="site-header__exit-wrapper"><div class="icon icon--exit site-header__exit"></div></div></a>
-                    </div>
-                    <div class="site-header__menu-icon">
-                           <div class="site-header__menu-icon__middle"></div>
-                    </div>
-                </div>
             </div>
-        </div>
-    </header>
+        </header>
 <!-- endinject -->
         <!-- inject:page-head:html -->
         <div class="page-head">
@@ -316,6 +322,8 @@
 
 
         
+
+
 <div class="modal modal--add-event">
     <div class="modal__inner">
         <h2 class="headline headline--white headline--20">Новое мероприятие</h2>
@@ -368,7 +376,7 @@
                     </div>
                     <div class="col-12 col-md-4 form__col">
                         <div class="form__input-wrapper">
-                            <input class="form__input form__input-icon form__input-g" type="text" placeholder="">
+                            <input class="form__input form__input-icon form__input-g form-control" type="text" id="inputDate">
                             <i class="icon icon--calendar-ss-g icon--input icon--g"></i>
                             <i class="icon icon--calendar-ss icon--input"></i>
                         </div>          
@@ -396,7 +404,7 @@
                 <div class="form__row form__row--finish-date-time form__row--is-hidden form__row--mrg-b-m row">
                     <div class="form__col col-12 offset-md-4 col-md-4">
                         <div class="form__input-wrapper form__field form__field--is-hidden form__field--finish-date">
-                            <input class="form__input form__input-icon form__input-g" type="text" placeholder="">
+                            <input id="inputFinishDate" class="form__input form__input-icon form__input-g form-control" type="text">
                             <i class="icon icon--calendar-ss-g icon--input icon--g"></i>
                             <i class="icon icon--calendar-ss icon--input"></i>
                         </div>
@@ -454,7 +462,16 @@
     </div>
     <div class="modal__bg"></div>
 </div>
+
 <script src="assets/scripts/App-9d236d6067.js"></script>
+
+<script>
+    $( function() {
+        $.datepicker.setDefaults( $.datepicker.regional[ "ru" ] );
+        $( "#inputDate" ).datepicker();
+        $( "#inputFinishDate" ).datepicker();
+    } );
+</script>
 
 </body>
 
@@ -467,4 +484,6 @@
 
 
 
-        <!-- endinject -->
+        
+
+<!-- endinject -->

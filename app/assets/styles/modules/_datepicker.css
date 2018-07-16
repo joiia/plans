@@ -1,0 +1,101 @@
+.ui-datepicker {
+    z-index: 1000000 !important;
+    background: #fff;
+    padding: 15px 20px; 
+    border: 1px solid #9cabac;
+    transform: translateX(-1px);
+    border-radius: 3px;
+    box-shadow:  5px 5px 30px 0px rgba(50, 50, 50, 0.25);
+
+    &-header {
+        position: relative;
+    }
+
+    &-title {
+        font-size: $px13;
+        color: #6a708a;
+        margin-bottom: 10px;
+    }
+
+    &-calendar {
+        th {
+            font-size: $px12;
+            color: #92d9ff;
+            padding-bottom: 10px;
+            font-weight: normal !important;
+            text-align: center;
+            font-family: $bold;
+
+            &.ui-datepicker-week-end {
+                color: #ff8365;
+            }
+        }
+        td {
+            font-size: $px14;
+            text-align: center;
+            padding: 3px;
+            .ui-state-default {
+                color: #767b93;
+                padding: 7px 6px 5px;
+                border-radius: 2px;
+                border: 1px solid #eef0f4;
+                display: block;
+                transition: all .3s;
+                text-decoration: none !important;
+                line-height: 1;
+
+                &:hover {
+                    background: #ff8365;
+                    border-color: #ff8365;
+                    color: #fff;
+
+                }
+            }
+        }
+    }
+
+    &-prev {
+        font-size: 0;
+        position: absolute;
+        top: 2px;
+        left: 100px;
+        background-image: url('../../assets/images/icons/arrow-l-s.png');
+        width: 8px;
+        height: 11px;
+        opacity: .7;
+        transition: all .3s;
+        cursor: pointer;
+
+        @mixin atM {
+            top: 3px;
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    &-next {
+        font-size: 0;
+        position: absolute;
+        top: 2px;
+        left: 120px;
+        background-image: url('../../assets/images/icons/arrow-r-s.png');
+        width: 8px;
+        height: 11px;
+        opacity: .7;
+        transition: all .3s;
+        cursor: pointer;
+
+        @mixin atM {
+            top: 3px;
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+}
+
+

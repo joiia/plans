@@ -51,7 +51,7 @@
                     </div>
                     <div class="col-12 col-md-4 form__col">
                         <div class="form__input-wrapper">
-                            <input class="form__input form__input-icon form__input-g" type="text" placeholder="">
+                            <input class="form__input form__input-icon form__input-g form-control" type="text" id="inputDate">
                             <i class="icon icon--calendar-ss-g icon--input icon--g"></i>
                             <i class="icon icon--calendar-ss icon--input"></i>
                         </div>          
@@ -79,7 +79,7 @@
                 <div class="form__row form__row--finish-date-time form__row--is-hidden form__row--mrg-b-m row">
                     <div class="form__col col-12 offset-md-4 col-md-4">
                         <div class="form__input-wrapper form__field form__field--is-hidden form__field--finish-date">
-                            <input class="form__input form__input-icon form__input-g" type="text" placeholder="">
+                            <input id="inputFinishDate" class="form__input form__input-icon form__input-g form-control" type="text">
                             <i class="icon icon--calendar-ss-g icon--input icon--g"></i>
                             <i class="icon icon--calendar-ss icon--input"></i>
                         </div>
@@ -137,9 +137,18 @@
     </div>
     <div class="modal__bg"></div>
 </div>
+
 <!-- build:js assets/scripts/App.js -->
 <script src="temp/scripts/App.js"></script>
 <!-- endbuild -->
+
+<script>
+    $( function() {
+        $.datepicker.setDefaults( $.datepicker.regional[ "ru" ] );
+        $( "#inputDate" ).datepicker();
+        $( "#inputFinishDate" ).datepicker();
+    } );
+</script>
 
 </body>
 
