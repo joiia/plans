@@ -5544,7 +5544,7 @@ a:focus {
         position: absolute;
         top: 2px;
         left: 100px;
-        background-image: url('../../assets/images/icons/arrow-l-s.png');
+        background-image: url('../../assets/images/arrow-l-s.png');
         width: 8px;
         height: 11px;
         opacity: .7;
@@ -5568,7 +5568,7 @@ a:focus {
         position: absolute;
         top: 2px;
         left: 120px;
-        background-image: url('../../assets/images/icons/arrow-r-s.png');
+        background-image: url('../../assets/images/arrow-r-s.png');
         width: 8px;
         height: 11px;
         opacity: .7;
