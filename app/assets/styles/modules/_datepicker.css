@@ -6,6 +6,7 @@
     transform: translateX(-1px);
     border-radius: 3px;
     box-shadow:  5px 5px 30px 0px rgba(50, 50, 50, 0.25);
+    display: none;
 
     &-header {
         position: relative;

@@ -12,6 +12,7 @@
         overflow-y: auto;
     
         @mixin atM {
+            height: auto;
             background: transparent; 
             display: block;
             position: static;

@@ -14,7 +14,6 @@ class FormFields {
     toggleVisibility(checkbox, field, row) {     
         checkbox.click(function() {
             field.toggleClass("form__field--is-hidden");
-            //row.removeClass("form__row--is-hidden");
 
             var checkboxes = checkbox.parents().eq(3).find('input[type="checkbox"]');
             if (!checkboxes.is(":checked")){
