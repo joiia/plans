@@ -20,12 +20,6 @@
         transition: all 0.5s ease-out;
     }
 
-    &--is-visible {
-        opacity: 1;
-        z-index: 5;
-        z-index: 100000;
-    }
-
     &__bg {
         background: rgba(0,0,0, .7);
         position: absolute;
@@ -53,5 +47,16 @@
         border-radius: 5px;
         max-height: 80vh;
         overflow-y: auto;
+
+        &--grey {
+            background: #f2f6fb;
+        }
     }
+
+    &--is-visible {
+        opacity: 1;
+        z-index: 5;
+        z-index: 100000;
+    }
+
 }

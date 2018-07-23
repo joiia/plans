@@ -37,10 +37,25 @@
             padding: 12px 0;
             flex-wrap: nowrap;
         }
+
+        &--no-border {
+            border: none;
+        }
+
+        &--no-wrap {
+            flex-wrap: nowrap;
+            align-items: flex-start;
+            
+            @mixin atM {
+                align-items: center;
+            }
+            
+        }
     }
 
     &__userpic {
-        flex-basis: 1;
+        flex-basis: 29px;
+        flex-shrink: 0;
         margin-right: 15px;
         width: 29px;
         height: 29px;
@@ -123,6 +138,10 @@
             top: -1px;
         }
     }
-    
-    
+
+    &--no-border {
+        border-bottom: none !important;
+    }
+
+
 }

@@ -2545,16 +2545,12 @@ a:focus {
         width: 100%;
         flex-basis: 85%;
         margin-bottom: 10px;
-
-
     }
 
 @media (min-width: 576px) {
 
 .form__input {
             flex-basis: 40%
-
-
     }
     }
 
@@ -2564,13 +2560,18 @@ a:focus {
             margin-bottom: 0;
             flex-basis: auto;
             margin-right: 10px
-
-
     }
     }
 
 .form__input--mrg-b-no {
             margin-bottom: 0;
+        }
+
+.form__input--full {
+            border: none;
+            width: 100%;
+            background: transparent;
+            height: 100%;
         }
 
 .form__input-s {
@@ -2720,9 +2721,25 @@ a:focus {
     text-decoration: none !important;
     text-align: center;
     transition: all .3s;
+    cursor: pointer;
 
 
 }
+
+.btn__icon {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+        position: relative;
+        top: -2px; 
+    }
+
+@media (min-width: 768px) {
+
+.btn__icon {
+            margin-right: 15px 
+    }
+    }
 
 .btn--rnd {
         border-radius: 30px;
@@ -2824,6 +2841,15 @@ a:focus {
             color:  #8a949b;
         }
 
+.btn--blue-g {
+        background-color: #32859c;
+        color: #fff !important;
+    }
+
+.btn--blue-g:hover {
+            background-color: #2f93af;
+        }
+
 .btn--green {
         color: #fff !important;
         background-color: #17a14b;
@@ -2867,23 +2893,14 @@ a:focus {
         font-family: 'Myriad Pro Semibold';
     }
 
-.btn__icon {
-        display: inline-block;
-        vertical-align: middle;
-        margin-right: 10px;
-        position: relative;
-        top: -2px; 
-    }
-
-@media (min-width: 768px) {
-
-.btn__icon {
-            margin-right: 15px 
-    }
-    }
-
 .btn--centered {
         margin: 0 auto;
+    }
+
+.btn--abs-r {
+        position: absolute;
+        right: 0;
+        top: 0;
     }
 
 .checklist {
@@ -4274,6 +4291,7 @@ a:focus {
     right: 0;
     transition: all 0.5s ease-out;
     z-index: -1;
+
 }
 
 .modal__close {
@@ -4287,12 +4305,6 @@ a:focus {
                 transform-origin: 100% 0;
         font-size: 1.4rem;
         transition: all 0.5s ease-out;
-    }
-
-.modal--is-visible {
-        opacity: 1;
-        z-index: 5;
-        z-index: 100000;
     }
 
 .modal__bg {
@@ -4323,6 +4335,16 @@ a:focus {
         border-radius: 5px;
         max-height: 80vh;
         overflow-y: auto;
+    }
+
+.modal__panel--grey {
+            background: #f2f6fb;
+        }
+
+.modal--is-visible {
+        opacity: 1;
+        z-index: 5;
+        z-index: 100000;
     }
 
 .main-column {
@@ -4495,14 +4517,12 @@ a:focus {
     position: relative;
 
 
-
 }
 
 @media (min-width: 576px) {
 
 .post {
         padding: 0 20px 16px
-
 
 
 }
@@ -4513,7 +4533,6 @@ a:focus {
 .post {
         padding: 0 30px 16px;
         margin-bottom: 30px
-
 
 
 }
@@ -4736,6 +4755,8 @@ a:focus {
 
 .post__actions {
         text-align: right;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #dee1e2;
     }
 
 @media (min-width: 768px) {
@@ -5018,6 +5039,76 @@ a:focus {
         margin-left: 10px;
     }
 
+.post__comments-list {
+        color: #000;
+    }
+
+@media (min-width: 768px) {
+
+.post__comments-list {
+            margin: 0 -30px
+    }
+    }
+
+.post__comments-list .table-item__inner {
+            padding: 15px 0;
+        }
+
+.post__to-comment {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+
+    }
+
+@media (min-width: 768px) {
+
+.post__to-comment {
+            flex-wrap: nowrap
+
+
+    }
+    }
+
+.post__to-comment input {
+            margin-bottom: 10px;
+        }
+
+@media (min-width: 768px) {
+
+.post__to-comment input {
+                margin-bottom: 0
+        }
+    }
+
+.post__to-comment .btn {
+            opacity: 0;
+            transition: all .5s;
+            z-index: -1;
+            max-height: 0;
+        }
+
+@media (min-width: 768px) {
+
+.post__to-comment .btn {
+                max-height: 40px
+        }
+    }
+
+.post__to-comment input:focus + .btn {
+            opacity: 1;
+            z-index: 10;
+            max-height: 40px;
+        }
+
+.post__to-comment input.not-empty + .btn {
+            opacity: 1;
+            z-index: 10;
+            max-height: 40px;
+        }
+
 .page-head {
     margin-top: 45px;  
 }
@@ -5025,16 +5116,16 @@ a:focus {
 .table-item {
     transition: all .3s;
     position: relative;
-    
-    
+
+
 }
 
 @media (min-width: 768px) {
 
 .table-item {
         padding: 0 25px
-    
-    
+
+
 }
 
         .table-item:before {
@@ -5074,8 +5165,27 @@ a:focus {
     }
     }
 
+.table-item__inner--no-border {
+            border: none;
+        }
+
+.table-item__inner--no-wrap {
+            flex-wrap: nowrap;
+            align-items: flex-start;
+            
+        }
+
+@media (min-width: 768px) {
+
+.table-item__inner--no-wrap {
+                align-items: center
+            
+        }
+    }
+
 .table-item__userpic {
-        flex-basis: 1;
+        flex-basis: 29px;
+        flex-shrink: 0;
         margin-right: 15px;
         width: 29px;
         height: 29px;
@@ -5183,13 +5293,16 @@ a:focus {
             top: -1px;
         }
 
+.table-item--no-border {
+        border-bottom: none !important;
+    }
+
 .status--ok {
         color: #17a14b;
     }
 
 .panel {
     padding-bottom: 45px;
-
 
 }
 
@@ -5415,6 +5528,13 @@ a:focus {
     }
     }
 
+.panel__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
 .photo-gallery {
     padding-bottom: 20px;
 
@@ -5462,10 +5582,18 @@ a:focus {
         margin-right: 12px;
     }
 
+.icon--mrg-r-8 {
+        margin-right: 8px;
+    }
+
 .icon--input {
         position: absolute;
         top: 12px;
         left: 10px;
+    }
+
+.icon--top-5 {
+        top: -5px;
     }
 
 .icon--calendar-ss {
@@ -5482,6 +5610,12 @@ a:focus {
 
 .icon--clock-ss-g {
         top: 10px;
+    }
+
+.icon--comment-w {
+        background-image: url('../../assets/images/comments-w.png');
+        width: 19px;
+        height: 19px;
     }
 
 .ui-datepicker {
@@ -5596,18 +5730,30 @@ a:focus {
     opacity: 0;
     z-index: -1;
     position: absolute;
-    top: 25px;
+    top: 30px;
     left: 0;
     background: #fff;
     border: 1px solid #dee1e2;
     box-shadow: 3px 3px 20px rgba(0, 0, 0, .2);
-    min-width: 200px;
+    width: 203px;
     border-radius: 3px;
-    max-height: 150px;
+    max-height: 250px;
     overflow-y: auto;
-    
-    
+
+
 }
+
+@media (min-width: 768px) {
+
+.popup {
+        position: absolute;
+        top: 25px;
+        left: 0;
+        width: 200px
+
+
+}
+    }
 
 .popup__row {
         display: flex;
@@ -5623,6 +5769,7 @@ a:focus {
 .popup__userpic {
         width: 20px;
         height: 20px;
+        flex-basis: 20px;
         margin-right: 10px;
         flex-shrink: 0;
     }
@@ -5632,10 +5779,7 @@ a:focus {
         z-index: 1000000000;
     }
 
-.popup--comments {
-        min-width: 300px;
+.popup--joined {
+        left: inherit;
+        right: 0;
     }
-
-.popup--comments .popup__row {
-            align-items: flex-start;
-        }

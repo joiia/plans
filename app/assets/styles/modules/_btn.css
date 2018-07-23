@@ -4,6 +4,19 @@
     text-decoration: none !important;
     text-align: center;
     transition: all .3s;
+    cursor: pointer;
+    
+    &__icon {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+        position: relative;
+        top: -2px;
+
+        @mixin atM {
+            margin-right: 15px;
+        } 
+    }
 
     &--rnd {
         border-radius: 30px;
@@ -96,6 +109,15 @@
             color:  #8a949b;
         }
     }
+    
+     &--blue-g {
+        background-color: $blue-g;
+        color: #fff !important;
+
+        &:hover {
+            background-color: $blue-g-l;
+        }
+    }
 
     &--green {
         color: #fff !important;
@@ -136,20 +158,16 @@
         font-family: $bold;
     }
 
-    &__icon {
-        display: inline-block;
-        vertical-align: middle;
-        margin-right: 10px;
-        position: relative;
-        top: -2px;
-
-        @mixin atM {
-            margin-right: 15px;
-        } 
-    }
+    
 
     &--centered {
         margin: 0 auto;
+    }
+    
+    &--abs-r {
+        position: absolute;
+        right: 0;
+        top: 0;
     }
 
 

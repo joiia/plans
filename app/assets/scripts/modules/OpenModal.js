@@ -1,10 +1,10 @@
 import $ from 'jquery';
 
 class OpenModal {
-    constructor() {
-        this.openModalEventBtn = $(".open-modal--add-event");
-        this.modalEvent = $(".modal--add-event");
-        this.modalBg = $(".modal__bg");
+    constructor(button, modal) {
+        this.openModalEventBtn = button;
+        this.modal = modal;
+        this.modalBg = modal.find($(".modal__bg"));
         this.events();
     }
     
@@ -15,7 +15,7 @@ class OpenModal {
     
     toggleVisibility(e) {
         e.preventDefault();
-        this.modalEvent.toggleClass("modal--is-visible");
+        this.modal.toggleClass("modal--is-visible");
     }
 }
 

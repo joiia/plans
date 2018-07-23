@@ -175,8 +175,13 @@
         &--mrg-b-no {
             margin-bottom: 0;
         }
-
-
+        
+        &--full {
+            border: none;
+            width: 100%;
+            background: transparent;
+            height: 100%;
+        }
     }
 
     &__input-s {

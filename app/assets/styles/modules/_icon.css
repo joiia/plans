@@ -3,10 +3,18 @@
         margin-right: 12px;
     }
     
+     &--mrg-r-8 {
+        margin-right: 8px;
+    }
+    
     &--input {
         position: absolute;
         top: 12px;
         left: 10px;
+    }
+    
+    &--top-5 {
+        top: -5px;
     }
     
     &--calendar-ss {
@@ -23,6 +31,12 @@
     
     &--clock-ss-g {
         top: 10px;
+    }
+    
+    &--comment-w {
+        background-image: url('../../assets/images/comments-w.png');
+        width: 19px;
+        height: 19px;
     }
 }
 

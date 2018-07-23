@@ -2,51 +2,51 @@
     opacity: 0;
     z-index: -1;
     position: absolute;
-    top: 25px;
+    top: 30px;
     left: 0;
     background: #fff;
     border: 1px solid $grey-ll;
     box-shadow: 3px 3px 20px rgba(0, 0, 0, .2);
-    min-width: 200px;
+    width: 203px;
     border-radius: 3px;
-    max-height: 150px;
+    max-height: 250px;
     overflow-y: auto;
-    
-    
-    
-    
-    
+
+    @mixin atM {
+        position: absolute;
+        top: 25px;
+        left: 0;
+        width: 200px;
+    }
+
     &__row {
         display: flex;
         align-items: center;
         border-bottom: 1px solid $grey-ll;
         padding: 5px 10px;
-        
+
         &:last-child {
             border-bottom: none;
         }
     }
-    
+
     &__userpic {
         width: 20px;
         height: 20px;
+        flex-basis: 20px;
         margin-right: 10px;
         flex-shrink: 0;
     }
-    
+
     &--is-visible {
         opacity: 1;
         z-index: 1000000000;
     }
-    
-    &--comments {
-        min-width: 300px;
-        
-        
-        .popup__row {
-            align-items: flex-start;
-        }
+
+    &--joined {
+        left: inherit;
+        right: 0;
     }
-    
-    
+
+
 }
