@@ -5772,6 +5772,13 @@ a:focus {
         flex-basis: 20px;
         margin-right: 10px;
         flex-shrink: 0;
+        margin-bottom: 0;
+    }
+
+.popup__name {
+        margin-bottom: 0;
+        padding-top: 2px;
+        text-align: left;
     }
 
 .popup--is-visible {
@@ -5782,4 +5789,12 @@ a:focus {
 .popup--joined {
         left: inherit;
         right: 0;
+    }
+
+@media (min-width: 576px) {
+
+.popup--joined {
+            left: 0;
+            right: inherit
+    }
     }
