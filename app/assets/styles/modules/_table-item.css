@@ -45,11 +45,11 @@
         &--no-wrap {
             flex-wrap: nowrap;
             align-items: flex-start;
-            
+
             @mixin atM {
                 align-items: center;
             }
-            
+
         }
     }
 
@@ -61,10 +61,8 @@
         height: 29px;
         margin-bottom: 10px;
 
-
         @mixin atS {     
             margin-bottom: 0px;
-
         }
     }
 
@@ -127,6 +125,87 @@
         @mixin atS {
             padding-right: 10px;
             position: static;
+        }
+    }
+
+    &__check {
+        width: 20px;
+        height: 20px;
+        border: 2px solid #8a949b;
+        border-radius: 3px;
+        display: block;
+        position: relative;
+        margin-right: 15px;
+
+        i {
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            opacity: 0;
+            transition: all .3s;
+        }
+
+        &--is-checked {
+            i {
+                opacity: 1;
+            }
+        }
+    }
+    
+    &__recipient {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        
+        &--is-hidden {
+            display: none;
+        }
+    }
+
+    &__online {
+        color: #9da7b6;
+        font-size: 0;
+        flex-grow: 0;
+        padding-right: 15px;
+        
+        @mixin atM {
+            font-size: $px13; 
+            padding-right: 10px;
+        }
+
+        &:after {
+            content: "";
+            width: 7px;
+            height: 7px;
+            margin-left: 5px;
+            display: inline-block;
+            background: #9da7b6;
+            border-radius: 50%;
+        }
+
+        &--online {
+            color: $green;
+
+            &:after {
+                background: $green;
+            }
+
+        }
+    }
+    
+    &__delete {
+        width: 14px;
+        height: 14px;
+        border: 1px solid #4965a0;
+        border-radius: 3px; 
+        position: relative;
+        cursor: pointer;
+        top: 1px;
+        
+        .icon {
+            position: absolute;
+            top: 1px;
+            left: 1px;
         }
     }
 

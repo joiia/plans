@@ -2354,9 +2354,25 @@ a:focus {
     border-radius: 50%;
 }
 
+.row--pdd-v-20 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+@media (min-width: 768px) {
+
+.row--pdd-v-20 {
+            padding-top: 20px;
+            padding-bottom: 20px
+    }
+    }
+
+.row--pdd-t-3 {
+        padding-top: 5px;
+    }
+
 .form {
     color: #788086;
-
 }
 
 .form input {
@@ -2539,12 +2555,19 @@ a:focus {
     }
     }
 
+.form__label-g {
+        font-family: 'Myriad Pro Semibold';
+        color: #788086;
+    }
+
 .form__input {
         font-size: 0.75rem;
-        padding: 9px 10px 6px;
+        padding: 8px 10px 6px;
         width: 100%;
         flex-basis: 85%;
         margin-bottom: 10px;
+        box-shadow: none;
+        border: 1px solid #95a5a6;
     }
 
 @media (min-width: 576px) {
@@ -2574,6 +2597,10 @@ a:focus {
             height: 100%;
         }
 
+.form__input--rnd {
+            border-radius: 3px;
+        }
+
 .form__input-s {
         width: 115px;
     }
@@ -2582,10 +2609,19 @@ a:focus {
         padding-left: 30px;
     }
 
+.form__input-icon--search {
+             padding-left: 35px;
+        }
+
 .form__input-wrapper {
         position: relative;
         width: 100%;
     }
+
+.form__input-wrapper--m {
+            width: 340px;
+            max-width: 100%;
+        }
 
 .form__col {
         display: flex;
@@ -2675,6 +2711,16 @@ a:focus {
             max-height: 0;
         }
 
+.form__textarea {
+        width: 100%;
+        height: 70px;
+        border: 1px solid #8a949b;
+        border-radius: 5px;
+        padding: 9px 9px 9px 30px;
+        font-size: 0.8125rem;
+        outline: none !important;
+    }
+
 .link:hover {
         text-decoration: none;
     }
@@ -2689,6 +2735,10 @@ a:focus {
 
 .link--green {
         color: #17a14b !important;
+    }
+
+.link--grey {
+        color: #8a949b !important;
     }
 
 .link--grey-l {
@@ -2776,8 +2826,10 @@ a:focus {
     }
 
 .btn--xs {
-        padding: 5px 15px;
+        padding: 0 15px;
         font-size: 0.8125rem;
+        height: 30px;
+        line-height: 30px;
     }
 
 .btn--m {
@@ -2825,7 +2877,7 @@ a:focus {
     }
 
 .btn--blue-l:hover {
-            background: #558EB8;
+            background: #3ea3e6;
         }
 
 .btn--blue-ll {
@@ -3571,211 +3623,235 @@ a:focus {
     }
 
 .icon {
-            background-image: url('../../assets/images/sprites/sprite-dc436daf.png');
+            background-image: url('../../assets/images/sprites/sprite-3d8c7091.png');
         }
 
 .icon--add {
         width: 17px; 
         height: 17px;
-        background-position: 98.17351598173516% 51.578947368421055%;  
+        background-position: 87.06467661691542% 84.12698412698413%;  
     }
 
 .icon--add-media {
         width: 48px; 
         height: 28px;
-        background-position: 0 17.318435754189945%;  
+        background-position: 0 17.415730337078653%;  
     }
 
 .icon--arrow-l-s {
         width: 10px; 
         height: 13px;
-        background-position: 41.150442477876105% 71.64948453608247%;  
+        background-position: 79.8076923076923% 72.53886010362694%;  
     }
 
 .icon--arrow-r {
         width: 14px; 
         height: 19px;
-        background-position: 96.84684684684684% 32.4468085106383%;  
+        background-position: 34.80392156862745% 74.8663101604278%;  
     }
 
 .icon--arrow-r-s {
         width: 10px; 
         height: 13px;
-        background-position: 36.72566371681416% 71.64948453608247%;  
+        background-position: 51.44230769230769% 44.55958549222798%;  
+    }
+
+.icon--attach {
+        width: 38px; 
+        height: 25px;
+        background-position: 66.11111111111111% 33.70165745856354%;  
     }
 
 .icon--calendar {
         width: 28px; 
         height: 27px;
-        background-position: 77.88461538461539% 15%;  
+        background-position: 85.26315789473684% 56.98324022346369%;  
     }
 
 .icon--calendar-active {
         width: 28px; 
         height: 27px;
-        background-position: 77.88461538461539% 0;  
+        background-position: 85.26315789473684% 41.899441340782126%;  
     }
 
 .icon--calendar-l-active {
         width: 34px; 
         height: 35px;
-        background-position: 0 60.46511627906977%;  
+        background-position: 20.108695652173914% 60.8187134502924%;  
     }
 
 .icon--calendar-s {
         width: 21px; 
         height: 20px;
-        background-position: 100% 11.229946524064172%;  
+        background-position: 68.02030456852792% 85.48387096774194%;  
     }
 
 .icon--calendar-ss {
         width: 16px; 
         height: 15px;
-        background-position: 23.181818181818183% 72.39583333333333%;  
+        background-position: 74.25742574257426% 73.29842931937172%;  
     }
 
 .icon--calendar-ss-g {
         width: 16px; 
         height: 15px;
-        background-position: 30.454545454545453% 72.39583333333333%;  
+        background-position: 66.33663366336634% 73.29842931937172%;  
     }
 
 .icon--cancel-s {
         width: 23px; 
         height: 23px;
-        background-position: 45.070422535211264% 88.04347826086956%;  
+        background-position: 25.128205128205128% 86.88524590163935%;  
+    }
+
+.icon--check {
+        width: 18px; 
+        height: 18px;
+        background-position: 96% 87.23404255319149%;  
     }
 
 .icon--clock-s {
         width: 21px; 
         height: 20px;
-        background-position: 17.674418604651162% 99.46524064171123%;  
+        background-position: 57.36040609137056% 85.48387096774194%;  
     }
 
 .icon--clock-ss {
         width: 17px; 
         height: 16px;
-        background-position: 98.17351598173516% 60.20942408376963%;  
+        background-position: 44.776119402985074% 45.26315789473684%;  
     }
 
 .icon--clock-ss-g {
         width: 17px; 
         height: 16px;
-        background-position: 98.17351598173516% 77.4869109947644%;  
+        background-position: 42.288557213930346% 73.6842105263158%;  
     }
 
 .icon--comments {
         width: 21px; 
         height: 21px;
-        background-position: 100% 0;  
+        background-position: 66.49746192893402% 98.37837837837837%;  
     }
 
 .icon--comments-p {
         width: 25px; 
         height: 24px;
-        background-position: 0 88.52459016393442%;  
+        background-position: 99.48186528497409% 23.076923076923077%;  
+    }
+
+.icon--comments-w {
+        width: 21px; 
+        height: 21px;
+        background-position: 77.15736040609137% 98.37837837837837%;  
     }
 
 .icon--create-event {
         width: 20px; 
         height: 22px;
-        background-position: 87.96296296296296% 88.64864864864865%;  
+        background-position: 36.36363636363637% 86.41304347826087%;  
     }
 
 .icon--delete {
         width: 10px; 
         height: 10px;
-        background-position: 45.575221238938056% 70.55837563451777%;  
+        background-position: 77.88461538461539% 65.81632653061224%;  
     }
 
 .icon--done {
         width: 45px; 
         height: 45px;
-        background-position: 0 36.41975308641975%;  
+        background-position: 26.01156069364162% 36.64596273291925%;  
     }
 
 .icon--done-s {
         width: 24px; 
         height: 24px;
-        background-position: 23.11320754716981% 88.52459016393442%;  
+        background-position: 21.649484536082475% 100%;  
     }
 
 .icon--edit {
         width: 27px; 
         height: 27px;
-        background-position: 77.51196172248804% 44.44444444444444%;  
+        background-position: 47.12041884816754% 32.960893854748605%;  
     }
 
 .icon--edit-s {
         width: 16px; 
         height: 16px;
-        background-position: 63.63636363636363% 84.81675392670157%;  
+        background-position: 58.415841584158414% 73.6842105263158%;  
     }
 
 .icon--edit-ss {
         width: 16px; 
         height: 16px;
-        background-position: 70.9090909090909% 84.81675392670157%;  
+        background-position: 50.495049504950494% 73.6842105263158%;  
     }
 
 .icon--edit-sss {
         width: 12px; 
         height: 12px;
-        background-position: 95.98214285714286% 100%;  
+        background-position: 85.4368932038835% 72.16494845360825%;  
+    }
+
+.icon--emoji {
+        width: 24px; 
+        height: 25px;
+        background-position: 98.96907216494846% 36.46408839779006%;  
     }
 
 .icon--exit {
         width: 18px; 
         height: 18px;
-        background-position: 98.62385321100918% 42.32804232804233%;  
+        background-position: 59.5% 45.744680851063826%;  
     }
 
 .icon--invitations {
         width: 29px; 
         height: 23px;
-        background-position: 43.47826086956522% 32.06521739130435%;  
+        background-position: 85.71428571428571% 15.846994535519126%;  
     }
 
 .icon--invitations-active {
         width: 29px; 
         height: 23px;
-        background-position: 61.83574879227053% 56.52173913043478%;  
+        background-position: 85.71428571428571% 28.415300546448087%;  
     }
 
 .icon--invitations-l-active {
         width: 41px; 
         height: 32px;
-        background-position: 61.02564102564103% 16.571428571428573%;  
+        background-position: 67.2316384180791% 16.666666666666668%;  
     }
 
 .icon--invite {
         width: 24px; 
         height: 19px;
-        background-position: 89.62264150943396% 26.06382978723404%;  
+        background-position: 13.402061855670103% 74.8663101604278%;  
     }
 
 .icon--invite-w {
         width: 17px; 
         height: 14px;
-        background-position: 98.17351598173516% 84.97409326424871%;  
+        background-position: 68.1592039800995% 44.791666666666664%;  
     }
 
 .icon--joined {
         width: 21px; 
         height: 21px;
-        background-position: 7.906976744186046% 100%;  
+        background-position: 46.7005076142132% 85.94594594594595%;  
     }
 
 .icon--like-p {
         width: 26px; 
         height: 23px;
-        background-position: 0 75.54347826086956%;  
+        background-position: 0 86.88524590163935%;  
     }
 
 .icon--likes {
         width: 21px; 
         height: 19px;
-        background-position: 55.348837209302324% 86.17021276595744%;  
+        background-position: 25.380710659898476% 74.8663101604278%;  
     }
 
 .icon--logo {
@@ -3787,145 +3863,151 @@ a:focus {
 .icon--media {
         width: 30px; 
         height: 29px;
-        background-position: 33.00970873786408% 58.42696629213483%;  
+        background-position: 55.851063829787236% 58.75706214689266%;  
     }
 
 .icon--media-active {
         width: 30px; 
         height: 29px;
-        background-position: 47.57281553398058% 58.42696629213483%;  
+        background-position: 86.17021276595744% 0;  
     }
 
 .icon--media-l-active {
         width: 37px; 
         height: 36px;
-        background-position: 59.79899497487437% 35.67251461988304%;  
+        background-position: 0 61.1764705882353%;  
     }
 
 .icon--messages {
         width: 32px; 
         height: 22px;
-        background-position: 39.21568627450981% 16.756756756756758%;  
+        background-position: 43.01075268817204% 16.847826086956523%;  
     }
 
 .icon--messages-active {
         width: 32px; 
         height: 22px;
-        background-position: 23.529411764705884% 16.756756756756758%;  
+        background-position: 25.806451612903224% 16.847826086956523%;  
     }
 
 .icon--messages-l-active {
         width: 43px; 
         height: 29px;
-        background-position: 61.6580310880829% 0;  
+        background-position: 68% 0;  
     }
 
 .icon--messages-s {
         width: 26px; 
         height: 19px;
-        background-position: 42.857142857142854% 43.61702127659574%;  
+        background-position: 0 74.8663101604278%;  
     }
 
 .icon--news {
         width: 24px; 
         height: 24px;
-        background-position: 89.62264150943396% 37.15846994535519%;  
+        background-position: 34.02061855670103% 100%;  
     }
 
 .icon--news-active {
         width: 24px; 
         height: 24px;
-        background-position: 11.79245283018868% 88.52459016393442%;  
+        background-position: 46.391752577319586% 100%;  
     }
 
 .icon--news-l-active {
         width: 34px; 
         height: 34px;
-        background-position: 16.831683168316832% 60.115606936416185%;  
+        background-position: 38.58695652173913% 60.46511627906977%;  
     }
 
 .icon--not-done {
         width: 45px; 
         height: 45px;
-        background-position: 23.56020942408377% 36.41975308641975%;  
+        background-position: 0 36.64596273291925%;  
     }
 
 .icon--notices {
         width: 23px; 
         height: 23px;
-        background-position: 34.27230046948357% 88.04347826086956%;  
+        background-position: 13.333333333333334% 86.88524590163935%;  
     }
 
 .icon--point {
         width: 17px; 
         height: 21px;
-        background-position: 0 100%;  
+        background-position: 56.71641791044776% 98.37837837837837%;  
     }
 
 .icon--private {
         width: 25px; 
         height: 16px;
-        background-position: 12.322274881516588% 72.77486910994764%;  
+        background-position: 99.48186528497409% 13.68421052631579%;  
     }
 
 .icon--search {
         width: 17px; 
         height: 17px;
-        background-position: 98.17351598173516% 68.94736842105263%;  
+        background-position: 86.06965174129353% 96.29629629629629%;  
     }
 
 .icon--search-active {
         width: 24px; 
         height: 24px;
-        background-position: 89.62264150943396% 76.50273224043715%;  
+        background-position: 98.96907216494846% 76.92307692307692%;  
     }
 
 .icon--search-l {
         width: 24px; 
         height: 24px;
-        background-position: 89.62264150943396% 63.387978142076506%;  
+        background-position: 9.278350515463918% 100%;  
     }
 
 .icon--search-ll-active {
         width: 25px; 
         height: 25px;
-        background-position: 90.04739336492891% 0;  
+        background-position: 99.48186528497409% 63.53591160220994%;  
     }
 
 .icon--search-m {
         width: 20px; 
         height: 20px;
-        background-position: 99.53703703703704% 21.925133689839573%;  
+        background-position: 78.28282828282828% 85.48387096774194%;  
     }
 
 .icon--search-w {
         width: 17px; 
         height: 17px;
-        background-position: 98.17351598173516% 93.6842105263158%;  
+        background-position: 94.5273631840796% 96.29629629629629%;  
     }
 
 .icon--send {
         width: 25px; 
         height: 24px;
-        background-position: 90.04739336492891% 13.66120218579235%;  
+        background-position: 99.48186528497409% 50%;  
     }
 
 .icon--settings {
         width: 27px; 
         height: 26px;
-        background-position: 77.51196172248804% 29.834254143646408%;  
+        background-position: 70.68062827225131% 57.77777777777778%;  
     }
 
 .icon--settings-s {
         width: 26px; 
         height: 26px;
-        background-position: 77.14285714285714% 59.11602209944751%;  
+        background-position: 100% 0;  
     }
 
 .icon--time {
         width: 18px; 
         height: 24px;
-        background-position: 87.1559633027523% 50.27322404371585%;  
+        background-position: 0 100%;  
+    }
+
+.icon--x {
+        width: 10px; 
+        height: 10px;
+        background-position: 82.6923076923077% 65.81632653061224%;  
     }
 
 .site-header {
@@ -4327,6 +4409,8 @@ a:focus {
         width: 670px;
         max-width: 90%;
         max-height: 90vh;
+
+
     }
 
 .modal__panel {
@@ -4341,11 +4425,31 @@ a:focus {
             background: #f2f6fb;
         }
 
+.modal__panel--pdd-b-140 {
+            padding-bottom: 140px !important;
+        }
+
 .modal--is-visible {
         opacity: 1;
         z-index: 5;
         z-index: 100000;
     }
+
+.modal--new-message-is-visible {
+        z-index: 100001;
+    }
+
+.modal--messages .modal__panel {
+            padding: 20px;
+        }
+
+.modal--new-message .modal__panel {
+            padding: 20px;
+        }
+
+.modal--new-message .form__input {
+            margin-bottom: 0;
+        }
 
 .main-column {
     position: relative;
@@ -5172,14 +5276,14 @@ a:focus {
 .table-item__inner--no-wrap {
             flex-wrap: nowrap;
             align-items: flex-start;
-            
+
         }
 
 @media (min-width: 768px) {
 
 .table-item__inner--no-wrap {
                 align-items: center
-            
+
         }
     }
 
@@ -5284,6 +5388,88 @@ a:focus {
     }
     }
 
+.table-item__check {
+        width: 20px;
+        height: 20px;
+        border: 2px solid #8a949b;
+        border-radius: 3px;
+        display: block;
+        position: relative;
+        margin-right: 15px;
+    }
+
+.table-item__check i {
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            opacity: 0;
+            transition: all .3s;
+        }
+
+.table-item__check--is-checked i {
+                opacity: 1;
+            }
+
+.table-item__recipient {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+.table-item__recipient--is-hidden {
+            display: none;
+        }
+
+.table-item__online {
+        color: #9da7b6;
+        font-size: 0;
+        flex-grow: 0;
+        padding-right: 15px;
+    }
+
+@media (min-width: 768px) {
+
+.table-item__online {
+            font-size: 0.8125rem; 
+            padding-right: 10px
+    }
+    }
+
+.table-item__online:after {
+            content: "";
+            width: 7px;
+            height: 7px;
+            margin-left: 5px;
+            display: inline-block;
+            background: #9da7b6;
+            border-radius: 50%;
+        }
+
+.table-item__online--online {
+            color: #17a14b;
+
+        }
+
+.table-item__online--online:after {
+                background: #17a14b;
+            }
+
+.table-item__delete {
+        width: 14px;
+        height: 14px;
+        border: 1px solid #4965a0;
+        border-radius: 3px; 
+        position: relative;
+        cursor: pointer;
+        top: 1px;
+    }
+
+.table-item__delete .icon {
+            position: absolute;
+            top: 1px;
+            left: 1px;
+        }
+
 .table-item--invite {
         padding: 7px 35px;
     }
@@ -5310,6 +5496,32 @@ a:focus {
         background: #fff;
         border: 1px solid #dee1e2;
         border-radius: 5px;
+    }
+
+.panel__inner--grey {
+            background: #f8f8f8;
+            border: 1px solid #dee1e2;
+        }
+
+.panel__inner--b-r-s {
+            border-radius: 3px;
+        }
+
+.panel__inner--pdd-s {
+            padding: 8px 8px 10px;
+        }
+
+.panel__inner--full-md {
+            margin: 0 -20px;
+            border-radius: 0;
+        }
+
+@media (min-width: 768px) {
+
+.panel__inner--full-md {
+                margin: 0;
+                border-radius: 5px
+        }
     }
 
 .panel__item {
@@ -5365,6 +5577,23 @@ a:focus {
                     padding-bottom: 45px
             }
     }
+
+.panel__item--no-br {
+            border-bottom: none !important;
+        }
+
+.panel__item--recipients {
+            padding-top: 10px;
+        }
+
+.panel__item--recipients .table-item__recipient {
+                position: relative;
+                padding: 3px 0;
+            }
+
+.panel__item--recipients .table-item__name {
+                flex-grow: 0;
+            }
 
 .panel__status-icon {
 
@@ -5531,9 +5760,52 @@ a:focus {
 .panel__head {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: baseline;
         margin-bottom: 15px;
+        flex-wrap: wrap;
     }
+
+@media (min-width: 768px) {
+
+.panel__head {
+            flex-wrap: nowrap;
+            align-items: center
+    }
+    }
+
+.panel__head h2 {
+            margin-bottom: 10px;
+        }
+
+@media (min-width: 768px) {
+
+.panel__head h2 {
+                margin-bottom: 0
+        }
+    }
+
+.panel__subtitle {
+        justify-content: center;
+        color: #95a5a6;
+        font-size: 0.8125rem;
+        padding-bottom: 10px;
+    }
+
+.panel--messages {
+        padding-bottom: 10px;
+    }
+
+.panel--messages .panel__item {
+            padding: 10px;
+        }
+
+.panel--messages .panel__status-icon {
+            top: 30%;
+        }
+
+.panel--messages .table-item__userpic {
+            margin-bottom: 0;
+        }
 
 .photo-gallery {
     padding-bottom: 20px;
@@ -5592,6 +5864,11 @@ a:focus {
         left: 10px;
     }
 
+.icon--input__search {
+            top: 8px;
+            left: 8px;
+        }
+
 .icon--top-5 {
         top: -5px;
     }
@@ -5616,6 +5893,13 @@ a:focus {
         background-image: url('../../assets/images/comments-w.png');
         width: 19px;
         height: 19px;
+        top: 0;
+    }
+
+.icon--mrg-g-10 {
+        margin-right: 10px;
+        margin-left: 10px;
+
     }
 
 .ui-datepicker {
@@ -5740,7 +6024,6 @@ a:focus {
     max-height: 250px;
     overflow-y: auto;
 
-
 }
 
 @media (min-width: 768px) {
@@ -5750,7 +6033,6 @@ a:focus {
         top: 25px;
         left: 0;
         width: 200px
-
 
 }
     }
@@ -5766,6 +6048,17 @@ a:focus {
             border-bottom: none;
         }
 
+.popup__row--l {
+            padding: 10px 12px;
+        }
+
+@media (min-width: 768px) {
+
+.popup__row--l {
+                padding: 10px 12px
+        }
+    }
+
 .popup__userpic {
         width: 20px;
         height: 20px;
@@ -5778,7 +6071,7 @@ a:focus {
 .popup__name {
         margin-bottom: 0;
         padding-top: 2px;
-        text-align: left;
+        text-align: left; 
     }
 
 .popup--is-visible {
@@ -5796,5 +6089,109 @@ a:focus {
 .popup--joined {
             left: 0;
             right: inherit
+    }
+    }
+
+.popup--recipients {
+        
+        top: 34px;
+        left: 15px;
+        width: 340px;
+        border-color: #95a5a6;
+        max-width: calc(100% - 30px);
+        overflow: hidden;
+        
+        
+    }
+
+@media (min-width: 576px) {
+
+.popup--recipients {
+            left: 15px
+        
+        
+    }
+    }
+
+.popup--recipients .popup__row {
+            cursor: pointer;
+        }
+
+.ss-container {
+        width: 340px;
+        height: 250px;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+@media (min-width: 768px) {
+
+.ss-container {
+            height: 150px
+    }
+    }
+
+.ss-wrapper {
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        float: left;
+    }
+
+@media (min-width: 768px) {
+
+.ss-wrapper {
+            height: 150px
+    }
+    }
+
+.ss-wrapper:after {
+            content: "";
+            background: #fff;
+            display: block;
+            height: 105%;
+            width: 8px;
+            border: 1px solid #dee1e2;
+            position: absolute;
+            top: -1px;
+            right: 0;
+            display: none;
+        }
+
+@media (min-width: 768px) {
+
+.ss-wrapper:after {
+                display: block
+        }
+    }
+
+.ss-content {
+        height: 100%;
+        width: 385px;
+        width: calc(100% + 45px);
+        padding: 0 32px 0 0;
+        position: relative;
+        overflow: auto;
+    }
+
+@media (min-width: 768px) {
+    }
+
+.ss-scroll {
+        position: relative;
+        background: #31839a;
+        width: 8px;
+        z-index: 2;
+        cursor: pointer;
+        opacity: 1;
+        transition: opacity 0.25s linear;
+        display: none;
+    }
+
+@media (min-width: 768px) {
+
+.ss-scroll {
+            display: block
     }
     }

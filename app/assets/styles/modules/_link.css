@@ -16,6 +16,10 @@
         color: $green !important;
     }
 
+    &--grey {
+        color: #8a949b !important;
+    }
+
     &--grey-l {
         color: $grey-l !important;
     }

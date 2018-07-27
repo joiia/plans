@@ -254,7 +254,7 @@
                                                     </a>
                                                     <a href="" class="post__actions-item post__edit"><i class="icon icon--edit-s"></i>Редактировать
                                                     </a>
-                                                    <a href="" class="post__actions-item post__messages open-modal--message"><i class="icon icon--messages-s"></i>Сообщение подписчикам
+                                                    <a href="" class="post__actions-item post__messages open-modal--messages"><i class="icon icon--messages-s"></i>Сообщение подписчикам
                                                     </a>
                                                 </div>
                                                 <div class="post__comments-list">
@@ -309,24 +309,25 @@
 
 
 
-        <div class="modal modal--message">
+        <div class="modal modal--messages">
             <div class="modal__inner">
                 <div class="modal__panel modal__panel--grey">
 
                     <div class="panel__head">
                         <h2 class="headline headline--blue-l headline--20 headline--no-mrg"><i class="icon icon--mrg-r-15 icon--top-5 icon--messages-l-active"></i>Сообщения</h2>
-                        <a class="btn btn--blue-g btn--xs btn--rnd"><i class="icon icon--comment-w icon--mrg-r-8"></i>Написать сообщение</a>
+                        <a class="btn btn--blue-g btn--xs btn--rnd open-modal--new-message"><i class="icon icon--comment-w icon--mrg-r-8"></i>Написать сообщение</a>
                     </div>
 
                     <div class="panel panel--messages">
-                        <div class="panel__inner">
+                        <div class="panel__inner panel__inner--full-md">
 
                             <div class="panel__item table-item table-item--no-hov panel__search">
                                 <i class="icon icon--search-m panel__search-icon"></i>
                                 <input type="text" class="panel__search-input" placeholder="Поиск">
                             </div>
 
-                            <div class="panel__item panel__date table-item table-item--no-hov table-item--no-border">1 октября 2016</div>
+                            <div class="panel__item panel__subtitle table-item table-item--no-hov table-item--no-border">25 сентября 2016</div>
+
                             <div class="panel__item table-item table-item--no-border">
                                 <div class="panel__userpic"><a href=""><img class="rounded" src="assets/images/up-1.jpg" alt=""></a></div>
                                 <div class="panel__message-wrapper">
@@ -340,19 +341,7 @@
                                     <i class="icon icon--cancel-s"></i>
                                 </div>
                             </div>
-                            <div class="panel__item table-item table-item--no-border">
-                                <div class="panel__userpic"><a href=""><img class="rounded" src="assets/images/up-3.jpg" alt=""></a></div>
-                                <div class="panel__message-wrapper">
-                                    <div class="panel__sender"><a href="" class="link link--blue link--bold">Петров Петя</a></div>
-                                    <div class="panel__message panel__message--answer"><a class="panel__message--answer-sender" href=""><img class="rounded" src="assets/images/up-2.jpg" alt=""></a><a href="" class="link link--black italic-b">Привет, текст письма текст письма текст письма текст письма . . .</a></div>
-                                </div>
-                                <div class="panel__time">
-                                    12:05
-                                </div>
-                                <div class="panel__status-icon">
-                                    <i class="icon icon--cancel-s"></i>
-                                </div>
-                            </div>
+
                             <div class="panel__item table-item table-item--no-border">
                                 <div class="panel__userpic"><a href=""><img class="rounded" src="assets/images/up-4.jpg" alt=""></a></div>
                                 <div class="panel__message-wrapper">
@@ -366,6 +355,9 @@
                                     <i class="icon icon--cancel-s"></i>
                                 </div>
                             </div>
+
+                            <div class="panel__item panel__subtitle table-item table-item--no-hov table-item--no-border">25 сентября 2016</div>
+
                             <div class="panel__item table-item table-item--no-border">
                                 <div class="panel__userpic"><a href=""><img class="rounded" src="assets/images/up-2.jpg" alt=""></a></div>
                                 <div class="panel__message-wrapper">
@@ -383,17 +375,8 @@
                             <div class="panel__item table-item table-item--no-border">
                                 <div class="panel__userpic"><a href=""><img class="rounded" src="assets/images/up-1.jpg" alt=""></a></div>
                                 <div class="panel__message-wrapper">
-                                    <div class="panel__sender"><a href="" class="link link--blue link--bold">Сидоров Антон</a></div>
-                                    <div class="panel__message panel__subs">
-                                        <div class="panel__message panel__subs-event">
-                                            <div class="panel__message-photo-wrapper"><a href="" class="panel__message-photo-inner">       <img class="panel__message-photo" src="assets/images/photo.jpg" alt=""></a>
-                                            </div>
-                                            <a href="" class="link link--black link--bold">“Поездка в Сочи”</a>
-                                        </div>
-                                        <div class="panel__message panel__subs-text">
-                                            <a href="" class="link link--green italic">Сообщение для подписчика: текст письма текст письма текст . . .</a>
-                                        </div>
-                                    </div>
+                                    <div class="panel__sender"><a href="" class="link link--blue link--bold">Иванов Иван</a></div>
+                                    <div class="panel__message"><a href="" class="link link--black italic-b">Привет, текст письма текст письма текст письма текст письма текст . . .</a></div>
                                 </div>
                                 <div class="panel__time">
                                     12:05
@@ -402,12 +385,146 @@
                                     <i class="icon icon--cancel-s"></i>
                                 </div>
                             </div>
+
+
+
                         </div>
                     </div>
                 </div>
             </div>
             <div class="modal__bg"></div>
         </div>
+
+        <div class="modal modal--new-message">
+            <div class="modal__inner ">
+                <div class="modal__panel modal__panel--grey modal__panel--pdd-b-140">
+
+                    <h2 class="headline headline--blue-l headline--20"><i class="icon icon--mrg-r-15 icon--top-5 icon--messages-l-active"></i>Написать сообщение</h2>
+
+                    <div class="panel panel--messages">
+
+                        <div class="row row--pdd-v-20 align-items-baseline">
+                            <div class="col-auto">
+                                <label class="form__label-g" for="">Кому:</label>
+                            </div>
+                            <div class="col popup__parent">
+                                <div class="form__input-wrapper form__input-wrapper--m popup__link"><i class="icon icon--search-m icon--input icon--input__search"></i><input type="text" class="form__input form__input--rnd form__input-icon form__input-icon--search" placeholder="Поиск">
+                                </div>
+                                <div class="popup popup--recipients">
+                                    <div class="popup__head popup__row popup__row--l popup__select-all">
+                                        <div href="" class="table-item__check"><i class="icon icon--check"></i></div>
+                                        <div class="link link--grey">Выбрать всех</div>
+                                    </div>
+                                    <div class="popup__container">
+
+                                        <div class="popup__row popup__row--l">
+                                            <div class="table-item__check">
+                                                <i class="icon icon--check"></i>
+                                            </div>
+                                            <div class="table-item__recipient">
+                                                <div class="table-item__userpic"><a href=""><img class="rounded" src="assets/images/up-1.jpg" alt=""></a></div>
+                                                <div class="table-item__name popup__name"><a href="" class="link link--blue">Иванов Иван</a>
+                                                </div>
+                                            </div>
+                                            <div class="table-item__online table-item__online--online">В сети</div>
+                                        </div>
+                                        <div class="popup__row popup__row--l">
+                                            <div class="table-item__check">
+                                                <i class="icon icon--check"></i>
+                                            </div>
+                                            <div class="table-item__recipient">
+                                                <div class="table-item__userpic"><a href=""><img class="rounded" src="assets/images/up-2.jpg" alt=""></a></div>
+                                                <div class="table-item__name popup__name"><a href="" class="link link--blue">Петрова Ольга</a>
+                                                </div>
+                                            </div>
+                                            <div class="table-item__online table-item__online">Нет в сети</div>
+                                        </div>
+                                        <div class="popup__row popup__row--l">
+                                            <div class="table-item__check">
+                                                <i class="icon icon--check"></i>
+                                            </div>
+                                            <div class="table-item__recipient">
+                                                <div class="table-item__userpic"><a href=""><img class="rounded" src="assets/images/up-3.jpg" alt=""></a></div>
+                                                <div class="table-item__name popup__name"><a href="" class="link link--blue">Кузнецов Сергей</a>
+                                                </div>
+                                            </div>
+                                            <div class="table-item__online table-item__online">Нет в сети</div>
+                                        </div>
+                                        <div class="popup__row popup__row--l">
+                                            <div class="table-item__check">
+                                                <i class="icon icon--check"></i>
+                                            </div>
+                                            <div class="table-item__recipient">
+                                                <div class="table-item__userpic"><a href=""><img class="rounded" src="assets/images/up-4.jpg" alt=""></a></div>
+                                                <div class="table-item__name popup__name"><a href="" class="link link--blue">Мишина Яна</a>
+                                                </div>
+                                            </div>
+                                            <div class="table-item__online table-item__online--online">В сети</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel__item--recipients">
+                                    <div class="table-item__recipient table-item__recipient--is-hidden">
+                                        <div class="table-item__userpic"><a href=""><img class="rounded" src="assets/images/up-1.jpg" alt=""></a></div>
+                                        <div class="table-item__name popup__name"><a href="" class="link link--blue">Иванов Иван</a>
+                                        </div>
+                                        <div class="table-item__delete">
+                                            <i class="icon icon--x"></i>
+                                        </div>
+                                    </div>
+                                    <div class="table-item__recipient table-item__recipient--is-hidden">
+                                        <div class="table-item__userpic"><a href=""><img class="rounded" src="assets/images/up-2.jpg" alt=""></a></div>
+                                        <div class="table-item__name popup__name"><a href="" class="link link--blue">Петрова Ольга</a>
+                                        </div>
+                                        <div class="table-item__delete">
+                                            <i class="icon icon--x"></i>
+                                        </div>
+                                    </div>
+                                    <div class="table-item__recipient table-item__recipient--is-hidden">
+                                        <div class="table-item__userpic"><a href=""><img class="rounded" src="assets/images/up-3.jpg" alt=""></a></div>
+                                        <div class="table-item__name popup__name"><a href="" class="link link--blue">Кузнецов Сергей</a>
+                                        </div>
+                                        <div class="table-item__delete">
+                                            <i class="icon icon--x"></i>
+                                        </div>
+                                    </div>
+                                    <div class="table-item__recipient table-item__recipient--is-hidden">
+                                        <div class="table-item__userpic"><a href=""><img class="rounded" src="assets/images/up-4.jpg" alt=""></a></div>
+                                        <div class="table-item__name popup__name"><a href="" class="link link--blue">Мишина Яна</a>
+                                        </div>
+                                        <div class="table-item__delete">
+                                            <i class="icon icon--x"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="panel__inner panel__inner--grey panel__inner--b-r-s panel__inner--pdd-s">
+                            <div class="form__input-wrapper">
+                                <textarea class="form__textarea" placeholder="Напишите сообщение"></textarea>
+                                <i class="icon icon--edit-sss icon--input"></i>
+                            </div>
+                            <div class="row row--pdd-t-3 justify-content-between align-items-center">
+                                <div class="col">
+                                    <div class="panel__add-media">
+                                        <a href=""><i class="icon icon--attach icon--mrg-g-10"></i></a>
+                                        <a href=""><i class="icon icon--emoji"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <a href="" class="btn btn--bold btn--blue-l btn--xs btn--rnd-ss">Отправить</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal__bg"></div>
+        </div>
+
         <!-- inject:footer:html -->
 
 

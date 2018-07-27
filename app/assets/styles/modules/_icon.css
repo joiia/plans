@@ -2,41 +2,53 @@
     &--mrg-r-15 {
         margin-right: 12px;
     }
-    
-     &--mrg-r-8 {
+
+    &--mrg-r-8 {
         margin-right: 8px;
     }
-    
+
     &--input {
         position: absolute;
         top: 12px;
         left: 10px;
+
+        &__search {
+            top: 8px;
+            left: 8px;
+        }
     }
-    
+
     &--top-5 {
         top: -5px;
     }
-    
+
     &--calendar-ss {
         top: 11px;
     }
-    
+
     &--calendar-ss-g {
         top: 11px;
     }
-    
+
     &--clock-ss {
         top: 11px;
     }
-    
+
     &--clock-ss-g {
         top: 10px;
     }
-    
+
     &--comment-w {
         background-image: url('../../assets/images/comments-w.png');
         width: 19px;
         height: 19px;
+        top: 0;
+    }
+
+    &--mrg-g-10 {
+        margin-right: 10px;
+        margin-left: 10px;
+
     }
 }
 

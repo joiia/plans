@@ -1,0 +1,15 @@
+.row {
+    &--pdd-v-20 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        @mixin atM {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+
+    &--pdd-t-3 {
+        padding-top: 5px;
+    }
+}

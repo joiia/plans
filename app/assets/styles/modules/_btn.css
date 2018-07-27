@@ -49,8 +49,10 @@
     }
 
     &--xs {
-        padding: 5px 15px;
+        padding: 0 15px;
         font-size: $px13;
+        height: 30px;
+        line-height: 30px;
     }
 
     &--m {
@@ -92,7 +94,7 @@
         color: #fff !important;
 
         &:hover {
-            background: #558EB8;
+            background: #3ea3e6;
         }
 
     }

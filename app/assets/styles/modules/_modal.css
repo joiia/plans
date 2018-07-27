@@ -39,6 +39,8 @@
         width: 670px;
         max-width: 90%;
         max-height: 90vh;
+
+
     }
 
     &__panel {
@@ -51,12 +53,36 @@
         &--grey {
             background: #f2f6fb;
         }
+
+        &--pdd-b-140 {
+            padding-bottom: 140px !important;
+        }
     }
 
     &--is-visible {
         opacity: 1;
         z-index: 5;
         z-index: 100000;
+    }
+
+    &--new-message-is-visible {
+        z-index: 100001;
+    }
+
+    &--messages {
+        .modal__panel {
+            padding: 20px;
+        }
+    }
+    
+    &--new-message {
+        .modal__panel {
+            padding: 20px;
+        }
+        
+        .form__input {
+            margin-bottom: 0;
+        }
     }
 
 }

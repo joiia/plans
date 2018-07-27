@@ -5,6 +5,29 @@
         background: #fff;
         border: 1px solid $grey-ll;
         border-radius: 5px;
+
+        &--grey {
+            background: #f8f8f8;
+            border: 1px solid #dee1e2;
+        }
+
+        &--b-r-s {
+            border-radius: 3px;
+        }
+
+        &--pdd-s {
+            padding: 8px 8px 10px;
+        }
+        
+        &--full-md {
+            margin: 0 -20px;
+            border-radius: 0;
+            
+            @mixin atM {
+                margin: 0;
+                border-radius: 5px;
+            }
+        }
     }
 
     &__item {
@@ -32,14 +55,14 @@
             @mixin atM {
                 padding: 0 45px 20px;
             }
-            
+
             @mixin atL {
                 padding: 0 45px 20px;
             }
 
             &:first-child {
                 padding-top: 20px;
-                
+
                 @mixin atM {
                     padding-top: 35px;
                 }
@@ -49,6 +72,23 @@
                 @mixin atM {
                     padding-bottom: 45px;
                 }
+            }
+        }
+
+        &--no-br {
+            border-bottom: none !important;
+        }
+
+        &--recipients {
+            padding-top: 10px;
+
+            .table-item__recipient {
+                position: relative;
+                padding: 3px 0;
+            }
+
+            .table-item__name {
+                flex-grow: 0;
             }
         }
     }
@@ -200,12 +240,49 @@
         }
     }
 
-    
+
     &__head {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: baseline;
         margin-bottom: 15px;
+        flex-wrap: wrap;
+
+        @mixin atM {
+            flex-wrap: nowrap;
+            align-items: center;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+
+            @mixin atM {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__subtitle {
+        justify-content: center;
+        color: $grey-l;
+        font-size: $px13;
+        padding-bottom: 10px;
+    }
+
+    &--messages {
+        padding-bottom: 10px;
+        
+        .panel__item {
+            padding: 10px;
+        }
+        
+        .panel__status-icon {
+            top: 30%;
+        }
+        
+        .table-item__userpic {
+            margin-bottom: 0;
+        }
     }
 
 }
